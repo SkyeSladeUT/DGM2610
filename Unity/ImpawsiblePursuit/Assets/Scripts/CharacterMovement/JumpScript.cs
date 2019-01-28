@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 public class JumpScript : MonoBehaviour
 {
 	private int JumpCount;
-	public FloatData JumpFloat;
+	public FloatData JumpFloat, Gravity;
 	public KeycodeData Jump;
 	public DoubleKeyCodeData Up;
 	private Rigidbody rb;
@@ -21,7 +21,8 @@ public class JumpScript : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(Up.Key1)||Input.GetKeyDown(Up.Key2)||Input.GetKeyDown(Jump.key)){
+		if (Input.GetKeyDown(Up.Key1) || Input.GetKeyDown(Up.Key2) || Input.GetKeyDown(Jump.key))
+		{
 			if (JumpCount < 2)
 			{
 				movement = rb.velocity;

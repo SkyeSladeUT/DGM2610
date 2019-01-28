@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dadb52d3c3b3c49428c50ebfe8ea80a8, type: 3}
-  m_Name: Jump
+  m_Script: {fileID: 11500000, guid: 4fb8d7a9937596849970f51f63c101ea, type: 3}
+  m_Name: FacingRight
   m_EditorClassIdentifier: 
-  value: 4
+  value: 1

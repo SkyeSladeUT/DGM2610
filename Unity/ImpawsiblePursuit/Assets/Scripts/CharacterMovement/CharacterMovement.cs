@@ -4,30 +4,66 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
-
+	public BoolData FacingRight;
 	private Rigidbody rb;
 	private Vector3 movement;
+	private Vector3 scale;
 	public FloatData Speed;
-	public FloatData SpeedChange;
-	public DoubleKeyCodeData faster;
-	public DoubleKeyCodeData slower;
+	//public FloatData SpeedChange;
+	public DoubleKeyCodeData Right;
+	public DoubleKeyCodeData Left;
 
 	// Use this for initialization
 	void Start ()
 	{
+		scale = transform.localScale;
+		if (transform.localScale.x < 0)
+		{
+			scale.x *= -1;
+			transform.localScale = scale;
+		}
+		FacingRight.value = true;
+		if(Speed.value < 0)
+		{
+			Speed.value *= -1;
+		}
 		rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		ChangeSpeed();
-		//Move Right
+		//ChangeSpeed();
+		ChangeDirection();
 		movement = rb.velocity;
 		movement.x = Speed.value;
 		rb.velocity = movement;
 	}
 
-	private void ChangeSpeed()
+	private void ChangeDirection()
+	{
+		if (Input.GetKeyDown(Left.Key1) || Input.GetKeyDown(Left.Key2))
+		{
+			if (FacingRight.value)
+			{
+				Speed.value *= -1;
+				scale.x *= -1;
+				transform.localScale = scale;
+				FacingRight.value = false;
+				
+			}
+		}
+		else if (Input.GetKeyDown(Right.Key1)||Input.GetKeyDown(Right.Key2))
+		{
+			if (!FacingRight.value)
+			{
+				Speed.value *= -1;
+				scale.x *= -1;
+				transform.localScale = scale;
+				FacingRight.value = true;
+			}
+		}
+	}
+	/*private void ChangeSpeed()
 	{
 		if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))
 		{
@@ -45,6 +81,6 @@ public class CharacterMovement : MonoBehaviour
 		{
 			Speed.value -= SpeedChange.value;
 		}
-	}
+	}*/
 
 }

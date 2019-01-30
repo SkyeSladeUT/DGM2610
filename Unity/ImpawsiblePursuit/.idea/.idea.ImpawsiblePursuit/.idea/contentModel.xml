@@ -7,10 +7,14 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="CharacterMovement" t="Include">
+            <e p="ChangeDirectionsMovement.cs" t="Include" />
             <e p="CharacterMovement.cs" t="Include" />
             <e p="ClickObject.cs" t="Include" />
             <e p="JumpScript.cs" t="Include" />
           </e>
+          <e p="Death.cs" t="Include" />
+          <e p="DogDeath.cs" t="Include" />
+          <e p="DoorScript.cs" t="Include" />
           <e p="PowerUp.cs" t="Include" />
           <e p="ScriptableObjectsScripts" t="Include">
             <e p="BoolData.cs" t="Include" />

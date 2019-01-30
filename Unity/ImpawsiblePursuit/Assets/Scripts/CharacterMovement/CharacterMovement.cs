@@ -4,29 +4,27 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
-	public BoolData FacingRight;
+	//public BoolData FacingRight;
 	private Rigidbody rb;
 	private Vector3 movement;
-	private Vector3 scale;
+	//private Vector3 scale;
 	public FloatData Speed;
 	public FloatData SpeedChange;
 	//public DoubleKeyCodeData Right;
 	public DoubleKeyCodeData slower;
+	public int startingSpeed;
 
 	// Use this for initialization
 	void Start ()
 	{
-		scale = transform.localScale;
-		if (transform.localScale.x < 0)
+		//scale = transform.localScale;
+		/*if (transform.localScale.x < 0)
 		{
 			scale.x *= -1;
 			transform.localScale = scale;
-		}
-		FacingRight.value = true;
-		if(Speed.value < 0)
-		{
-			Speed.value *= -1;
-		}
+		}*/
+		//FacingRight.value = true;
+		Speed.value = startingSpeed;
 		rb = GetComponent<Rigidbody>();
 	}
 	

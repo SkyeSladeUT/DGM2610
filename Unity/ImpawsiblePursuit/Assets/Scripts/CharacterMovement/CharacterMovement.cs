@@ -9,9 +9,9 @@ public class CharacterMovement : MonoBehaviour
 	private Vector3 movement;
 	private Vector3 scale;
 	public FloatData Speed;
-	//public FloatData SpeedChange;
-	public DoubleKeyCodeData Right;
-	public DoubleKeyCodeData Left;
+	public FloatData SpeedChange;
+	//public DoubleKeyCodeData Right;
+	public DoubleKeyCodeData slower;
 
 	// Use this for initialization
 	void Start ()
@@ -32,14 +32,14 @@ public class CharacterMovement : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		//ChangeSpeed();
-		ChangeDirection();
+		ChangeSpeed();
+		//ChangeDirection();
 		movement = rb.velocity;
 		movement.x = Speed.value;
 		rb.velocity = movement;
 	}
 
-	private void ChangeDirection()
+	/*private void ChangeDirection()
 	{
 		if (Input.GetKeyDown(Left.Key1) || Input.GetKeyDown(Left.Key2))
 		{
@@ -62,25 +62,25 @@ public class CharacterMovement : MonoBehaviour
 				FacingRight.value = true;
 			}
 		}
-	}
-	/*private void ChangeSpeed()
+	}*/
+	private void ChangeSpeed()
 	{
 		if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))
 		{
 			Speed.value -= SpeedChange.value;
 		}
-		else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
+		/*else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
 		{
 			Speed.value += SpeedChange.value;
-		}
+		}*/
 		if (Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2))
 		{
 			Speed.value += SpeedChange.value;
 		}
-		else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1))
+		/*else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1))
 		{
 			Speed.value -= SpeedChange.value;
-		}
-	}*/
+		}*/
+	}
 
 }

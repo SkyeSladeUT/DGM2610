@@ -7,6 +7,7 @@ public class ClickObject : MonoBehaviour
 	public bool InRange;
 	public GameObject Highlighter;
 	private Rigidbody rb;
+	public DoubleKeyCodeData interact;
 
 	private void Start()
 	{
@@ -34,11 +35,22 @@ public class ClickObject : MonoBehaviour
 		}
 	}
 
-	private void OnMouseDown()
+	private void Update()
+	{
+		if (Input.GetKeyDown(interact.Key1)||Input.GetKeyDown(interact.Key2))
+		{
+			if (InRange)
+			{
+				rb.constraints = RigidbodyConstraints.None;
+			}
+		}
+	}
+
+	/*private void OnMouseDown()
 	{
 		if (InRange)
 		{
 			rb.constraints = RigidbodyConstraints.None;
 		}
-	}
+	}*/
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
@@ -80,5 +81,8 @@ public class CharacterMovement : MonoBehaviour
 			Speed.value -= SpeedChange.value;
 		}*/
 	}
+
+
+
 
 }

@@ -27,14 +27,14 @@ public class JumpScript : MonoBehaviour
 		{
 			if (JumpCount < 2)
 			{
-				if (JumpCount > 0)
+				/*if (JumpCount > 1)
 				{
 					jumpspeed = JumpFloat.value * .85f;
-				}
-				else
-				{
+				}*/
+				//else
+				//{
 					jumpspeed = JumpFloat.value;
-				}
+				//}
 				movement = rb.velocity;
 				//movement.y = JumpFloat.value;
 				movement.y = jumpspeed;
@@ -46,8 +46,8 @@ public class JumpScript : MonoBehaviour
 
 		if (gravity < 1)
 			gravity += Time.deltaTime * Gravity.value;
-		if (gravity > .5f)
-			gravity = .5f;
+		if (gravity > .75f)
+			gravity = .75f;
 		movement = rb.velocity;
 		movement.y -= gravity;
 		rb.velocity = movement;

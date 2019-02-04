@@ -11,7 +11,7 @@ public class CharacterMovement : MonoBehaviour
 	//private Vector3 scale;
 	public FloatData Speed;
 	public FloatData SpeedChange;
-	//public DoubleKeyCodeData Right;
+	public DoubleKeyCodeData faster;
 	public DoubleKeyCodeData slower;
 	public int startingSpeed;
 
@@ -32,7 +32,6 @@ public class CharacterMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update () {
 		ChangeSpeed();
-		//ChangeDirection();
 		movement = rb.velocity;
 		movement.x = Speed.value;
 		rb.velocity = movement;
@@ -68,18 +67,18 @@ public class CharacterMovement : MonoBehaviour
 		{
 			Speed.value -= SpeedChange.value;
 		}
-		/*else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
+		else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
 		{
-			Speed.value += SpeedChange.value;
-		}*/
+			Speed.value += SpeedChange.value/2;
+		}
 		if (Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2))
 		{
 			Speed.value += SpeedChange.value;
 		}
-		/*else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1))
+		else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1))
 		{
-			Speed.value -= SpeedChange.value;
-		}*/
+			Speed.value -= SpeedChange.value/2;
+		}
 	}
 
 

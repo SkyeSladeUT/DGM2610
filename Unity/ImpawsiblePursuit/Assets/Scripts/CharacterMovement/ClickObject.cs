@@ -8,6 +8,7 @@ public class ClickObject : MonoBehaviour
 	public GameObject Highlighter;
 	private Rigidbody rb;
 	public DoubleKeyCodeData interact;
+	public float seconds;
 
 	private void Start()
 	{
@@ -49,6 +50,15 @@ public class ClickObject : MonoBehaviour
 	private void KnockOver()
 	{
 		rb.constraints = RigidbodyConstraints.None;
+		StartCoroutine(destroy());
+
+	}
+
+	IEnumerator destroy()
+	{
+		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(seconds);
+		Destroy(gameObject);
 	}
 
 }

@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dadb52d3c3b3c49428c50ebfe8ea80a8, type: 3}
   m_Name: Jump
   m_EditorClassIdentifier: 
-  value: 7.5
+  value: 6.5

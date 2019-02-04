@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DogDeath : MonoBehaviour {
-	private void OnCollisionEnter(Collision obj)
+	private void OnTriggerEnter(Collider obj)
 	{
-		if (obj.gameObject.CompareTag("Breakable"))
+		if (obj.CompareTag("Breakable"))
 		{
 			Destroy(gameObject);
 		}

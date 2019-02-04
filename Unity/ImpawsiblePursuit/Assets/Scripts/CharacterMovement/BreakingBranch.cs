@@ -10,6 +10,8 @@ public class BreakingBranch : MonoBehaviour
 	public GameObject Highlighter;
 	private Rigidbody rb;
 	public DoubleKeyCodeData interact;
+	public BoxCollider collider;
+	public float seconds;
 
 	private void Start()
 	{
@@ -53,5 +55,10 @@ public class BreakingBranch : MonoBehaviour
 		yield return new WaitForSeconds(.25f);
 		rb.constraints = RigidbodyConstraints.None;
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
+		yield return new WaitForSeconds(2);
+		collider.isTrigger = true;
+		yield return new WaitForSeconds(seconds);
+		Destroy(gameObject);
 	}
+	
 }

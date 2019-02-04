@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 [RequireComponent(typeof(Rigidbody))]
-public class ClickObject : MonoBehaviour
+public class BreakingBranch : MonoBehaviour
 {
+
 	public bool InRange;
 	public GameObject Highlighter;
 	private Rigidbody rb;
@@ -37,18 +39,19 @@ public class ClickObject : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(interact.Key1)||Input.GetKeyDown(interact.Key2))
+		if (Input.GetKeyDown(interact.Key1) || Input.GetKeyDown(interact.Key2))
 		{
 			if (InRange)
 			{
-				KnockOver();
+				StartCoroutine(Break());
 			}
 		}
 	}
 
-	private void KnockOver()
+	private IEnumerator Break()
 	{
+		yield return new WaitForSeconds(.25f);
 		rb.constraints = RigidbodyConstraints.None;
+		rb.constraints = RigidbodyConstraints.FreezeRotation;
 	}
-
 }

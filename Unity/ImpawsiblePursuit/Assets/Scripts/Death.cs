@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Death : MonoBehaviour
 {
-	private void OnCollisionEnter(Collision obj)
+	private void OnTriggerEnter(Collider obj)
 	{
-		if (obj.gameObject.CompareTag("Death"))
+		if (obj.CompareTag("Death"))
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}

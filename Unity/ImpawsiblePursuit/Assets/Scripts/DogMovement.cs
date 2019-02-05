@@ -34,7 +34,7 @@ public class DogMovement : MonoBehaviour
 			movement = rb.velocity;
 			movement.x = currentSpeed;
 			rb.velocity = movement;
-			currentSpeed += .2f * Time.deltaTime;
+			currentSpeed += .5f * Time.deltaTime;
 		}
 	}
 

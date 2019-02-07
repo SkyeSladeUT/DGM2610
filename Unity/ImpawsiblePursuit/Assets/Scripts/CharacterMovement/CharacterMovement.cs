@@ -5,10 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
-	//public BoolData FacingRight;
 	private Rigidbody rb;
 	private Vector3 movement;
-	//private Vector3 scale;
 	public FloatData Speed;
 	public FloatData SpeedChange;
 	public DoubleKeyCodeData faster;
@@ -18,13 +16,6 @@ public class CharacterMovement : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		//scale = transform.localScale;
-		/*if (transform.localScale.x < 0)
-		{
-			scale.x *= -1;
-			transform.localScale = scale;
-		}*/
-		//FacingRight.value = true;
 		Speed.value = startingSpeed;
 		rb = GetComponent<Rigidbody>();
 	}
@@ -37,30 +28,6 @@ public class CharacterMovement : MonoBehaviour
 		rb.velocity = movement;
 	}
 
-	/*private void ChangeDirection()
-	{
-		if (Input.GetKeyDown(Left.Key1) || Input.GetKeyDown(Left.Key2))
-		{
-			if (FacingRight.value)
-			{
-				Speed.value *= -1;
-				scale.x *= -1;
-				transform.localScale = scale;
-				FacingRight.value = false;
-				
-			}
-		}
-		else if (Input.GetKeyDown(Right.Key1)||Input.GetKeyDown(Right.Key2))
-		{
-			if (!FacingRight.value)
-			{
-				Speed.value *= -1;
-				scale.x *= -1;
-				transform.localScale = scale;
-				FacingRight.value = true;
-			}
-		}
-	}*/
 	private void ChangeSpeed()
 	{
 		if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))

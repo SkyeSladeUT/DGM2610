@@ -195,7 +195,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1401539469626678}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1.2566693, y: 0.99999964, z: 1.0012479}
@@ -227,4 +227,4 @@ MonoBehaviour:
   Highlighter: {fileID: 1436487986857068}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
   seconds: 1
-  collider: {fileID: 65474871309361640}
+  player: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}

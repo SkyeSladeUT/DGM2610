@@ -78,7 +78,6 @@ GameObject:
   - component: {fileID: 114532922244676520}
   - component: {fileID: 65522916571964104}
   - component: {fileID: 114346079585003290}
-  - component: {fileID: 114337747448967178}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Player
@@ -110,7 +109,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1540427344273078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.9, y: 0.5, z: 1.18}
+  m_LocalPosition: {x: -13.8, y: 0.5, z: 1.18}
   m_LocalScale: {x: 1.1713107, y: 0.23745273, z: 0.52049}
   m_Children:
   - {fileID: 4723249134817154}
@@ -427,21 +426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: {fileID: 11400000, guid: 7e8ba468e2a0b7d4aa537bcf98529781, type: 2}
   SpeedChange: {fileID: 11400000, guid: 6928b6f8df7ce044b8dbf3bd7686baad, type: 2}
+  faster: {fileID: 11400000, guid: 3b747f85d58232c4ca374f1c0bd974c4, type: 2}
   slower: {fileID: 11400000, guid: e723867f2db5e44439ea164b6bee211d, type: 2}
   startingSpeed: 5
---- !u!114 &114337747448967178
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1540427344273078}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e69747e5247c34d95ad6918b32004b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpSpeed: 1
-  speed: 5
 --- !u!114 &114346079585003290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -453,6 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826690b126e841d46a46953bc26642e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
 --- !u!114 &114532922244676520
 MonoBehaviour:
   m_ObjectHideFlags: 1

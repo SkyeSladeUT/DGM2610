@@ -9,6 +9,7 @@ public class ClickObject : MonoBehaviour
 	private Rigidbody rb;
 	public DoubleKeyCodeData interact;
 	public float seconds;
+	public PlayerData player;
 
 	private void Start()
 	{
@@ -50,6 +51,7 @@ public class ClickObject : MonoBehaviour
 	private void KnockOver()
 	{
 		rb.constraints = RigidbodyConstraints.None;
+		player.score.value += 1;
 		StartCoroutine(destroy());
 
 	}

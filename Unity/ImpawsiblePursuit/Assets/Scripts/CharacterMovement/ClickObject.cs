@@ -39,12 +39,9 @@ public class ClickObject : MonoBehaviour
 
 	private void Update()
 	{
-		if (Input.GetKeyDown(interact.Key1)||Input.GetKeyDown(interact.Key2))
+		if (InRange && interact.GetKey())
 		{
-			if (InRange)
-			{
-				KnockOver();
-			}
+			KnockOver();
 		}
 	}
 

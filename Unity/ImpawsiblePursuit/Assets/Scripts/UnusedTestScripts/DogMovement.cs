@@ -46,7 +46,7 @@ public class DogMovement : MonoBehaviour
 			currentSpeed += .1f * Time.deltaTime;
 		}
 
-		if ((Input.GetKeyDown(interact.Key1) || Input.GetKeyDown(interact.Key2)) && inRange)
+		if (interact.GetKey() && inRange)
 		{
 			cat.score.value += 10;
 			PowerUpLevel.value = 0;

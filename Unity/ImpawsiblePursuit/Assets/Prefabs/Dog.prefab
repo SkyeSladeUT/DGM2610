@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 65019292899652824}
   - component: {fileID: 65608630798103964}
   - component: {fileID: 114566199219569280}
-  - component: {fileID: 114478639726551464}
+  - component: {fileID: 114001284082749148}
   m_Layer: 0
   m_Name: Dog
   m_TagString: Death
@@ -227,7 +227,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553802202998658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.37, y: 1.4364246, z: 3.3201125}
+  m_LocalPosition: {x: -50.37, y: 0.64643, z: 3.3201125}
   m_LocalScale: {x: 1.1713107, y: 0.23745273, z: 0.52049}
   m_Children:
   - {fileID: 4965854251388728}
@@ -624,8 +624,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 4.167805, z: 0.3379133}
-  m_Center: {x: 0, y: 0.1536355, z: -0.33104455}
+  m_Size: {x: 1, y: 4.167805, z: 1.0728313}
+  m_Center: {x: 0, y: 0.1536355, z: 0.036414444}
 --- !u!65 &65608630798103964
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -636,9 +636,9 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.9999988, z: 5.734316}
-  m_Center: {x: 0, y: -0.00000006275422, z: 2.3671582}
---- !u!114 &114478639726551464
+  m_Size: {x: 1, y: 1.9999988, z: 11.583775}
+  m_Center: {x: 0, y: -0.00000006275422, z: -0.557566}
+--- !u!114 &114001284082749148
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -646,16 +646,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1553802202998658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc4241b70d4285847ab7673b09897e47, type: 3}
+  m_Script: {fileID: 11500000, guid: b706521b963d0cd43826c60655ba696f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
-  player: {fileID: 0}
+  offset: 0.5
   seconds: 0.5
+  player: {fileID: 0}
+  CatHighlighter: {fileID: 0}
   collider: {fileID: 65019292899652824}
   cat: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
   highlighter: {fileID: 1390760063026000}
-  inRange: 0
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
   PowerUpLevel: {fileID: 11400000, guid: 618870d5572310c47a6f0c2d406d9c1f, type: 2}
 --- !u!114 &114566199219569280

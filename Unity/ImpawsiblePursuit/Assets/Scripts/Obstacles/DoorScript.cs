@@ -32,10 +32,8 @@ public class DoorScript : MonoBehaviour
 
 	private void Update()
 	{
-		if (InRange)
+		if (InRange && Interact.GetKey())
 		{
-			if (Input.GetKeyDown(Interact.Key1) || Input.GetKeyDown(Interact.Key2))
-			{
 				if (open)
 				{
 					CloseDoor();
@@ -44,7 +42,6 @@ public class DoorScript : MonoBehaviour
 				{
 					OpenDoor();
 				}
-			}
 		}
 	}
 

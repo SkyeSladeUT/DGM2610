@@ -5,4 +5,9 @@ using UnityEngine;
 public class KeycodeData : ScriptableObject
 {
 	public KeyCode key;
+
+	public bool GetKey()
+	{
+		return (Input.GetKeyDown(key));
+	}
 }

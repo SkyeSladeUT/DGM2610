@@ -19,6 +19,7 @@ public class CameraScript : MonoBehaviour
 	private float rotationamount;
 	private float z;
 	private float originalZ;
+	public BoolData canChange;
 
 	private void Start()
 	{
@@ -48,6 +49,7 @@ public class CameraScript : MonoBehaviour
 		transform.position = position;
 		if (CrazyCam.value)
 		{
+			canChange.value = false;
 			CrazyCam.value = false;
 			StartCoroutine(Crazy());
 		}
@@ -55,7 +57,7 @@ public class CameraScript : MonoBehaviour
 
 	private IEnumerator Crazy()
 	{
-		seconds = 10;
+		seconds = 5;
 		positive = true;
 		rotationamount = .05f;
 		while (seconds > 0)
@@ -104,5 +106,6 @@ public class CameraScript : MonoBehaviour
 		print("End");
 		transform.rotation = rotation;
 		z = 0;
+		canChange.value = true;
 	}
 }

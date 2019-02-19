@@ -51,9 +51,9 @@ public class BreakingBranch : MonoBehaviour
 	{
 		yield return new WaitForSeconds(.25f);
 		rb.constraints = RigidbodyConstraints.None;
-		rb.constraints = RigidbodyConstraints.FreezeRotation;
-		yield return new WaitForSeconds(2);
-		collider.isTrigger = true;
+		//rb.constraints = RigidbodyConstraints.FreezeRotation;
+		//yield return new WaitForSeconds(2);
+		//collider.isTrigger = true;
 		yield return new WaitForSeconds(seconds);
 		Destroy(gameObject);
 	}

@@ -6,6 +6,14 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="BreakApart.cs" t="Include" />
+        <e p="Prefabs" t="Include">
+          <e p="Objects" t="Include">
+            <e p="LivingRoom" t="Include">
+              <e p="ChangeLight.cs" t="Include" />
+              <e p="Window.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="CameraScript.cs" t="Include" />
           <e p="CharacterMovement" t="Include">

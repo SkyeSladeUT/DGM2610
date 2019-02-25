@@ -2,38 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a3bfacd-5d33-41e0-8857-d9f26fc4883a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../FBX/Kitchen/Counter.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/../../FBX/Kitchen/Counter.fbx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../E for Everyone Rating.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Eamples.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Maya/LowPolyASsets.ma" beforeDir="false" afterPath="$PROJECT_DIR$/../../Maya/LowPolyASsets.ma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Skye.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImpawsiblePursuit/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImpawsiblePursuit/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImpawsiblePursuit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImpawsiblePursuit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Roughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Roughness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/SlideRoof_lambert1_Height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/SlideRoof_lambert1_Height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/SlideRoof_lambert1_Roughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/SlideRoof_lambert1_Roughness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Brick_Height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Brick_Height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Brick_Roughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Brick_Roughness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Doors_Height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Doors_Height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Doors_Roughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Doors_Roughness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Roof_Height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Roof_Height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Roof_Roughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/UVedHouse_Roof_Roughness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/WoodPlank_lambert1_Height.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/WoodPlank_lambert1_Height.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/WoodPlank_lambert1_Roughness.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/WoodPlank_lambert1_Roughness.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Kitchen/Counter.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/Kitchen/Counter.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Kitchen/Counter.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Objects/Kitchen/Counter.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/BrickWall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/BrickWall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/Tile.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/Tile.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/Wall1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/Wall1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/BakcGroundMaterials/Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_BaseColor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_BaseColor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Metallic.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Metallic.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Floor_lambert1_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_BaseColor.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_BaseColor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_BaseColor.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_BaseColor.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Height.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Height.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Metallic.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Metallic.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Normal.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Normal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Normal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Normal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Roughness.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/TextureImages/Wall_lambert1_Roughness.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/ProBuilderPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProBuilder Data/ProBuilderPreferences.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype One.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/level0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/sharedassets0.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/sharedassets0.assets.resS" beforeDir="false" afterPath="$PROJECT_DIR$/../ImpawsiblePursuit_Data/sharedassets0.assets.resS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../tree_clipart.gif" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -121,7 +121,7 @@
       <file leaf-file-name="StoveGlow.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/StoveGlow.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
+            <state relative-caret-position="405">
               <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
               <folding>
                 <marker date="1550948322728" expanded="false" signature="6:78" ph="..." />
@@ -138,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BreakApart.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BreakApart.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/BreakApart.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -149,6 +149,62 @@
                 <marker date="1550952028994" expanded="true" signature="198:256" ph="{...}" />
                 <marker date="1550952028994" expanded="true" signature="312:447" ph="{...}" />
                 <marker date="1550952028994" expanded="true" signature="350:444" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Window.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/Window.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <marker date="1551056722565" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551056722565" expanded="true" signature="115:477" ph="{...}" />
+                <marker date="1551056722565" expanded="true" signature="197:258" ph="{...}" />
+                <marker date="1551056722565" expanded="true" signature="311:475" ph="{...}" />
+                <marker date="1551056722565" expanded="true" signature="348:472" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChangeLight.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/ChangeLight.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+              <folding>
+                <marker date="1551057691081" expanded="false" signature="6:78" ph="..." />
+                <marker date="1551057691081" expanded="true" signature="120:545" ph="{...}" />
+                <marker date="1551057691081" expanded="true" signature="225:287" ph="{...}" />
+                <marker date="1551057691081" expanded="true" signature="332:543" ph="{...}" />
+                <marker date="1551057691081" expanded="true" signature="369:540" ph="{...}" />
+                <marker date="1551057691081" expanded="true" signature="389:459" ph="{...}" />
+                <marker date="1551057691081" expanded="true" signature="467:536" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CharacterMovement.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+              <folding>
+                <marker date="1551059217862" expanded="true" signature="6:92" ph="..." />
+                <marker date="1551059217862" expanded="true" signature="177:1480" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="452:555" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="610:980" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="780:841" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="916:977" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="1009:1474" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="1082:1127" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="1199:1246" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="1310:1355" ph="{...}" />
+                <marker date="1551059217862" expanded="true" signature="1424:1471" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -181,6 +237,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/BreakingBranch.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/Window.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/ChangeLight.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/StoveGlow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Destroy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -191,8 +249,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/FloatData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/KeycodeData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/BoolData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/GroundCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/ClickObjects.cs" />
@@ -213,7 +269,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Collectables.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Death.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DogMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUpLevelBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerData.cs" />
@@ -242,6 +297,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScript.cs" />
         <option value="$PROJECT_DIR$/Assets/StoveGlow.cs" />
         <option value="$PROJECT_DIR$/Assets/BreakApart.cs" />
+        <option value="$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/Window.cs" />
+        <option value="$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/ChangeLight.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs" />
       </list>
     </option>
   </component>
@@ -251,7 +309,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="width" value="1225" />
     <option name="height" value="1040" />
@@ -263,10 +321,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -283,6 +337,10 @@
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
       </pane>
     </panes>
   </component>
@@ -350,11 +408,14 @@
       <workItem from="1549996210934" duration="130000" />
       <workItem from="1550516997295" duration="2279000" />
       <workItem from="1550945818163" duration="4174000" />
+      <workItem from="1551055912377" duration="977000" />
+      <workItem from="1551057513615" duration="743000" />
+      <workItem from="1551058757274" duration="1032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76205000" />
+    <option name="totallyTimeSpent" value="78957000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,21 +427,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="0" width="980" height="832" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.3294964" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09865772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.104347825" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="12" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="NuGet" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,14 +463,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/BoolData.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="38" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/GroundCheck.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/ClickObjects.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/IntData.cs">
       <provider selected="true" editor-type-id="text-editor">
@@ -438,13 +491,6 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DogDeath.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Death.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DogMovement.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PowerUpLevelBar.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/PowerUp.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Collectables.cs" />
@@ -556,7 +602,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/StoveGlow.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
+        <state relative-caret-position="405">
           <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
           <folding>
             <marker date="1550948322728" expanded="false" signature="6:78" ph="..." />
@@ -594,6 +640,56 @@
             <marker date="1550952028994" expanded="true" signature="198:256" ph="{...}" />
             <marker date="1550952028994" expanded="true" signature="312:447" ph="{...}" />
             <marker date="1550952028994" expanded="true" signature="350:444" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/Window.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <marker date="1551056722565" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551056722565" expanded="true" signature="115:477" ph="{...}" />
+            <marker date="1551056722565" expanded="true" signature="197:258" ph="{...}" />
+            <marker date="1551056722565" expanded="true" signature="311:475" ph="{...}" />
+            <marker date="1551056722565" expanded="true" signature="348:472" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Prefabs/Objects/LivingRoom/ChangeLight.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <marker date="1551057691081" expanded="false" signature="6:78" ph="..." />
+            <marker date="1551057691081" expanded="true" signature="120:545" ph="{...}" />
+            <marker date="1551057691081" expanded="true" signature="225:287" ph="{...}" />
+            <marker date="1551057691081" expanded="true" signature="332:543" ph="{...}" />
+            <marker date="1551057691081" expanded="true" signature="369:540" ph="{...}" />
+            <marker date="1551057691081" expanded="true" signature="389:459" ph="{...}" />
+            <marker date="1551057691081" expanded="true" signature="467:536" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+          <folding>
+            <marker date="1551059217862" expanded="true" signature="6:92" ph="..." />
+            <marker date="1551059217862" expanded="true" signature="177:1480" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="452:555" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="610:980" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="780:841" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="916:977" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="1009:1474" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="1082:1127" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="1199:1246" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="1310:1355" ph="{...}" />
+            <marker date="1551059217862" expanded="true" signature="1424:1471" ph="{...}" />
           </folding>
         </state>
       </provider>

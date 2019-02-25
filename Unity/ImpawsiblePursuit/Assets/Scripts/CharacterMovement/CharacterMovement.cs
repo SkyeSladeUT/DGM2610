@@ -12,10 +12,12 @@ public class CharacterMovement : MonoBehaviour
 	public DoubleKeyCodeData faster;
 	public DoubleKeyCodeData slower;
 	public int startingSpeed;
+	private Vector3 scale;
 
 	// Use this for initialization
 	void Start ()
 	{
+		scale = transform.localScale;
 		Speed.value = startingSpeed;
 		rb = GetComponent<Rigidbody>();
 	}
@@ -26,6 +28,16 @@ public class CharacterMovement : MonoBehaviour
 		movement = rb.velocity;
 		movement.x = Speed.value;
 		rb.velocity = movement;
+		if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
+		{
+			scale.y *= .75f;
+			transform.localScale = scale;
+		}
+		else if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
+		{
+			scale.y /= .75f;
+			transform.localScale = scale;
+		}
 	}
 
 	private void ChangeSpeed()

@@ -24,6 +24,7 @@ public class StoveGlow : MonoBehaviour
 
 	IEnumerator ChangeIntensity()
 	{
+		w = new WaitForFixedUpdate();
 		while (true)
 		{
 			RandInt = Random.Range(0, 100);

@@ -10,7 +10,6 @@ public class FollowDogMovement : MonoBehaviour {
 	public GameObject player, CatHighlighter;
 	private Vector3 movement;
 	private bool isAwake;
-	public BoxCollider collider;
 	public PlayerData cat;
 	public GameObject highlighter;
 	private bool inRange;
@@ -23,7 +22,6 @@ public class FollowDogMovement : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;
-		collider.isTrigger = true;
 		inRange = false;
 		highlighter.SetActive(false);
 		rotation = transform.rotation;
@@ -61,32 +59,6 @@ public class FollowDogMovement : MonoBehaviour {
 			Destroy(gameObject);
 		}
 		
-	}
-	
-	private void OnTriggerEnter(Collider obj)
-	{
-		if (obj.CompareTag("Door"))
-		{
-			collider.isTrigger = false;
-		}
-		if (obj.CompareTag("Player") && cat.PowerUp)
-		{
-			highlighter.SetActive(true);
-			inRange = true;
-		}
-	}
-
-	private void OnTriggerExit(Collider obj)
-	{
-		if (obj.CompareTag("Door"))
-		{
-			collider.isTrigger = true;
-		}
-		if (obj.CompareTag("Player"))
-		{
-			highlighter.SetActive(false);
-			inRange = false;
-		}
 	}
 
 	private IEnumerator Wake()

@@ -38,6 +38,7 @@
           <e p="Enemy" t="Include">
             <e p="DogDeath.cs" t="Include" />
             <e p="FollowDogMovement.cs" t="Include" />
+            <e p="JumpDog.cs" t="Include" />
           </e>
           <e p="Obstacles" t="Include">
             <e p="CarMovement.cs" t="Include" />
@@ -61,6 +62,9 @@
           </e>
         </e>
         <e p="StoveGlow.cs" t="Include" />
+        <e p="TestScripts" t="Include">
+          <e p="ChangeColor.cs" t="Include" />
+        </e>
       </e>
       <e p="ImpawsiblePursuit.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

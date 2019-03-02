@@ -18,13 +18,15 @@ public class JumpDog : MonoBehaviour {
 	public IntData PowerUpLevel;
 	private Quaternion rotation;
 	//Jump Variables
-	public float JumpFrequency;
+	//public float JumpFrequency;
 	public float jumpspeed;
 	private float gravity;
 	public float Gravity;
+	private bool CanJump;
 
 	private void Start()
 	{
+		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;
@@ -54,6 +56,20 @@ public class JumpDog : MonoBehaviour {
 			movement.x = currentSpeed;
 			rb.velocity = movement;
 			currentSpeed += .1f * Time.deltaTime;
+			if (CanJump)
+			{
+				//print("Jump");
+				movement = rb.velocity;
+				movement.y = jumpspeed;
+				rb.AddForce(movement, ForceMode.Impulse);
+				gravity = 0;
+				CanJump = false;
+			}
+			if (gravity < 1f)
+				gravity += Time.deltaTime * Gravity;
+			movement = rb.velocity;
+			movement.y -= gravity;
+			rb.velocity = movement;
 		}
 
 		if ((interact.GetKey() && inRange))
@@ -67,12 +83,20 @@ public class JumpDog : MonoBehaviour {
 		
 	}
 
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.layer == 9)
+		{
+			CanJump = true;
+		}
+	}
+
 	private IEnumerator Wake()
 	{
 		yield return new WaitForSeconds(seconds);
 		currentSpeed = speed;
 		isAwake = true;
-		StartCoroutine(Jump());
+		//StartCoroutine(Jump());
 	}
 
 	private IEnumerator Right()
@@ -95,23 +119,5 @@ public class JumpDog : MonoBehaviour {
 		}
 		rotation.y = 180;
 		transform.rotation = rotation;
-	}
-
-	private IEnumerator Jump()
-	{
-		while (true)
-		{
-			yield return new WaitForSeconds(JumpFrequency);
-			print("Jump");
-			JumpMove = rb.velocity;
-			JumpMove.y = jumpspeed;
-			rb.AddForce(JumpMove, ForceMode.Impulse);
-			gravity = 0;
-			if (gravity < 1f)
-				gravity += Time.deltaTime * Gravity;
-			JumpMove = rb.velocity;
-			JumpMove.y -= gravity;
-			rb.velocity = JumpMove;
-		}
 	}
 }

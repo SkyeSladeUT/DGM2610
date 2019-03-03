@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4561041764586958}
   - component: {fileID: 33458807216463372}
   - component: {fileID: 23618973515678006}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4525156286037574}
   - component: {fileID: 33640637292023160}
   - component: {fileID: 23429930953926754}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4161224175002156}
   - component: {fileID: 33567964958731592}
   - component: {fileID: 23997443591947972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4965854251388728}
   - component: {fileID: 33165100256334008}
   - component: {fileID: 23138771207514046}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4870246142817866}
   - component: {fileID: 33561122855186950}
   - component: {fileID: 23644613769397220}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Highlighter
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 65608630798103964}
   - component: {fileID: 114566199219569280}
   - component: {fileID: 114001284082749148}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Dog
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 4909452265895436}
   - component: {fileID: 33541631986700402}
   - component: {fileID: 23435047277038390}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 4038230906119930}
   - component: {fileID: 33977354614929748}
   - component: {fileID: 23545110804211596}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +227,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553802202998658}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50.37, y: 0.64643, z: 3.3201125}
+  m_LocalPosition: {x: -419.39, y: 0.64643, z: 3.3201125}
   m_LocalScale: {x: 1.1713107, y: 0.23745273, z: 0.52049}
   m_Children:
   - {fileID: 4965854251388728}
@@ -612,7 +612,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 124
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!65 &65019292899652824
 BoxCollider:
@@ -621,7 +621,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553802202998658}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 4.167805, z: 1.0728313}
@@ -649,16 +649,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b706521b963d0cd43826c60655ba696f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 9.5
   offset: 0.5
   seconds: 0.5
+  gravity: 5
   player: {fileID: 0}
   CatHighlighter: {fileID: 0}
-  collider: {fileID: 65019292899652824}
   cat: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
   highlighter: {fileID: 1390760063026000}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
-  PowerUpLevel: {fileID: 11400000, guid: 618870d5572310c47a6f0c2d406d9c1f, type: 2}
+  PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
 --- !u!114 &114566199219569280
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -5,8 +5,8 @@ using UnityEngine;
 public class FollowDogMovement : MonoBehaviour {
 
 	private Rigidbody rb;
-	private float currentSpeed;
-	public float speed, offset, seconds;
+	private float currentSpeed, Gravity;
+	public float speed, offset, seconds, gravity;
 	public GameObject player, CatHighlighter;
 	private Vector3 movement;
 	private bool isAwake;
@@ -14,7 +14,7 @@ public class FollowDogMovement : MonoBehaviour {
 	public GameObject highlighter;
 	private bool inRange;
 	public DoubleKeyCodeData interact;
-	public IntData PowerUpLevel;
+	public FloatData PowerUpLevel;
 	private Quaternion rotation;
 
 	private void Start()
@@ -48,6 +48,11 @@ public class FollowDogMovement : MonoBehaviour {
 			movement.x = currentSpeed;
 			rb.velocity = movement;
 			currentSpeed += .1f * Time.deltaTime;
+			if (gravity < 1f)
+				gravity += Time.deltaTime * Gravity;
+			movement = rb.velocity;
+			movement.y -= gravity;
+			rb.velocity = movement;
 		}
 
 		if ((interact.GetKey() && inRange))

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4223129820253418}
   - component: {fileID: 33698787614009786}
   - component: {fileID: 23178900507179804}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,9 +42,8 @@ GameObject:
   - component: {fileID: 65430636961350110}
   - component: {fileID: 65145572810281820}
   - component: {fileID: 114598069867692452}
-  - component: {fileID: 114540368291208008}
   - component: {fileID: 114661288622681476}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: JumpDog
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -61,7 +60,7 @@ GameObject:
   - component: {fileID: 4679667933233750}
   - component: {fileID: 33159858565980454}
   - component: {fileID: 23818852438330906}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +77,7 @@ GameObject:
   - component: {fileID: 4616405569946566}
   - component: {fileID: 33417907415857290}
   - component: {fileID: 23762692301051582}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +94,7 @@ GameObject:
   - component: {fileID: 4247676789633962}
   - component: {fileID: 33826135136463800}
   - component: {fileID: 23302123327365526}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +111,7 @@ GameObject:
   - component: {fileID: 4250235163861880}
   - component: {fileID: 33924025579042196}
   - component: {fileID: 23120120669547144}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +128,7 @@ GameObject:
   - component: {fileID: 4444735379510776}
   - component: {fileID: 33035759659654858}
   - component: {fileID: 23233094979533480}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +145,7 @@ GameObject:
   - component: {fileID: 4916070177834536}
   - component: {fileID: 33505642594992810}
   - component: {fileID: 23733821152890020}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Highlighter
   m_TagString: Death
   m_Icon: {fileID: 0}
@@ -254,7 +253,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244414156630078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -225.13, y: 0.18, z: 3.3201125}
+  m_LocalPosition: {x: -335.7, y: 0.1800003, z: 1.57}
   m_LocalScale: {x: 1.17131, y: 0.23744999, z: 0.52049}
   m_Children:
   - {fileID: 4223129820253418}
@@ -625,8 +624,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.9999988, z: 11.583775}
-  m_Center: {x: 0, y: -0.00000006275422, z: -0.557566}
+  m_Size: {x: 1, y: 1.9999988, z: 18.153625}
+  m_Center: {x: 0, y: -0.00000006275494, z: 2.727354}
 --- !u!65 &65430636961350110
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -639,26 +638,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.167805, z: 1.0728313}
   m_Center: {x: 0, y: 0.1536355, z: 0.036414444}
---- !u!114 &114540368291208008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1244414156630078}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b706521b963d0cd43826c60655ba696f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  offset: 0.5
-  seconds: 0.5
-  player: {fileID: 0}
-  CatHighlighter: {fileID: 0}
-  cat: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
-  highlighter: {fileID: 1793571655934954}
-  interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
-  PowerUpLevel: {fileID: 11400000, guid: 618870d5572310c47a6f0c2d406d9c1f, type: 2}
 --- !u!114 &114598069867692452
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -682,7 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43299e849fd870d48a0bc7acd16b7b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  speed: 9
   offset: 0.5
   seconds: 0.5
   player: {fileID: 0}
@@ -690,6 +669,6 @@ MonoBehaviour:
   cat: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
   highlighter: {fileID: 1793571655934954}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
-  PowerUpLevel: {fileID: 11400000, guid: 618870d5572310c47a6f0c2d406d9c1f, type: 2}
+  PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
   jumpspeed: 20
   Gravity: 5

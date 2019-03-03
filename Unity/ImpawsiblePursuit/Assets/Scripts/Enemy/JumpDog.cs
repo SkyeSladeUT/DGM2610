@@ -15,7 +15,7 @@ public class JumpDog : MonoBehaviour {
 	public GameObject highlighter;
 	private bool inRange;
 	public DoubleKeyCodeData interact;
-	public IntData PowerUpLevel;
+	public FloatData PowerUpLevel;
 	private Quaternion rotation;
 	//Jump Variables
 	//public float JumpFrequency;

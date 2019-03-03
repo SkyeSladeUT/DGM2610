@@ -226,5 +226,5 @@ MonoBehaviour:
   InRange: 0
   Highlighter: {fileID: 1983330816385072}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
-  seconds: 1
+  seconds: 2
   player: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}

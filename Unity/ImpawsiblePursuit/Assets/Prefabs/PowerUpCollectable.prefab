@@ -97,9 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
-  PowerUpLevel: {fileID: 11400000, guid: 618870d5572310c47a6f0c2d406d9c1f, type: 2}
+  PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
   catHighlighter: {fileID: 0}
-  action: {fileID: 11400000, guid: 238df6991926b2146a5bd9b181e2f2f4, type: 2}
 --- !u!135 &135475804686212984
 SphereCollider:
   m_ObjectHideFlags: 1

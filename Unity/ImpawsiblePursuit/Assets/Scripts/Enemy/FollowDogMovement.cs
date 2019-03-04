@@ -94,4 +94,22 @@ public class FollowDogMovement : MonoBehaviour {
 		rotation.y = 180;
 		transform.rotation = rotation;
 	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Player")&& cat.PowerUp)
+		{
+			inRange = true;
+			highlighter.SetActive(true);
+		}
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Player") && cat.PowerUp)
+		{
+			highlighter.SetActive(false);
+			inRange = false;
+		}
+	}
 }

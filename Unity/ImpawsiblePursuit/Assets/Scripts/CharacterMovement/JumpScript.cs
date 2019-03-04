@@ -13,6 +13,7 @@ public class JumpScript : MonoBehaviour
 	private Rigidbody rb;
 	private Vector3 movement;
 	private float gravity;
+	public Animator Anim;
 	
 	// Use this for initialization
 	void Start ()
@@ -27,6 +28,8 @@ public class JumpScript : MonoBehaviour
 		{
 			if (JumpCount < 2)
 			{
+				if(JumpCount < 1)
+					Anim.SetTrigger("Jump");
 				/*if (JumpCount > 1)
 				{
 					jumpspeed = JumpFloat.value * .85f;
@@ -58,6 +61,7 @@ public class JumpScript : MonoBehaviour
 		if (obj.gameObject.layer == 9)
 		{
 			JumpCount = 0;
+			Anim.SetTrigger("Run");
 		}
 	}
 }

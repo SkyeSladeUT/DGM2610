@@ -23,6 +23,7 @@ public class JumpDog : MonoBehaviour {
 	private float gravity;
 	public float Gravity;
 	private bool CanJump;
+	public Animator Anim;
 
 	private void Start()
 	{
@@ -59,6 +60,7 @@ public class JumpDog : MonoBehaviour {
 			if (CanJump)
 			{
 				//print("Jump");
+				Anim.SetTrigger("Jump");
 				movement = rb.velocity;
 				movement.y = jumpspeed;
 				rb.AddForce(movement, ForceMode.Impulse);
@@ -119,5 +121,23 @@ public class JumpDog : MonoBehaviour {
 		}
 		rotation.y = 180;
 		transform.rotation = rotation;
+	}
+	
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Player")&& cat.PowerUp)
+		{
+			inRange = true;
+			highlighter.SetActive(true);
+		}
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Player") && cat.PowerUp)
+		{
+			highlighter.SetActive(false);
+			inRange = false;
+		}
 	}
 }

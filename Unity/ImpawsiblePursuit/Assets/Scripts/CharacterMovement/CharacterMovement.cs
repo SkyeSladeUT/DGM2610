@@ -13,6 +13,9 @@ public class CharacterMovement : MonoBehaviour
 	public DoubleKeyCodeData slower;
 	public int startingSpeed;
 	private Vector3 scale;
+	public FloatData PowerUpLevel;
+	public PlayerData player;
+	public GameObject catHighlighter;
 
 	// Use this for initialization
 	void Start ()
@@ -38,6 +41,11 @@ public class CharacterMovement : MonoBehaviour
 			scale.y /= .75f;
 			transform.localScale = scale;
 		}
+
+		if (PowerUpLevel.value >= 10)
+		{
+			StartCoroutine(CountDown());
+		}
 	}
 
 	private void ChangeSpeed()
@@ -58,6 +66,18 @@ public class CharacterMovement : MonoBehaviour
 		{
 			Speed.value -= SpeedChange.value/2;
 		}
+	}
+	
+	IEnumerator CountDown()
+	{
+		while (PowerUpLevel.value > 0)
+		{
+			yield return new WaitForFixedUpdate();
+			PowerUpLevel.value -= Time.deltaTime * .5f;
+		}
+
+		player.PowerUp = false;
+		catHighlighter.SetActive(false);
 	}
 
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PowerUp : MonoBehaviour
 {
@@ -19,26 +20,20 @@ public class PowerUp : MonoBehaviour
     {
         if (obj.CompareTag("Player"))
         {
-            PowerUpLevel.value += 1;
-            player.score.value += 1;
+            if (player.PowerUp == false)
+           {
+                PowerUpLevel.value += 1;
+                player.score.value += 1;
+            }
+
             if (PowerUpLevel.value >= 10)
             {
                 player.PowerUp = true;
                 catHighlighter.SetActive(true);
-                StartCoroutine(CountDown());
             }
             Destroy(gameObject);
         }
     }
 
-    IEnumerator CountDown()
-    {
-        while(PowerUpLevel.value > 0){
-            yield return new WaitForFixedUpdate();
-            PowerUpLevel.value -= Time.deltaTime;
-        }
 
-        player.PowerUp = false;
-        catHighlighter.SetActive(false);
-    }
 }

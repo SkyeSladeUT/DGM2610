@@ -138,4 +138,21 @@ public class ChargingDog : MonoBehaviour {
 			}
 		}
 	}
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Player")&& cat.PowerUp)
+		{
+			inRange = true;
+			highlighter.SetActive(true);
+		}
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Player") && cat.PowerUp)
+		{
+			highlighter.SetActive(false);
+			inRange = false;
+		}
+	}
 }

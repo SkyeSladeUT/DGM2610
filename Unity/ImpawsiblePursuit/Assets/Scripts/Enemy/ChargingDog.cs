@@ -7,7 +7,7 @@ public class ChargingDog : MonoBehaviour {
 	private Rigidbody rb;
 	private float currentSpeed, Gravity;
 	public float speed, offset, seconds, gravity;
-	public GameObject player, CatHighlighter;
+	public GameObject player; //CatHighlighter;
 	private Vector3 movement;
 	private bool isAwake, right, charging;
 	public PlayerData cat;
@@ -19,6 +19,7 @@ public class ChargingDog : MonoBehaviour {
 	public GameObject CautionSymbolRight;
 	public GameObject CautionSymbolLeft;
 	private Quaternion rotation;
+	public Animator Anim;
 
 	private void Start()
 	{
@@ -66,20 +67,21 @@ public class ChargingDog : MonoBehaviour {
 			rb.velocity = movement;
 		}
 
-		if ((interact.GetKey() && inRange))
+		/*if ((interact.GetKey() && inRange))
 		{
 			cat.score.value += 10;
 			PowerUpLevel.value = 0;
 			cat.PowerUp = false;
 			CatHighlighter.SetActive(false);
 			Destroy(gameObject);
-		}
+		}*/
 		
 	}
 
 	private IEnumerator Wake()
 	{
 		yield return new WaitForSeconds(seconds);
+		Anim.SetTrigger("Run");
 		currentSpeed = speed;
 		isAwake = true;
 	}
@@ -138,7 +140,7 @@ public class ChargingDog : MonoBehaviour {
 			}
 		}
 	}
-	private void OnTriggerEnter(Collider other)
+	/*private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player")&& cat.PowerUp)
 		{
@@ -154,5 +156,5 @@ public class ChargingDog : MonoBehaviour {
 			highlighter.SetActive(false);
 			inRange = false;
 		}
-	}
+	}*/
 }

@@ -9,6 +9,7 @@ TagManager:
   - Car
   - Door
   - EndScreen
+  - Enemy
   layers:
   - Default
   - TransparentFX

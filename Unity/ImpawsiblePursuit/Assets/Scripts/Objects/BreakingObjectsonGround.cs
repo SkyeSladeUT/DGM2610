@@ -17,7 +17,7 @@ public class BreakingObjectsonGround : MonoBehaviour {
 
 	private void  OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.CompareTag("Death"))
+		if (other.gameObject.CompareTag("Enemy"))
 		{
 			broken.SetActive(true);
 			Destroy(Solid);

@@ -74,14 +74,14 @@ public class JumpDog : MonoBehaviour {
 			rb.velocity = movement;
 		}
 
-		if ((interact.GetKey() && inRange))
+		/*if ((interact.GetKey() && inRange))
 		{
 			cat.score.value += 10;
 			PowerUpLevel.value = 0;
 			cat.PowerUp = false;
 			CatHighlighter.SetActive(false);
 			Destroy(gameObject);
-		}
+		}*/
 		
 	}
 
@@ -96,6 +96,7 @@ public class JumpDog : MonoBehaviour {
 	private IEnumerator Wake()
 	{
 		yield return new WaitForSeconds(seconds);
+		Anim.SetTrigger("Run");
 		currentSpeed = speed;
 		isAwake = true;
 		//StartCoroutine(Jump());
@@ -123,7 +124,7 @@ public class JumpDog : MonoBehaviour {
 		transform.rotation = rotation;
 	}
 	
-	private void OnTriggerEnter(Collider other)
+	/*private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player")&& cat.PowerUp)
 		{
@@ -139,5 +140,5 @@ public class JumpDog : MonoBehaviour {
 			highlighter.SetActive(false);
 			inRange = false;
 		}
-	}
+	}*/
 }

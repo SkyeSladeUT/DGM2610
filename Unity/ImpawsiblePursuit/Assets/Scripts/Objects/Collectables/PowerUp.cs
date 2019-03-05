@@ -20,17 +20,17 @@ public class PowerUp : MonoBehaviour
     {
         if (obj.CompareTag("Player"))
         {
-            if (player.PowerUp == false)
+            if (PowerUpLevel.value < 10)
            {
                 PowerUpLevel.value += 1;
-                player.score.value += 1;
             }
+            player.score.value += 1;
 
-            if (PowerUpLevel.value >= 10)
-            {
-                player.PowerUp = true;
-                catHighlighter.SetActive(true);
-            }
+            //if (PowerUpLevel.value >= 10)
+            //{
+                //player.PowerUp = true;
+                //catHighlighter.SetActive(true);
+            //}
             Destroy(gameObject);
         }
     }

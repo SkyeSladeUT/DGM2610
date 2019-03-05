@@ -16,6 +16,7 @@ public class FollowDogMovement : MonoBehaviour {
 	public DoubleKeyCodeData interact;
 	public FloatData PowerUpLevel;
 	private Quaternion rotation;
+	public Animator Anim;
 
 	private void Start()
 	{
@@ -55,20 +56,21 @@ public class FollowDogMovement : MonoBehaviour {
 			rb.velocity = movement;
 		}
 
-		if ((interact.GetKey() && inRange))
+		/*if ((interact.GetKey() && inRange))
 		{
 			cat.score.value += 10;
 			PowerUpLevel.value = 0;
 			cat.PowerUp = false;
 			CatHighlighter.SetActive(false);
 			Destroy(gameObject);
-		}
+		}*/
 		
 	}
 
 	private IEnumerator Wake()
 	{
 		yield return new WaitForSeconds(seconds);
+		Anim.SetTrigger("Run");
 		currentSpeed = speed;
 		isAwake = true;
 	}
@@ -95,7 +97,7 @@ public class FollowDogMovement : MonoBehaviour {
 		transform.rotation = rotation;
 	}
 
-	private void OnTriggerEnter(Collider other)
+	/*private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player")&& cat.PowerUp)
 		{
@@ -111,5 +113,5 @@ public class FollowDogMovement : MonoBehaviour {
 			highlighter.SetActive(false);
 			inRange = false;
 		}
-	}
+	}*/
 }

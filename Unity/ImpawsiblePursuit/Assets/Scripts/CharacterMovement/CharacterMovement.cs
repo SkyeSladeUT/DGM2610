@@ -42,8 +42,10 @@ public class CharacterMovement : MonoBehaviour
 			transform.localScale = scale;
 		}
 
-		if (PowerUpLevel.value >= 10)
+		if (PowerUpLevel.value >= 10 && Input.GetKeyDown(KeyCode.LeftControl))
 		{
+			player.PowerUp = true;
+			catHighlighter.SetActive(true);
 			StartCoroutine(CountDown());
 		}
 	}
@@ -72,8 +74,8 @@ public class CharacterMovement : MonoBehaviour
 	{
 		while (PowerUpLevel.value > 0)
 		{
-			yield return new WaitForFixedUpdate();
-			PowerUpLevel.value -= Time.deltaTime * .5f;
+			yield return new WaitForSeconds(1f);
+			PowerUpLevel.value -= 1;
 		}
 
 		player.PowerUp = false;

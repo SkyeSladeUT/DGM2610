@@ -14,6 +14,7 @@
           <e p="Final" t="Include">
             <e p="Highlight.cs" t="Include" />
           </e>
+          <e p="MakeTrigger.cs" t="Include" />
           <e p="Objects" t="Include">
             <e p="LivingRoom" t="Include">
               <e p="ChangeLight.cs" t="Include" />
@@ -25,10 +26,12 @@
           <e p="BreakApart.cs" t="Include" />
           <e p="CameraScript.cs" t="Include" />
           <e p="CharacterMovement" t="Include">
+            <e p="ActivateArea.cs" t="Include" />
             <e p="CharacterMovement.cs" t="Include" />
             <e p="Death.cs" t="Include" />
             <e p="JumpScript.cs" t="Include" />
             <e p="PowerUpAvailable.cs" t="Include" />
+            <e p="TriggerEvent.cs" t="Include" />
           </e>
           <e p="Destroy.cs" t="Include" />
           <e p="Enemy" t="Include">

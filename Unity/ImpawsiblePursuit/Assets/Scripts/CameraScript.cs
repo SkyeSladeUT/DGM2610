@@ -20,12 +20,15 @@ public class CameraScript : MonoBehaviour
 	private float z;
 	private float originalZ;
 	public BoolData canChange;
+	private bool c;
 
 	private void Start()
 	{
+		CrazyCam.value = false;
 		//z = transform.position.z;
 		//originalZ = z;
 		z = 0;
+		c = true;
 		rotation = transform.rotation;
 		position = transform.position;
 	}
@@ -47,10 +50,10 @@ public class CameraScript : MonoBehaviour
 		}
 		position.y = y;
 		transform.position = position;
-		if (CrazyCam.value)
+		if (CrazyCam.value && c)
 		{
 			canChange.value = false;
-			CrazyCam.value = false;
+			c = false;
 			StartCoroutine(Crazy());
 		}
 	}
@@ -96,9 +99,13 @@ public class CameraScript : MonoBehaviour
 		while (transform.rotation != rotation)
 		{
 			transform.rotation = Quaternion.Lerp(transform.rotation, rotation, .05f);
-			if (z >= 0)
+			if (z > 0)
 			{
 				z -= .25f;
+			}
+			else if (z < 0)
+			{
+				z += .25f;
 			}
 			yield return new WaitForSeconds(.05f);
 		}
@@ -107,5 +114,7 @@ public class CameraScript : MonoBehaviour
 		transform.rotation = rotation;
 		z = 0;
 		canChange.value = true;
+		CrazyCam.value = false;
+		c = true;
 	}
 }

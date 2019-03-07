@@ -11,7 +11,7 @@ public class CharacterMovement : MonoBehaviour
 	public FloatData SpeedChange;
 	public DoubleKeyCodeData faster;
 	public DoubleKeyCodeData slower;
-	public int startingSpeed;
+	public float startingSpeed;
 	private Vector3 scale;
 	public FloatData PowerUpLevel;
 	public PlayerData player;

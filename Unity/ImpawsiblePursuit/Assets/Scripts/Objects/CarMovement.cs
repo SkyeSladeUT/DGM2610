@@ -7,32 +7,27 @@ using UnityEngine.Internal.Experimental.UIElements;
 [RequireComponent(typeof(Rigidbody))]
 public class CarMovement : MonoBehaviour {
 
-	private Rigidbody rb;
-	private Vector3 movement;
-	public float Speed;
-	private float currentSpeed;
-	private Vector3 spawnpoint;
-	public float StartingScale;
-	private Vector3 scale;
-	private float currentscale;
-	public float StartWaitTime;
-	private Vector3 Position;
-	private bool moving;
+	public float Speed, StartingScale, StartWaitTime, XSpeed, scalingfactor, currentSpeed;
+	private float  currentscale;
+	private Vector3 scale, Position, spawnpoint, movement;
+	private bool moving, scaling, upwardsmovement;
 
 	// Use this for initialization
 	 IEnumerator Start ()
 	 {
+		upwardsmovement = false;
+		scaling = false;
 		moving = false;
-		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		spawnpoint = transform.position;
-		//spawnpoint.y = -.55f;
-		spawnpoint.y = 1f;
-		spawnpoint.z = 30;
+		transform.position = spawnpoint;
 		scale.Set(0,0,0);
 		transform.localScale = scale;
 		yield return new WaitForSeconds(StartWaitTime);
+		upwardsmovement = true;
 		moving = true;
+		scaling = true;
+		scalingfactor = .1f;
 		currentSpeed = Speed;
 		scale.Set(StartingScale, StartingScale, StartingScale);
 		transform.localScale = scale;
@@ -42,15 +37,30 @@ public class CarMovement : MonoBehaviour {
 	{
 		if(moving)
 		{
+			scalingfactor += .1f * Time.deltaTime;
 			Position = transform.position;
-			movement = rb.velocity;
-			movement.z = currentSpeed;
-			Position.y -= 1.25f * Time.deltaTime;
-			transform.position = Position;
-			rb.velocity = movement;
-			currentscale = scale.x + .4f * Time.deltaTime;
+			if (scaling)
+			{
+				currentscale = scale.x + .6f * scalingfactor * Time.deltaTime;
+			}
+			else
+			{
+				currentscale = scale.x + .25f * Time.deltaTime;
+			}
 			scale.Set(currentscale, currentscale, currentscale);
 			transform.localScale = scale;
+			if (upwardsmovement)
+			{
+				Position.x += XSpeed * scalingfactor * Time.deltaTime;
+				Position.y -= .9f * scalingfactor* Time.deltaTime;
+			}
+			else
+			{
+				Position.y -= .5f * Time.deltaTime;
+			}
+			currentSpeed = Speed * scalingfactor;
+			Position.z += currentSpeed;
+			transform.position = Position;
 		}
 	}
 
@@ -58,15 +68,36 @@ public class CarMovement : MonoBehaviour {
 	{
 		if (other.CompareTag("Car"))
 		{
+			upwardsmovement = false;
 			moving = false;
+			scaling = false;
 			currentSpeed = 0;
-			scale.Set(0,0,0);
+			scale.Set(0f,0f,0f);
 			transform.position = spawnpoint;
 			transform.localScale = scale;
 			yield return new WaitForSeconds(1f);
+			scalingfactor = .1f;
+			upwardsmovement = true;
 			moving = true;
-			scale.Set(.1f, .1f, .1f);
+			scaling = true;
+			scale.Set(StartingScale, StartingScale, StartingScale);
 			currentSpeed = Speed;
+		}
+
+		if (other.CompareTag("TriggerArea"))
+		{
+			upwardsmovement = false;
+			scaling = false;
+			yield return new WaitForFixedUpdate();
+		}
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("TriggerArea"))
+		{
+			//upwardsmovement = true;
+			scaling = true;
 		}
 	}
 }

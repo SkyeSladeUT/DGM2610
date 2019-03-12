@@ -61,6 +61,7 @@ public class JumpScript : MonoBehaviour
 		if (obj.gameObject.layer == 9)
 		{
 			JumpCount = 0;
+			gravity = 0;
 			Anim.SetTrigger("Run");
 		}
 	}

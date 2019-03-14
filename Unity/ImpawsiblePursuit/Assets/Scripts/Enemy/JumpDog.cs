@@ -6,32 +6,31 @@ public class JumpDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed;
-	public float speed, offset, seconds;
-	public GameObject player, CatHighlighter;
-	private Vector3 movement;
-	private Vector3 JumpMove;
-	private bool isAwake;
-	public PlayerData cat;
+	public GameObject player;// CatHighlighter;
+	private Vector3 movement, JumpMove;
+	private bool isAwake, CanJump;
+	//public PlayerData cat;
 	public GameObject highlighter;
-	private bool inRange;
-	public DoubleKeyCodeData interact;
-	public FloatData PowerUpLevel;
+	//private bool inRange;
+	//public DoubleKeyCodeData interact;
+	//public FloatData PowerUpLevel;
 	private Quaternion rotation;
 	//Jump Variables
 	//public float JumpFrequency;
-	public float jumpspeed;
-	private float gravity;
-	public float Gravity;
-	private bool CanJump;
+	public float speed, jumpspeed, gravity, Gravity, offset, seconds, speedincrease;
 	public Animator Anim;
+	public FloatData Speed, Offset, Seconds;
 
 	private void Start()
 	{
+		Seconds.value = seconds;
+		Offset.value = offset;
+		Speed.value = speed;
 		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;
-		inRange = false;
+		//inRange = false;
 		highlighter.SetActive(false);
 		rotation = transform.rotation;
 	}
@@ -56,7 +55,10 @@ public class JumpDog : MonoBehaviour {
 			movement = rb.velocity;
 			movement.x = currentSpeed;
 			rb.velocity = movement;
-			currentSpeed += .1f * Time.deltaTime;
+			if(currentSpeed < 0)
+				currentSpeed -= speedincrease * Time.deltaTime;
+			else
+				currentSpeed += speedincrease * Time.deltaTime;
 			if (CanJump)
 			{
 				//print("Jump");
@@ -95,16 +97,16 @@ public class JumpDog : MonoBehaviour {
 
 	private IEnumerator Wake()
 	{
-		yield return new WaitForSeconds(seconds);
+		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
-		currentSpeed = speed;
+		currentSpeed = Speed.value;
 		isAwake = true;
 		//StartCoroutine(Jump());
 	}
 
 	private IEnumerator Right()
 	{
-		yield return  new WaitForSeconds(offset);
+		yield return  new WaitForSeconds(Offset.value);
 		if (currentSpeed < 0)
 		{
 			currentSpeed *= -1;
@@ -115,7 +117,7 @@ public class JumpDog : MonoBehaviour {
 
 	private IEnumerator Left()
 	{
-		yield return new WaitForSeconds(offset);
+		yield return new WaitForSeconds(Offset.value);
 		if (currentSpeed > 0)
 		{
 			currentSpeed *= -1;

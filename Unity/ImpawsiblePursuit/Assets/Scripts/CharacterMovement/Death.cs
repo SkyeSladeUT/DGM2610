@@ -8,7 +8,7 @@ public class Death : MonoBehaviour
 	public PlayerData player;
 	private void OnTriggerEnter(Collider obj)
 	{
-		if (obj.CompareTag("Enemy")&& !player.PowerUp)
+		if (obj.CompareTag("Enemy")&& !player.PowerUp && !player.hidden)
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 		}

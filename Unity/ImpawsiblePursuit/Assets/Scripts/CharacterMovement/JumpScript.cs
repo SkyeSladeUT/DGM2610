@@ -8,7 +8,6 @@ public class JumpScript : MonoBehaviour
 	private int JumpCount;
 	public FloatData JumpFloat, Gravity;
 	private float jumpspeed;
-	public KeycodeData Jump;
 	public DoubleKeyCodeData Up;
 	private Rigidbody rb;
 	private Vector3 movement;
@@ -24,7 +23,7 @@ public class JumpScript : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown(Up.Key1) || Input.GetKeyDown(Up.Key2) || Input.GetKeyDown(Jump.key))
+		if (Up.GetKey())
 		{
 			if (JumpCount < 2)
 			{

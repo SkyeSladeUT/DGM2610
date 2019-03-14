@@ -6,15 +6,15 @@ public class ChargingDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed, Gravity;
-	public float speed, offset, seconds, gravity;
+	public float speed, offset, seconds, gravity, speedincrease;
 	public GameObject player; //CatHighlighter;
 	private Vector3 movement;
 	private bool isAwake, right, charging;
-	public PlayerData cat;
+	//public PlayerData cat;
 	public GameObject highlighter;
 	private bool inRange;
-	public DoubleKeyCodeData interact;
-	public FloatData PowerUpLevel;
+	//public DoubleKeyCodeData interact;
+	public FloatData DogSpeed, Offset, Seconds;
 	public float ChargeFrequency;
 	public GameObject CautionSymbolRight;
 	public GameObject CautionSymbolLeft;
@@ -23,6 +23,9 @@ public class ChargingDog : MonoBehaviour {
 
 	private void Start()
 	{
+		DogSpeed.value = speed;
+		Offset.value = offset;
+		Seconds.value = seconds;
 		charging = false;
 		CautionSymbolLeft.SetActive(false);
 		CautionSymbolRight.SetActive(false);
@@ -60,6 +63,10 @@ public class ChargingDog : MonoBehaviour {
 			movement = rb.velocity;
 			movement.x = currentSpeed;
 			rb.velocity = movement;
+			if(currentSpeed < 0)
+				currentSpeed -= speedincrease * Time.deltaTime;
+			else
+				currentSpeed += speedincrease * Time.deltaTime;
 			if (gravity < 1f)
 				gravity += Time.deltaTime * Gravity;
 			movement = rb.velocity;
@@ -80,34 +87,32 @@ public class ChargingDog : MonoBehaviour {
 
 	private IEnumerator Wake()
 	{
-		yield return new WaitForSeconds(seconds);
+		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
-		currentSpeed = speed;
+		currentSpeed = DogSpeed.value;
 		isAwake = true;
 	}
 
 	private IEnumerator Right()
 	{
-		yield return  new WaitForSeconds(offset);
+		yield return  new WaitForSeconds(Offset.value);
 		if (currentSpeed < 0)
 		{
 			currentSpeed *= -1;
 		}
 		rotation.y = 0;
 		transform.rotation = rotation;
-		currentSpeed += .1f * Time.deltaTime;
 	}
 
 	private IEnumerator Left()
 	{
-		yield return new WaitForSeconds(offset);
+		yield return new WaitForSeconds(Offset.value);
 		if (currentSpeed > 0)
 		{
 			currentSpeed *= -1;
 		}
 		rotation.y = 180;
 		transform.rotation = rotation;
-		currentSpeed -= .1f * Time.deltaTime;
 	}
 
 	private IEnumerator Move()

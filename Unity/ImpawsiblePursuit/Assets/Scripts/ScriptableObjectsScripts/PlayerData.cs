@@ -6,4 +6,5 @@ public class PlayerData : ScriptableObject
 {
     public FloatData score;
     public bool PowerUp;
+    public bool hidden;
 }

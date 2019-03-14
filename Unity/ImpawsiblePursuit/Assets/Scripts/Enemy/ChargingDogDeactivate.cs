@@ -25,4 +25,14 @@ public class ChargingDogDeactivate : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.CompareTag("Door"))
+		{
+			Right.SetActive(false);
+			Left.SetActive(false);
+			Destroy(gameObject);
+		}
+	}
 }

@@ -19,4 +19,12 @@ public class DogDeath : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
+
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.CompareTag("Door"))
+		{
+			Destroy(gameObject);
+		}
+	}
 }

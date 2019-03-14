@@ -9,26 +9,33 @@ public class CharacterMovement : MonoBehaviour
 	private Vector3 movement;
 	public FloatData Speed;
 	public FloatData SpeedChange;
-	public DoubleKeyCodeData faster;
+	//public DoubleKeyCodeData faster;
 	public DoubleKeyCodeData slower;
 	public float startingSpeed;
-	private Vector3 scale;
+	//private Vector3 scale;
 	public FloatData PowerUpLevel;
 	public PlayerData player;
 	public GameObject catHighlighter;
+	public BoolData Tutorial;
+	public DoubleKeyCodeData PowerUpStart;
+	//private float slowspeed;
 
 	void Start ()
 	{
-		scale = transform.localScale;
+		SpeedChange.value = 3;
+		player.hidden = false;
+		//scale = transform.localScale;
 		Speed.value = startingSpeed;
 		rb = GetComponent<Rigidbody>();
 	}
 	
 	void Update () {
-		ChangeSpeed();
-		movement = rb.velocity;
-		movement.x = Speed.value;
-		rb.velocity = movement;
+		if (!Tutorial.value)
+			ChangeSpeed();
+			movement = rb.velocity;
+			movement.x = Speed.value;
+			rb.velocity = movement;
+		
 		/*if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
 		{
 			scale.y *= .75f;
@@ -40,7 +47,7 @@ public class CharacterMovement : MonoBehaviour
 			transform.localScale = scale;
 		}*/
 
-		if (PowerUpLevel.value >= 10 && Input.GetKeyDown(KeyCode.LeftControl))
+		if (PowerUpLevel.value >= 10 && PowerUpStart.GetKey())
 		{
 			player.PowerUp = true;
 			catHighlighter.SetActive(true);
@@ -80,7 +87,20 @@ public class CharacterMovement : MonoBehaviour
 		catHighlighter.SetActive(false);
 	}
 
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Hidden"))
+		{
+			player.hidden = true;
+		}
+	}
 
-
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Hidden"))
+		{
+			player.hidden = false;
+		}
+	}
 
 }

@@ -11,6 +11,8 @@ TagManager:
   - EndScreen
   - Enemy
   - TriggerArea
+  - Tutorial
+  - Hidden
   layers:
   - Default
   - TransparentFX

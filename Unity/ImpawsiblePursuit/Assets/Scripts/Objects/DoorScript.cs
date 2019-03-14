@@ -49,7 +49,7 @@ public class DoorScript : MonoBehaviour
 	{
 		transform.Rotate(0, -90, 0);
 		scaling = transform.localScale;
-		scaling.z = 1;
+		scaling.z = 1.5f;
 		transform.localScale = scaling;
 		open = false;
 	}

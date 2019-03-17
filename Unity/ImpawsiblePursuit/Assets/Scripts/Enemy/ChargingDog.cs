@@ -145,6 +145,20 @@ public class ChargingDog : MonoBehaviour {
 			}
 		}
 	}
+
+
+	private void OnCollisionStay(Collision other)
+	{
+		if (other.gameObject.layer == 9)
+		{
+			gravity = 0;
+		}
+	}
+	private void OnCollisionExit(Collision other)
+	{
+		gravity = 1;
+	}
+
 	/*private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player")&& cat.PowerUp)

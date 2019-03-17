@@ -87,11 +87,12 @@ public class JumpDog : MonoBehaviour {
 		
 	}
 
-	private void OnCollisionEnter(Collision other)
+	private void OnCollisionStay(Collision other)
 	{
 		if (other.gameObject.layer == 9)
 		{
 			CanJump = true;
+			gravity = 0;
 		}
 	}
 

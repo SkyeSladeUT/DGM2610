@@ -103,6 +103,19 @@ public class FollowDogMovement : MonoBehaviour {
 		rotation.y = 180;
 		transform.rotation = rotation;
 	}
+	
+	private void OnCollisionStay(Collision other)
+	{
+		if (other.gameObject.layer == 9)
+		{
+			gravity = 0;
+		}
+	}
+
+	private void OnCollisionExit(Collision other)
+	{
+		gravity = 1;
+	}
 
 	/*private void OnTriggerEnter(Collider other)
 	{

@@ -2,15 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a3bfacd-5d33-41e0-8857-d9f26fc4883a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../CatAnimated.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../DogAnimation.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maya/LowPolyASsets.ma" beforeDir="false" afterPath="$PROJECT_DIR$/../../Maya/LowPolyASsets.ma" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ImpawsiblePursuit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ImpawsiblePursuit/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ProBuilder Data/ProBuilderPreferences.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProBuilder Data/ProBuilderPreferences.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Catnip.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Catnip.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Fence.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Fence.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/House.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/House.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/MountainTest.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/MountainTest.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Mountainsnow.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Mountainsnow.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/PineTree.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/PineTree.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/SideWalk.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/SideWalk.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Slide.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Slide.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/SlideRoof.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/SlideRoof.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/SwingSet.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/SwingSet.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Tree2.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/Tree2.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/UVedHouse.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/UVedHouse.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/grass.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/grass.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/treetest.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Objects/treetest.fbx.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prototype One.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prototype One.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../treetest.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/ScriptableObject/PowerUp.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/ScriptableObject/PowerUp.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -60,7 +84,7 @@
       <file leaf-file-name="FollowDogMovement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
+            <state relative-caret-position="1680">
               <caret line="114" selection-start-line="114" selection-end-line="117" selection-end-column="5" />
               <folding>
                 <marker date="1552788214977" expanded="false" signature="6:78" ph="..." />
@@ -90,7 +114,7 @@
       <file leaf-file-name="CharacterMovement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
+            <state relative-caret-position="1335">
               <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
               <folding>
                 <marker date="1552501870126" expanded="false" signature="6:92" ph="..." />
@@ -110,6 +134,29 @@
                 <marker date="1552501870126" expanded="true" signature="2141:2174" ph="{...}" />
                 <marker date="1552501870126" expanded="true" signature="2222:2296" ph="{...}" />
                 <marker date="1552501870126" expanded="true" signature="2259:2293" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JumpScript.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="401">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+              <folding>
+                <marker date="1552867984665" expanded="false" signature="6:110" ph="..." />
+                <marker date="1552867984665" expanded="true" signature="188:1432" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="454:511" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="566:1178" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="586:991" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="612:987" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="674:749" ph="/* if (JumpCount &gt; 1) ... */" />
+                <marker date="1552867984665" expanded="true" signature="754:768" ph="/* else ... */" />
+                <marker date="1552867984665" expanded="true" signature="1225:1317" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="1261:1314" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="1365:1430" ph="{...}" />
+                <marker date="1552867984665" expanded="true" signature="1403:1427" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -138,10 +185,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChargingDog.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChargingDog.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
+            <state relative-caret-position="2355">
               <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
               <folding>
                 <marker date="1552788268667" expanded="false" signature="6:78" ph="..." />
@@ -206,22 +253,6 @@
                 <marker date="1552497461370" expanded="true" signature="845:949" ph="{...}" />
                 <marker date="1552497461370" expanded="true" signature="1013:1265" ph="{...}" />
                 <marker date="1552497461370" expanded="true" signature="1090:1259" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Death.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="71" selection-start-line="10" selection-start-column="71" selection-end-line="10" selection-end-column="71" />
-              <folding>
-                <marker date="1552442077353" expanded="false" signature="6:113" ph="..." />
-                <marker date="1552442077353" expanded="true" signature="149:489" ph="{...}" />
-                <marker date="1552442077353" expanded="true" signature="221:487" ph="{...}" />
-                <marker date="1552442077353" expanded="true" signature="291:362" ph="{...}" />
-                <marker date="1552442077353" expanded="true" signature="413:484" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -328,7 +359,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CarHighlight.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/CarMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Materials/Images/FPSCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/PlayerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/DoorScript.cs" />
@@ -340,6 +370,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs" />
       </list>
     </option>
   </component>
@@ -350,8 +381,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1294" />
-    <option name="height" value="1039" />
+    <option name="width" value="1295" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -359,6 +390,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
@@ -386,7 +418,6 @@
         </subPane>
         <option name="show-hidden-items" value="false" />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -475,11 +506,12 @@
       <workItem from="1552438117490" duration="5175000" />
       <workItem from="1552494009237" duration="11072000" />
       <workItem from="1552787962262" duration="904000" />
+      <workItem from="1552867866970" duration="270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138180000" />
+    <option name="totallyTimeSpent" value="138450000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,21 +523,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1035" height="831" extended-state="0" />
+    <frame x="0" y="0" width="1036" height="832" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.3294964" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16717948" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110656" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="12" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="NuGet" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -523,24 +555,24 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Unity" order="13" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16427104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Unit Tests" order="8" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.3294964" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,13 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -792,35 +817,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
-          <folding>
-            <marker date="1552501870126" expanded="false" signature="6:92" ph="..." />
-            <marker date="1552501870126" expanded="true" signature="177:2299" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="615:770" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="789:1352" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="920:1190" ph="/* if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S)) ... */" />
-            <marker date="1552501870126" expanded="true" signature="1248:1349" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="1381:1854" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="1454:1499" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="1502:1622" ph="/* else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2)) ... */" />
-            <marker date="1552501870126" expanded="true" signature="1686:1731" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="1734:1851" ph="/* else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1)) ... */" />
-            <marker date="1552501870126" expanded="true" signature="1881:2058" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="1917:1993" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="2104:2177" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="2141:2174" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="2222:2296" ph="{...}" />
-            <marker date="1552501870126" expanded="true" signature="2259:2293" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
+        <state relative-caret-position="1680">
           <caret line="114" selection-start-line="114" selection-end-line="117" selection-end-column="5" />
           <folding>
             <marker date="1552788214977" expanded="false" signature="6:78" ph="..." />
@@ -848,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
+        <state relative-caret-position="2355">
           <caret line="159" column="5" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
           <folding>
             <marker date="1552788268667" expanded="false" signature="6:78" ph="..." />
@@ -874,6 +873,53 @@
             <marker date="1552788268667" expanded="true" signature="3389:3413" ph="{...}" />
             <marker date="1552788268667" expanded="true" signature="3463:3484" ph="{...}" />
             <marker date="1552788268667" expanded="true" signature="3487:3808" ph="/* private void OnTriggerEnter(Collider other) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+          <folding>
+            <marker date="1552501870126" expanded="false" signature="6:92" ph="..." />
+            <marker date="1552501870126" expanded="true" signature="177:2299" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="615:770" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="789:1352" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="920:1190" ph="/* if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S)) ... */" />
+            <marker date="1552501870126" expanded="true" signature="1248:1349" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="1381:1854" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="1454:1499" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="1502:1622" ph="/* else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2)) ... */" />
+            <marker date="1552501870126" expanded="true" signature="1686:1731" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="1734:1851" ph="/* else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1)) ... */" />
+            <marker date="1552501870126" expanded="true" signature="1881:2058" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="1917:1993" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="2104:2177" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="2141:2174" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="2222:2296" ph="{...}" />
+            <marker date="1552501870126" expanded="true" signature="2259:2293" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <marker date="1552867984665" expanded="false" signature="6:110" ph="..." />
+            <marker date="1552867984665" expanded="true" signature="188:1432" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="454:511" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="566:1178" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="586:991" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="612:987" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="674:749" ph="/* if (JumpCount &gt; 1) ... */" />
+            <marker date="1552867984665" expanded="true" signature="754:768" ph="/* else ... */" />
+            <marker date="1552867984665" expanded="true" signature="1225:1317" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="1261:1314" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="1365:1430" ph="{...}" />
+            <marker date="1552867984665" expanded="true" signature="1403:1427" ph="{...}" />
           </folding>
         </state>
       </provider>

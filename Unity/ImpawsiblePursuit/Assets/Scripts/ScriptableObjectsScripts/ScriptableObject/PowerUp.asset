@@ -8,6 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fee31f9b9a2ccf34a824b19e2d033c85, type: 3}
+  m_Script: {fileID: 11500000, guid: 2760139bedbe8aa42925830ea2802e86, type: 3}
   m_Name: PowerUp
   m_EditorClassIdentifier: 
+  player: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
+  PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
+  catHighlighter: {fileID: 0}

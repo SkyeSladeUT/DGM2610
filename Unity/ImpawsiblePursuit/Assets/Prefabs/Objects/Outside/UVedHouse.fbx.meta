@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: ebdbbd8cbf5f36945934157bb6013896
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BigRood
+    100002: Chimney
+    100004: Door
+    100006: Garage
+    100008: GarageDoor
+    100010: LittleRoof
+    100012: MainHouse
+    100014: //RootNode
+    100016: Window
+    400000: BigRood
+    400002: Chimney
+    400004: Door
+    400006: Garage
+    400008: GarageDoor
+    400010: LittleRoof
+    400012: MainHouse
+    400014: //RootNode
+    400016: Window
+    2100000: Brick
+    2100002: Doors
+    2100004: Roof
+    2300000: BigRood
+    2300002: Chimney
+    2300004: Door
+    2300006: Garage
+    2300008: GarageDoor
+    2300010: LittleRoof
+    2300012: MainHouse
+    2300014: Window
+    3300000: BigRood
+    3300002: Chimney
+    3300004: Door
+    3300006: Garage
+    3300008: GarageDoor
+    3300010: LittleRoof
+    3300012: MainHouse
+    3300014: Window
+    4300000: MainHouse
+    4300002: Garage
+    4300004: Door
+    4300006: GarageDoor
+    4300008: BigRood
+    4300010: LittleRoof
+    4300012: Chimney
+    4300014: Window
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick
+    second: {fileID: 2100000, guid: 76951c614becf344fa06cb39b00543c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Doors
+    second: {fileID: 2100000, guid: ac841849dbef66b42b1a1e7b0a6ab79c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof
+    second: {fileID: 2100000, guid: 56014d7e83febd844aa024c6c24d19f9, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

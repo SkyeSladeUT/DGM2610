@@ -41,7 +41,7 @@ public class CarMovement : MonoBehaviour {
 			Position = transform.position;
 			if (scaling)
 			{
-				currentscale = scale.x + .6f * scalingfactor * Time.deltaTime;
+				currentscale = scale.x + 1f * scalingfactor * Time.deltaTime;
 			}
 			else
 			{
@@ -52,7 +52,7 @@ public class CarMovement : MonoBehaviour {
 			if (upwardsmovement)
 			{
 				Position.x += XSpeed * scalingfactor * Time.deltaTime;
-				Position.y -= .9f * scalingfactor* Time.deltaTime;
+				Position.y -= .95f * scalingfactor* Time.deltaTime;
 			}
 			else
 			{

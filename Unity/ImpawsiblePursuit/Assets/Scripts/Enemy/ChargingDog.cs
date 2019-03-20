@@ -23,7 +23,6 @@ public class ChargingDog : MonoBehaviour {
 
 	private void Start()
 	{
-		DogSpeed.value = speed;
 		Offset.value = offset;
 		Seconds.value = seconds;
 		charging = false;

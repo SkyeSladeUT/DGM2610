@@ -40,6 +40,7 @@
             <e p="ChargingDogDeactivate.cs" t="Include" />
             <e p="DogDeath.cs" t="Include" />
             <e p="FollowDogMovement.cs" t="Include" />
+            <e p="InitializeValues.cs" t="Include" />
             <e p="JumpDog.cs" t="Include" />
           </e>
           <e p="HighlightScript.cs" t="Include" />

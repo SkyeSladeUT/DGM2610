@@ -21,7 +21,6 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private void Start()
 	{
-		Speed.value = speed;
 		Offset.value = offset;
 		Seconds.value = seconds;
 		rb = GetComponent<Rigidbody>();

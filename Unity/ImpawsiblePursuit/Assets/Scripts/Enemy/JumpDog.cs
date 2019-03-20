@@ -25,7 +25,6 @@ public class JumpDog : MonoBehaviour {
 	{
 		Seconds.value = seconds;
 		Offset.value = offset;
-		Speed.value = speed;
 		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;

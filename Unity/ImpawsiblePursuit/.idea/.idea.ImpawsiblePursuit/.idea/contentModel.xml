@@ -44,6 +44,7 @@
             <e p="JumpDog.cs" t="Include" />
           </e>
           <e p="HighlightScript.cs" t="Include" />
+          <e p="InacvtivateAreas.cs" t="Include" />
           <e p="IncreaseSpeed.cs" t="Include" />
           <e p="Objects" t="Include">
             <e p="BreakingBranch.cs" t="Include" />

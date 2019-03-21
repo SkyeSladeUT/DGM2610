@@ -18,8 +18,9 @@ public class BreakApart : MonoBehaviour
 
 	private IEnumerator OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.layer == 9)
+		if (other.gameObject.layer == 12|| other.gameObject.CompareTag("Enemy"))
 		{
+			gameObject.tag = "Untagged";
 			yield return new WaitForSeconds(1f);
 			broken.SetActive(true);
 			Destroy(Solid);

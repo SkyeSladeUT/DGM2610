@@ -60,5 +60,13 @@ public class ClickObject : MonoBehaviour
 		yield return new WaitForSeconds(seconds);
 		Destroy(gameObject);
 	}
+	
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.layer == 12|| other.gameObject.CompareTag("Enemy"))
+		{
+			gameObject.tag = "Untagged";
+		}
+	}
 
 }

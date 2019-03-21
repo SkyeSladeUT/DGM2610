@@ -57,7 +57,7 @@ public class JumpScript : MonoBehaviour
 
 	private void OnCollisionEnter(Collision obj)
 	{
-		if (obj.gameObject.layer == 9)
+		if (obj.gameObject.layer == 9|| obj.gameObject.layer == 12)
 		{
 			JumpCount = 0;
 			Anim.SetTrigger("Run");

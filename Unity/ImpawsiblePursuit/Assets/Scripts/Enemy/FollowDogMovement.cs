@@ -105,7 +105,7 @@ public class FollowDogMovement : MonoBehaviour {
 	
 	private void OnCollisionStay(Collision other)
 	{
-		if (other.gameObject.layer == 9)
+		if (other.gameObject.layer == 9|| other.gameObject.layer == 12)
 		{
 			gravity = 0;
 		}

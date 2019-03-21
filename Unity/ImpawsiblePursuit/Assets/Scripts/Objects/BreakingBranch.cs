@@ -60,4 +60,12 @@ public class BreakingBranch : MonoBehaviour
 		Destroy(gameObject);
 	}
 	
+	private void OnCollisionEnter(Collision other)
+	{
+		if (other.gameObject.layer == 12|| other.gameObject.CompareTag("Enemy"))
+		{
+			gameObject.tag = "Untagged";
+		}
+	}
+	
 }

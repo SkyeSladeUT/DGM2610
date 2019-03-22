@@ -26,5 +26,12 @@ public class DogDeath : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
+		
+		if (other.gameObject.CompareTag("Breakable") || other.gameObject.layer == 11)
+		{
+			print("Dead");
+			player.score.value += 5;
+			Destroy(gameObject);
+		}
 	}
 }

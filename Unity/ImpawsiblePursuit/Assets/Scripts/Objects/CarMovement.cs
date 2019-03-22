@@ -12,9 +12,16 @@ public class CarMovement : MonoBehaviour {
 	private Vector3 scale, Position, spawnpoint, movement;
 	private bool moving, scaling, upwardsmovement;
 
+
+	private void Awake()
+	{
+		StartCoroutine(Call());
+	}
+
 	// Use this for initialization
-	 IEnumerator Start ()
+	 IEnumerator Call ()
 	 {
+		 print("Start");
 		upwardsmovement = false;
 		scaling = false;
 		moving = false;

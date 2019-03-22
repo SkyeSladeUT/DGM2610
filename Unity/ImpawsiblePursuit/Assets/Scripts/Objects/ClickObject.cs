@@ -10,9 +10,11 @@ public class ClickObject : MonoBehaviour
 	public DoubleKeyCodeData interact;
 	public float seconds;
 	public PlayerData player;
+	//public Collider PlayerTrigger;
 
 	private void Start()
 	{
+		//PlayerTrigger.enabled = true;
 		gameObject.tag = "Untagged";
 		rb = GetComponent<Rigidbody>();
 		rb.constraints = RigidbodyConstraints.FreezeAll;
@@ -48,6 +50,7 @@ public class ClickObject : MonoBehaviour
 
 	private void KnockOver()
 	{
+		//PlayerTrigger.enabled = false;
 		gameObject.tag = "Breakable";
 		rb.constraints = RigidbodyConstraints.None;
 		player.score.value += 1;
@@ -61,10 +64,12 @@ public class ClickObject : MonoBehaviour
 		Destroy(gameObject);
 	}
 	
-	private void OnCollisionEnter(Collision other)
+	private IEnumerator OnCollisionEnter(Collision other)
 	{
-		if (other.gameObject.layer == 12|| other.gameObject.CompareTag("Enemy"))
+		if (other.gameObject.layer == 12)
 		{
+			print("hit");
+			yield return new WaitForSeconds(.1f);
 			gameObject.tag = "Untagged";
 		}
 	}

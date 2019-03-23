@@ -13,6 +13,7 @@ TagManager:
   - TriggerArea
   - Tutorial
   - Hidden
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

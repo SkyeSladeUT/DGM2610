@@ -523,23 +523,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1580796005725516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4689901061389558}
-  - component: {fileID: 33325085073357210}
-  - component: {fileID: 23264893502533606}
-  m_Layer: 0
-  m_Name: DogHighlighter
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1679971204826422
 GameObject:
   m_ObjectHideFlags: 1
@@ -1193,19 +1176,6 @@ Transform:
   m_Father: {fileID: 4647650239626568}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4689901061389558
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1580796005725516}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38901192, z: 0}
-  m_LocalScale: {x: 1.600216, y: 7.893572, z: 3.6011262}
-  m_Children: []
-  m_Father: {fileID: 4767887392020682}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4691234116037004
 Transform:
   m_ObjectHideFlags: 1
@@ -1239,11 +1209,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1043382489567116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -228.02, y: 6.8543077, z: -36.03}
-  m_LocalScale: {x: 1.1713107, y: 0.23745273, z: 0.52049}
+  m_LocalPosition: {x: 48.267426, y: 45.777832, z: -55.077705}
+  m_LocalScale: {x: 1.332366, y: 0.23745273, z: 0.52049}
   m_Children:
   - {fileID: 4876901818747618}
-  - {fileID: 4689901061389558}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1600,41 +1569,6 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: b2a37d953b6ba614e8223d569de492a4, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!23 &23264893502533606
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1580796005725516}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 633bf86b5ef7e464988a1056c2242cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2032,13 +1966,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1008836586090180}
   m_Mesh: {fileID: 4300002, guid: 0f2d00b9aa8669646a048ada15b5a38e, type: 3}
---- !u!33 &33325085073357210
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1580796005725516}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33356544847058854
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -2188,13 +2115,12 @@ MonoBehaviour:
   offset: 0.5
   seconds: 0.5
   gravity: 5
+  speedincrease: 0.3
   player: {fileID: 0}
-  CatHighlighter: {fileID: 0}
-  cat: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
-  highlighter: {fileID: 1580796005725516}
-  interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
-  PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
   Anim: {fileID: 95154459292916278}
+  Speed: {fileID: 11400000, guid: e798676e349e0204a89cadf89e444e89, type: 2}
+  Offset: {fileID: 11400000, guid: b05f94ce24eacc04eb7d221cc08f74a7, type: 2}
+  Seconds: {fileID: 11400000, guid: bac6fc3412c0f764ab41ef6c7b292740, type: 2}
 --- !u!114 &114657056717211314
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -8,7 +8,7 @@ public class ClickObject : MonoBehaviour
 	public GameObject Highlighter;
 	private Rigidbody rb;
 	public DoubleKeyCodeData interact;
-	public float seconds;
+	public float seconds, waitseconds;
 	public PlayerData player;
 	//public Collider PlayerTrigger;
 
@@ -69,7 +69,7 @@ public class ClickObject : MonoBehaviour
 		if (other.gameObject.layer == 12)
 		{
 			print("hit");
-			yield return new WaitForSeconds(.1f);
+			yield return new WaitForSeconds(waitseconds);
 			gameObject.tag = "Untagged";
 		}
 	}

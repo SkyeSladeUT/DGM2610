@@ -11,7 +11,7 @@ public class FollowDogMovement : MonoBehaviour {
 	private Vector3 movement;
 	private bool isAwake;
 	//public PlayerData cat;
-	public GameObject highlighter;
+	//public GameObject highlighter;
 	private bool inRange;
 	//public DoubleKeyCodeData interact;
 	//public FloatData PowerUpLevel;
@@ -27,7 +27,7 @@ public class FollowDogMovement : MonoBehaviour {
 		currentSpeed = 0;
 		isAwake = false;
 		inRange = false;
-		highlighter.SetActive(false);
+		//highlighter.SetActive(false);
 		rotation = transform.rotation;
 	}
 

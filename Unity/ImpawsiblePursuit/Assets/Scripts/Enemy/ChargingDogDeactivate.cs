@@ -34,5 +34,12 @@ public class ChargingDogDeactivate : MonoBehaviour
 			Left.SetActive(false);
 			Destroy(gameObject);
 		}
+		if (other.gameObject.CompareTag("Breakable"))
+		{
+			Right.SetActive(false);
+			Left.SetActive(false);
+			player.score.value += 5;
+			Destroy(gameObject);
+		}
 	}
 }

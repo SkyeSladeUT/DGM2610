@@ -10,7 +10,7 @@ public class JumpDog : MonoBehaviour {
 	private Vector3 movement, JumpMove;
 	private bool isAwake, CanJump;
 	//public PlayerData cat;
-	public GameObject highlighter;
+	//public GameObject highlighter;
 	//private bool inRange;
 	//public DoubleKeyCodeData interact;
 	//public FloatData PowerUpLevel;
@@ -30,7 +30,7 @@ public class JumpDog : MonoBehaviour {
 		currentSpeed = 0;
 		isAwake = false;
 		//inRange = false;
-		highlighter.SetActive(false);
+		//highlighter.SetActive(false);
 		rotation = transform.rotation;
 	}
 

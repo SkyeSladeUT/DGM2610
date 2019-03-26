@@ -93,23 +93,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1153871953498120
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4330832327154694}
-  - component: {fileID: 33090326245536428}
-  - component: {fileID: 23409370018894360}
-  m_Layer: 0
-  m_Name: DogHighlighter (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1157570792336008
 GameObject:
   m_ObjectHideFlags: 1
@@ -945,19 +928,6 @@ Transform:
   m_Father: {fileID: 4448649773583350}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4330832327154694
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153871953498120}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 0}
-  m_LocalScale: {x: 1.6002171, y: 7.893663, z: 3.6011262}
-  m_Children: []
-  m_Father: {fileID: 4917848232934244}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4351649263137300
 Transform:
   m_ObjectHideFlags: 1
@@ -1394,11 +1364,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1244414156630078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -113.597595, y: 2.3157294, z: -20.436428}
-  m_LocalScale: {x: 1.17131, y: 0.23744999, z: 0.52049}
+  m_LocalPosition: {x: 143.46487, y: 45.454468, z: -56.82782}
+  m_LocalScale: {x: 1.332366, y: 0.23745, z: 0.52049}
   m_Children:
   - {fileID: 4700933043558918}
-  - {fileID: 4330832327154694}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1634,41 +1603,6 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 4c4404ff3fa326b48936d215cd5bc9de, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!23 &23409370018894360
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153871953498120}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: 633bf86b5ef7e464988a1056c2242cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1975,13 +1909,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1253550101717910}
   m_Mesh: {fileID: 4300012, guid: 0f2d00b9aa8669646a048ada15b5a38e, type: 3}
---- !u!33 &33090326245536428
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1153871953498120}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33150594038813854
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -2160,18 +2087,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43299e849fd870d48a0bc7acd16b7b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  highlighter: {fileID: 0}
   speed: 9
+  jumpspeed: 10
+  gravity: 0
+  Gravity: 5
   offset: 0.5
   seconds: 0.5
-  player: {fileID: 0}
-  CatHighlighter: {fileID: 0}
-  cat: {fileID: 11400000, guid: 7b5fe213b31865a4a92700e9323da701, type: 2}
-  highlighter: {fileID: 1153871953498120}
-  interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
-  PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
-  jumpspeed: 20
-  Gravity: 5
   Anim: {fileID: 95029915879838380}
+  Speed: {fileID: 11400000, guid: 6c8438304a61c7e499452f19d0a27352, type: 2}
+  Offset: {fileID: 11400000, guid: 420f411b72922a84694c5b8fd6b97384, type: 2}
+  Seconds: {fileID: 11400000, guid: 1cd02f66462b8244196f5acd15b8e13c, type: 2}
+  SpeedIncrease: {fileID: 11400000, guid: 63d23a2f742562d46b4fef249aa1f251, type: 2}
 --- !u!137 &137230556091922836
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

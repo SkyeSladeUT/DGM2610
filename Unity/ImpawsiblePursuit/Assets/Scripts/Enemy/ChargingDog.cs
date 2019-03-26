@@ -11,7 +11,7 @@ public class ChargingDog : MonoBehaviour {
 	private Vector3 movement;
 	private bool isAwake, right, charging;
 	//public PlayerData cat;
-	public GameObject highlighter;
+	//public GameObject highlighter;
 	private bool inRange;
 	//public DoubleKeyCodeData interact;
 	public FloatData DogSpeed, Offset, Seconds, SpeedIncrease;
@@ -32,7 +32,7 @@ public class ChargingDog : MonoBehaviour {
 		currentSpeed = 0;
 		isAwake = false;
 		inRange = false;
-		highlighter.SetActive(false);
+		//highlighter.SetActive(false);
 		rotation = transform.rotation;
 	}
 

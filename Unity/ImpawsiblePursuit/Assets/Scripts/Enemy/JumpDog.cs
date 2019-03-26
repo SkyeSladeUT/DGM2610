@@ -17,9 +17,9 @@ public class JumpDog : MonoBehaviour {
 	private Quaternion rotation;
 	//Jump Variables
 	//public float JumpFrequency;
-	public float speed, jumpspeed, gravity, Gravity, offset, seconds, speedincrease;
+	public float speed, jumpspeed, gravity, Gravity, offset, seconds;
 	public Animator Anim;
-	public FloatData Speed, Offset, Seconds;
+	public FloatData Speed, Offset, Seconds, SpeedIncrease;
 
 	private void Start()
 	{
@@ -55,9 +55,9 @@ public class JumpDog : MonoBehaviour {
 			movement.x = currentSpeed;
 			rb.velocity = movement;
 			if(currentSpeed < 0)
-				currentSpeed -= speedincrease * Time.deltaTime;
+				currentSpeed -= SpeedIncrease.value * Time.deltaTime;
 			else
-				currentSpeed += speedincrease * Time.deltaTime;
+				currentSpeed += SpeedIncrease.value * Time.deltaTime;
 			if (CanJump)
 			{
 				//print("Jump");

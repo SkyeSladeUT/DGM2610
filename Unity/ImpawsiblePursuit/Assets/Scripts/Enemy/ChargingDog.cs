@@ -6,7 +6,7 @@ public class ChargingDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed, Gravity;
-	public float speed, offset, seconds, gravity, speedincrease;
+	public float speed, offset, seconds, gravity;
 	public GameObject player; //CatHighlighter;
 	private Vector3 movement;
 	private bool isAwake, right, charging;
@@ -14,7 +14,7 @@ public class ChargingDog : MonoBehaviour {
 	public GameObject highlighter;
 	private bool inRange;
 	//public DoubleKeyCodeData interact;
-	public FloatData DogSpeed, Offset, Seconds;
+	public FloatData DogSpeed, Offset, Seconds, SpeedIncrease;
 	public float ChargeFrequency;
 	public GameObject CautionSymbolRight;
 	public GameObject CautionSymbolLeft;
@@ -63,9 +63,9 @@ public class ChargingDog : MonoBehaviour {
 			movement.x = currentSpeed;
 			rb.velocity = movement;
 			if(currentSpeed < 0)
-				currentSpeed -= speedincrease * Time.deltaTime;
+				currentSpeed -= SpeedIncrease.value * Time.deltaTime;
 			else
-				currentSpeed += speedincrease * Time.deltaTime;
+				currentSpeed += SpeedIncrease.value * Time.deltaTime;
 			if (gravity < 1f)
 				gravity += Time.deltaTime * Gravity;
 			movement = rb.velocity;

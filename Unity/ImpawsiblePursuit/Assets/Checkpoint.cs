@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Checkpoint : MonoBehaviour
 {
-
-	public BoolData Halfway;
+	public UnityEvent CheckpointEvent;
+	/*public BoolData Halfway;
 	public GameObject Half;
 	public GameObject Full;
 
@@ -22,14 +24,14 @@ public class Checkpoint : MonoBehaviour
 			Half.SetActive(false);
 			Full.SetActive(true);
 		}
-	}
+	}*/
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Player"))
 		{
-			print("CheckPoint");
-			Halfway.value = true;
+			print("Checkpoint");
+			CheckpointEvent.Invoke();
 		}
 	}
 }

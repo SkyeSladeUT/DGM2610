@@ -6,7 +6,7 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed, Gravity;
-	public float speed, offset, seconds, gravity, speedincrease;
+	public float speed, offset, seconds, gravity;
 	public GameObject player;// CatHighlighter;
 	private Vector3 movement;
 	private bool isAwake;
@@ -17,7 +17,7 @@ public class FollowDogMovement : MonoBehaviour {
 	//public FloatData PowerUpLevel;
 	private Quaternion rotation;
 	public Animator Anim;
-	public FloatData Speed, Offset, Seconds;
+	public FloatData Speed, Offset, Seconds, SpeedIncrease;
 
 	private void Start()
 	{
@@ -52,9 +52,9 @@ public class FollowDogMovement : MonoBehaviour {
 			movement.x = currentSpeed;
 			rb.velocity = movement;
 			if(currentSpeed < 0)
-				currentSpeed -= speedincrease * Time.deltaTime;
+				currentSpeed -= SpeedIncrease.value * Time.deltaTime;
 			else
-				currentSpeed += speedincrease * Time.deltaTime;
+				currentSpeed += SpeedIncrease.value * Time.deltaTime;
 			if (gravity < 1f)
 				gravity += Time.deltaTime * Gravity;
 			movement = rb.velocity;

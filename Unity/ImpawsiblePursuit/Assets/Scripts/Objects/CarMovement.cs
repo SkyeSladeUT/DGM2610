@@ -21,7 +21,7 @@ public class CarMovement : MonoBehaviour {
 	// Use this for initialization
 	 IEnumerator Call ()
 	 {
-		 print("Start");
+		 //print("Start");
 		upwardsmovement = false;
 		scaling = false;
 		moving = false;

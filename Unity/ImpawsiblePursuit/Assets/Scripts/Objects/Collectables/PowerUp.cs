@@ -12,7 +12,7 @@ public class PowerUp : MonoBehaviour
     private void Start()
     {
         player.PowerUp = false;
-        PowerUpLevel.value = 0;
+        //PowerUpLevel.value = 0;
         catHighlighter.SetActive(false);
     }
 

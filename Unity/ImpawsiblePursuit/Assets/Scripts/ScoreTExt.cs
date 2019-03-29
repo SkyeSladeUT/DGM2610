@@ -12,7 +12,7 @@ public class ScoreTExt : MonoBehaviour
 	private void Start()
 	{
 		Score = GetComponent<Text>();
-		playerscore.score.value = 0;
+		//playerscore.score.value = 0;
 		Score.text = "Score: 0";
 	}
 

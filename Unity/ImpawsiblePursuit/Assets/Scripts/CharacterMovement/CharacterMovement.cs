@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
 	public FloatData Speed;
 	public FloatData SpeedChange;
 
-	private float currentSpeed;
+	private float currentSpeed, changevalue;
 	//public DoubleKeyCodeData faster;
 	public DoubleKeyCodeData slower;
 	//public float startingSpeed;
@@ -18,7 +18,7 @@ public class CharacterMovement : MonoBehaviour
 
 	public PlayerData player;
 	//public GameObject catHighlighter;
-	public BoolData Tutorial;
+	public BoolData Tutorial, TutorialOver;
 
 	//private float slowspeed;
 
@@ -55,28 +55,27 @@ public class CharacterMovement : MonoBehaviour
 
 	private void ChangeSpeed()
 	{
-		if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))
-		{
-			currentSpeed -= SpeedChange.value;
-		}
-		/*else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
-		{
-			Speed.value += SpeedChange.value/2;
-		}*/
-		else if (Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2))
-		{
-			currentSpeed += SpeedChange.value;
-		}
 		if (Tutorial.value)
 			currentSpeed = 0;
 		else
 		{
-			currentSpeed = Speed.value;
+			if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))
+			{
+				//currentSpeed -= SpeedChange.value;
+				changevalue = -SpeedChange.value;
+			}
+			/*else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
+			{
+				Speed.value += SpeedChange.value/2;
+			}*/
+			else if (Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2))
+			{
+				changevalue = 0;
+			}
+			currentSpeed = Speed.value + changevalue;
 		}
-		/*else if (Input.GetKeyUp(faster.Key2)||Input.GetKeyUp(faster.Key1))
-		{
-			Speed.value -= SpeedChange.value/2;
-		}*/
+
+		
 	}
 
 

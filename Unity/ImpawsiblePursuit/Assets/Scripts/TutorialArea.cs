@@ -9,13 +9,14 @@ public class TutorialArea : MonoBehaviour
     public List<string> Textlist;
     public int _textnum;
     public FloatData CharacterSpeed;
-    public BoolData Tutorial;
+    public BoolData Tutorial, TutorialOver;
     public List<DoubleKeyCodeData> keys;
     //public float characterstartspeed;
     public UnityEvent StartGame;
 
     private void Start()
     {
+        //TutorialOver.value = false;
         Tutorial.value = false;
         _textnum = 0;
         TutorialText.text = Textlist[_textnum];
@@ -31,6 +32,7 @@ public class TutorialArea : MonoBehaviour
             //CharacterSpeed.value = characterstartspeed;
             if (_textnum >= Textlist.Count)
             {
+                TutorialOver.value = true;
                 TutorialText.text = "";
                 StartGame.Invoke();
             }

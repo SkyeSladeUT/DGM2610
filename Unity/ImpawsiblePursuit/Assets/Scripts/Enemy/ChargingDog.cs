@@ -23,8 +23,8 @@ public class ChargingDog : MonoBehaviour {
 
 	private void Start()
 	{
-		Offset.value = offset;
-		Seconds.value = seconds;
+		//Offset.value = offset;
+		//Seconds.value = seconds;
 		charging = false;
 		CautionSymbolLeft.SetActive(false);
 		CautionSymbolRight.SetActive(false);

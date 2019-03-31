@@ -21,8 +21,8 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private void Start()
 	{
-		Offset.value = offset;
-		Seconds.value = seconds;
+		//Offset.value = offset;
+		//Seconds.value = seconds;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;

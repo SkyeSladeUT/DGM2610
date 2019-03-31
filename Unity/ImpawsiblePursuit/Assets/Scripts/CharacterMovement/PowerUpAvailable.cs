@@ -5,7 +5,8 @@ using UnityEngine;
 public class PowerUpAvailable : MonoBehaviour
 {
     public DoubleKeyCodeData PowerUpStart;
-    public FloatData PowerUpLevel;
+    public FloatData PowerUpLevel, Speed;
+    //public float Jumpstart, jumpchange;
     public PlayerData player;
     public GameObject catHighlighter;
     private bool powerupactive;
@@ -17,6 +18,7 @@ public class PowerUpAvailable : MonoBehaviour
         powerupavailable = false;
         player.PowerUp = false;
         catHighlighter.SetActive(false);
+        //Jump.value = Jumpstart;
     }
 
     private void Update()
@@ -27,16 +29,21 @@ public class PowerUpAvailable : MonoBehaviour
         } 
         else if (powerupavailable && PowerUpStart.GetKey() && !powerupactive)
         {
+            Speed.value += 5;
+            //Jump.value += jumpchange;
             powerupactive = true;
-            player.PowerUp = true;
-            catHighlighter.SetActive(true);
+            //player.PowerUp = true;
+            //catHighlighter.SetActive(true);
             StartCoroutine(CountDown());
+            PowerUpLevel.value = 0;
         }
     }
     
     IEnumerator CountDown()
     {
-        print("StartCountdown");
+        yield return new WaitForSeconds(.1f);
+        Speed.value -= 5;
+        /*print("StartCountdown");
         while (PowerUpLevel.value > 0)
         {
             yield return new WaitForSeconds(1f);
@@ -45,9 +52,10 @@ public class PowerUpAvailable : MonoBehaviour
         }
 
         PowerUpLevel.value = 0;
-        player.PowerUp = false;
+        //player.PowerUp = false;
         powerupactive = false;
         powerupavailable = false;
-        catHighlighter.SetActive(false);
+        Jump.value -= jumpchange;
+        //catHighlighter.SetActive(false);*/
     }
 }

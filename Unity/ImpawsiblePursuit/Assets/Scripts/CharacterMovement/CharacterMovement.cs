@@ -9,46 +9,36 @@ public class CharacterMovement : MonoBehaviour
 	private Vector3 movement;
 	public FloatData Speed;
 	public FloatData SpeedChange;
-
-	private float currentSpeed, changevalue;
-	//public DoubleKeyCodeData faster;
+	public DoubleKeyCodeData PowerUpStart;
+	public FloatData PowerUpLevel;
+	private float currentSpeed, changevalue, countdown;
 	public DoubleKeyCodeData slower;
-	//public float startingSpeed;
-	//private Vector3 scale;
-
 	public PlayerData player;
-	//public GameObject catHighlighter;
 	public BoolData Tutorial, TutorialOver;
-
-	//private float slowspeed;
+	private bool powerupactive;
 
 	void Start ()
 	{
 		currentSpeed = Speed.value;
-		//SpeedChange.value = 3;
+		changevalue = 0;
+		player.PowerUp = false;
+		powerupactive = false;
 		player.hidden = false;
-		//scale = transform.localScale;
-		//Speed.value = startingSpeed;
 		rb = GetComponent<Rigidbody>();
 	}
 	
 	void Update () {
-		/*if (!Tutorial.value)*/
 			ChangeSpeed();
 			movement = rb.velocity;
 			movement.x = currentSpeed;
 			rb.velocity = movement;
-		
-		/*if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKeyDown(KeyCode.S))
+		if (PowerUpStart.GetKey() && !powerupactive && PowerUpLevel.value >= 10)
 		{
-			scale.y *= .75f;
-			transform.localScale = scale;
+			changevalue += 10;
+			powerupactive = true;
+			PowerUpLevel.value = 0;
+			StartCoroutine(CountDown());
 		}
-		else if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.S))
-		{
-			scale.y /= .75f;
-			transform.localScale = scale;
-		}*/
 
 		
 	}
@@ -62,7 +52,7 @@ public class CharacterMovement : MonoBehaviour
 			if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))
 			{
 				//currentSpeed -= SpeedChange.value;
-				changevalue = -SpeedChange.value;
+				changevalue -= SpeedChange.value;
 			}
 			/*else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
 			{
@@ -70,7 +60,7 @@ public class CharacterMovement : MonoBehaviour
 			}*/
 			else if (Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2))
 			{
-				changevalue = 0;
+				changevalue += SpeedChange.value;
 			}
 			currentSpeed = Speed.value + changevalue;
 		}
@@ -85,6 +75,11 @@ public class CharacterMovement : MonoBehaviour
 		{
 			player.hidden = true;
 		}
+
+		if (other.CompareTag("Mud"))
+		{
+			changevalue -= 3;
+		}
 	}
 
 	private void OnTriggerExit(Collider other)
@@ -93,6 +88,31 @@ public class CharacterMovement : MonoBehaviour
 		{
 			player.hidden = false;
 		}
+
+		if (other.CompareTag("Mud"))
+		{
+			countdown = 6;
+			StartCoroutine(cleanMud());
+		}
+	}
+
+	private IEnumerator cleanMud()
+	{
+		while (countdown > 0)
+		{
+			yield return new WaitForSeconds(.5f);
+			countdown--;
+			changevalue += .5f;
+		}
+	}
+	
+
+    
+	IEnumerator CountDown()
+	{
+		yield return new WaitForSeconds(1f);
+		changevalue -= 10;
+		powerupactive = false;
 	}
 
 }

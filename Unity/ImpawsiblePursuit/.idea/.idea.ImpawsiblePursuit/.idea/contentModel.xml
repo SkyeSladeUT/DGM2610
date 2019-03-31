@@ -10,6 +10,7 @@
         <e p="IncrementFloats.cs" t="Include" />
         <e p="IncrementFunction.cs" t="Include" />
         <e p="NeedSorting" t="Include">
+          <e p="MudPuddle.cs" t="Include" />
           <e p="TestRestartScript.cs" t="Include" />
         </e>
         <e p="Prefabs" t="Include">

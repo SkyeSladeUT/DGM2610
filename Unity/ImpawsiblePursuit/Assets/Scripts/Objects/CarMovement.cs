@@ -13,13 +13,8 @@ public class CarMovement : MonoBehaviour {
 	private bool moving, scaling, upwardsmovement;
 
 
-	private void Awake()
-	{
-		StartCoroutine(Call());
-	}
-
 	// Use this for initialization
-	 IEnumerator Call ()
+	 IEnumerator Start ()
 	 {
 		 //print("Start");
 		upwardsmovement = false;
@@ -82,7 +77,7 @@ public class CarMovement : MonoBehaviour {
 			scale.Set(0f,0f,0f);
 			transform.position = spawnpoint;
 			transform.localScale = scale;
-			yield return new WaitForSeconds(1f);
+			yield return new WaitForSeconds(.25f);
 			scalingfactor = .1f;
 			upwardsmovement = true;
 			moving = true;

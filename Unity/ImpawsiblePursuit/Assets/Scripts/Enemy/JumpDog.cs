@@ -25,6 +25,7 @@ public class JumpDog : MonoBehaviour {
 	{
 		//Seconds.value = seconds;
 		//Offset.value = offset;
+		gameObject.tag = "Untagged";
 		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
@@ -101,6 +102,7 @@ public class JumpDog : MonoBehaviour {
 		Anim.SetTrigger("Run");
 		currentSpeed = Speed.value;
 		isAwake = true;
+		gameObject.tag = "Enemy";
 		//StartCoroutine(Jump());
 	}
 

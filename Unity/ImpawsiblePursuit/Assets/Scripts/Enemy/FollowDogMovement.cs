@@ -23,6 +23,7 @@ public class FollowDogMovement : MonoBehaviour {
 	{
 		//Offset.value = offset;
 		//Seconds.value = seconds;
+		gameObject.tag = "Untagged";
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;
@@ -79,6 +80,7 @@ public class FollowDogMovement : MonoBehaviour {
 		Anim.SetTrigger("Run");
 		currentSpeed = Speed.value;
 		isAwake = true;
+		gameObject.tag = "Enemy";
 	}
 
 	private IEnumerator Right()

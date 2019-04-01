@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 357d62f457782014a9616c2231f808b6, type: 3}
   m_Name: ChargeDogSpeed
   m_EditorClassIdentifier: 
-  value: 8.5
-  IncValue: 1
+  value: 9.299999
+  IncValue: 1.15

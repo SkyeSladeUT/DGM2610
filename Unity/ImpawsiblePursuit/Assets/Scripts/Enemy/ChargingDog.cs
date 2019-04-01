@@ -14,8 +14,8 @@ public class ChargingDog : MonoBehaviour {
 	//public GameObject highlighter;
 	private bool inRange;
 	//public DoubleKeyCodeData interact;
-	public FloatData DogSpeed, Offset, Seconds, SpeedIncrease;
-	public float ChargeFrequency;
+	public FloatData DogSpeed, Offset, Seconds, SpeedIncrease, ChargeFrequency;
+	//public float ChargeFrequency;
 	public GameObject CautionSymbolRight;
 	public GameObject CautionSymbolLeft;
 	private Quaternion rotation;
@@ -25,6 +25,7 @@ public class ChargingDog : MonoBehaviour {
 	{
 		//Offset.value = offset;
 		//Seconds.value = seconds;
+		gameObject.tag = "Untagged";
 		charging = false;
 		CautionSymbolLeft.SetActive(false);
 		CautionSymbolRight.SetActive(false);
@@ -90,6 +91,7 @@ public class ChargingDog : MonoBehaviour {
 		Anim.SetTrigger("Run");
 		currentSpeed = DogSpeed.value;
 		isAwake = true;
+		gameObject.tag = "Enemy";
 	}
 
 	private IEnumerator Right()
@@ -118,7 +120,7 @@ public class ChargingDog : MonoBehaviour {
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(ChargeFrequency);
+			yield return new WaitForSeconds(ChargeFrequency.value);
 			if (right)
 			{
 				CautionSymbolRight.SetActive(true);

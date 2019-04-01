@@ -15,10 +15,11 @@ public class CharacterMovement : MonoBehaviour
 	public DoubleKeyCodeData slower;
 	public PlayerData player;
 	public BoolData Tutorial, TutorialOver;
-	private bool powerupactive;
+	private bool powerupactive, Muddy;
 
 	void Start ()
 	{
+		Muddy = false;
 		currentSpeed = Speed.value;
 		changevalue = 0;
 		player.PowerUp = false;
@@ -76,8 +77,9 @@ public class CharacterMovement : MonoBehaviour
 			player.hidden = true;
 		}
 
-		if (other.CompareTag("Mud"))
+		if (other.CompareTag("Mud") && !Muddy)
 		{
+			Muddy = true;
 			changevalue -= 3;
 		}
 	}
@@ -104,6 +106,8 @@ public class CharacterMovement : MonoBehaviour
 			countdown--;
 			changevalue += .5f;
 		}
+
+		Muddy = false;
 	}
 	
 

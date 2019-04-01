@@ -6,16 +6,12 @@ using UnityEngine.Events;
 public class TestRestartScript : MonoBehaviour
 {
 
-	public BoolData Restart, TutorialOver;
+	public BoolData TutorialOver;
 	public UnityEvent Rstrt;
 
 	private void Start()
 	{
-		if (Restart.value)
-		{
-			TutorialOver.value = false;
-			Rstrt.Invoke();
-			Restart.value = false;
-		}
+		TutorialOver.value = false;
+		Rstrt.Invoke();
 	}
 }

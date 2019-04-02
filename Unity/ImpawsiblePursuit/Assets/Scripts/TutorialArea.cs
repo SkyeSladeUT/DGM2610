@@ -12,7 +12,7 @@ public class TutorialArea : MonoBehaviour
     public BoolData Tutorial, TutorialOver;
     public List<DoubleKeyCodeData> keys;
     //public float characterstartspeed;
-    public UnityEvent StartGame;
+    //public UnityEvent StartGame;
 
     private void Start()
     {
@@ -34,7 +34,7 @@ public class TutorialArea : MonoBehaviour
             {
                 TutorialOver.value = true;
                 TutorialText.text = "";
-                StartGame.Invoke();
+                //StartGame.Invoke();
             }
         }
     }

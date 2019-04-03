@@ -18,6 +18,8 @@ public class CharacterMovement : MonoBehaviour
 	public PlayerData player;
 	public BoolData Tutorial, TutorialOver;
 	private bool powerupactive, Muddy;
+	public UnityEvent Mud, mud2;
+
 
 
 	void Start ()
@@ -83,6 +85,7 @@ public class CharacterMovement : MonoBehaviour
 		if (other.CompareTag("Mud") && !Muddy)
 		{
 			Muddy = true;
+			mud2.Invoke();
 			changevalue -= 3;
 		}
 
@@ -98,6 +101,7 @@ public class CharacterMovement : MonoBehaviour
 		if (other.CompareTag("Mud"))
 		{
 			countdown = 6;
+			Mud.Invoke();
 			StartCoroutine(cleanMud());
 		}
 	}

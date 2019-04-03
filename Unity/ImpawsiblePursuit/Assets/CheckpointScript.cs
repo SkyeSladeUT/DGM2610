@@ -15,6 +15,7 @@ public class CheckpointScript : MonoBehaviour
 
 	private void Start()
 	{
+		Player.SetActive(true);
 		for (int i = 0; i < Areas.Count; i++)
 		{
 			Areas[i].SetActive(false);

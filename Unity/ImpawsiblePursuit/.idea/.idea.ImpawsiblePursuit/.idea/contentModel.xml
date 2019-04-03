@@ -14,9 +14,12 @@
           <e p="ChangeScene.cs" t="Include" />
           <e p="ConstantSpeed.cs" t="Include" />
           <e p="EndingScript.cs" t="Include" />
+          <e p="LivesText.cs" t="Include" />
           <e p="MenuChange.cs" t="Include" />
           <e p="MenuStartScreen.cs" t="Include" />
           <e p="MudPuddle.cs" t="Include" />
+          <e p="MudSplatter.cs" t="Include" />
+          <e p="MudTexture.cs" t="Include" />
           <e p="OnKeyEvent.cs" t="Include" />
           <e p="ReapwanMenuScript.cs" t="Include" />
           <e p="TestRestartScript.cs" t="Include" />

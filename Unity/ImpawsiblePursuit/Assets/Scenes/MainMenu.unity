@@ -2219,6 +2219,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5e0a2e172c2bd4c4da71ea397d4b00ed, type: 2}
   - {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
   - {fileID: 11400000, guid: 92c7b6c35b914514885b4dace80c6a34, type: 2}
+  - {fileID: 11400000, guid: 92c7b6c35b914514885b4dace80c6a34, type: 2}
   InitializeValues:
   - 10.5
   - 2
@@ -2230,6 +2231,7 @@ MonoBehaviour:
   - 0.55
   - 0
   - 0
+  - 2
   - 2
 --- !u!114 &507022402
 MonoBehaviour:
@@ -2259,6 +2261,8 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  lives: {fileID: 11400000, guid: ac440b71a1a83c84f8f973e10ccfe043, type: 2}
+  numlives: 9
 --- !u!1 &548326091
 GameObject:
   m_ObjectHideFlags: 0

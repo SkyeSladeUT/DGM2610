@@ -7,13 +7,13 @@ public class PowerUp : MonoBehaviour
 {
     public PlayerData player;
     public FloatData PowerUpLevel;
-    public GameObject catHighlighter;
+    //public GameObject catHighlighter;
 
     private void Start()
     {
         player.PowerUp = false;
         //PowerUpLevel.value = 0;
-        catHighlighter.SetActive(false);
+        //catHighlighter.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider obj)

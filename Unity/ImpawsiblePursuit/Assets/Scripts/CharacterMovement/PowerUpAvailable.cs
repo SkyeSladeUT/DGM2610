@@ -8,7 +8,7 @@ public class PowerUpAvailable : MonoBehaviour
     public FloatData PowerUpLevel, Speed;
     //public float Jumpstart, jumpchange;
     public PlayerData player;
-    public GameObject catHighlighter;
+    //public GameObject catHighlighter;
     private bool powerupactive;
     private bool powerupavailable;
 
@@ -17,7 +17,7 @@ public class PowerUpAvailable : MonoBehaviour
         powerupactive = false;
         powerupavailable = false;
         player.PowerUp = false;
-        catHighlighter.SetActive(false);
+        //catHighlighter.SetActive(false);
         //Jump.value = Jumpstart;
     }
 

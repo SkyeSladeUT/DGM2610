@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 [RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
@@ -16,6 +18,7 @@ public class CharacterMovement : MonoBehaviour
 	public PlayerData player;
 	public BoolData Tutorial, TutorialOver;
 	private bool powerupactive, Muddy;
+
 
 	void Start ()
 	{
@@ -82,6 +85,7 @@ public class CharacterMovement : MonoBehaviour
 			Muddy = true;
 			changevalue -= 3;
 		}
+
 	}
 
 	private void OnTriggerExit(Collider other)

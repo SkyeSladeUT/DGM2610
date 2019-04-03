@@ -15,6 +15,7 @@ TagManager:
   - Hidden
   - CheckPoint
   - Mud
+  - End
   layers:
   - Default
   - TransparentFX

@@ -2220,12 +2220,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
   - {fileID: 11400000, guid: 92c7b6c35b914514885b4dace80c6a34, type: 2}
   InitializeValues:
-  - 9.5
+  - 10.5
   - 2
   - 7
   - 0
-  - 9.4
-  - 9.25
+  - 10.4
+  - 10.25
   - 0.55
   - 0.55
   - 0

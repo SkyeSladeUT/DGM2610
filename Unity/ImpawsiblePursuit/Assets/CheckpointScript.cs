@@ -40,6 +40,7 @@ public class CheckpointScript : MonoBehaviour
 		position = Player.transform.position;
 		position.x = StartAreas[(int) CheckpointNum.value].position.x;
 		position.x += 2f;
+		position.z = 1.25f;
 		Player.transform.position = position;
 	}
 	

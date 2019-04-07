@@ -38,6 +38,7 @@
           <e p="IncrementFloats.cs" t="Include" />
           <e p="IncrementFunction.cs" t="Include" />
           <e p="MakeTrigger.cs" t="Include" />
+          <e p="MaterialSwitch.cs" t="Include" />
           <e p="MenuScripts" t="Include">
             <e p="ChangeScene.cs" t="Include" />
             <e p="ConstantSpeed.cs" t="Include" />
@@ -90,9 +91,6 @@
           <e p="IncreaseSpeed.cs" t="Include" />
           <e p="MerryMovement.cs" t="Include" />
           <e p="MudPuddle.cs" t="Include" />
-          <e p="TestScripts" t="Include">
-            <e p="MaterialSwitch.cs" t="Include" />
-          </e>
         </e>
       </e>
       <e p="ImpawsiblePursuit.sln" t="IncludeFlat" />

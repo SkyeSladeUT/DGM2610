@@ -1,0 +1,29 @@
+// Exported skin weight map file
+// 
+Cat	Chest_Jnt	Cat_Chest_Jnt.iff
+Cat	Chest_Jnt|R_Calvicle_jnt|R_Shoulder_Jnt	Cat_R_Shoulder_Jnt.iff
+Cat	Chest_Jnt|R_Calvicle_jnt|R_Shoulder_Jnt|R_Elbow_Jnt	Cat_R_Elbow_Jnt.iff
+Cat	Chest_Jnt|R_Calvicle_jnt|R_Shoulder_Jnt|R_Elbow_Jnt|R_Wrist_Jnt	Cat_R_Wrist_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt	Cat_Back1_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt	Cat_Back2_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt	Cat_Back3_jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist	Cat_Waist.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|R_Hip_Jnt	Cat_R_Hip_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|R_Hip_Jnt|R_Knee_Jnt	Cat_R_Knee_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|R_Hip_Jnt|R_Knee_Jnt|R_Heel_Jnt	Cat_R_Heel_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|R_Hip_Jnt|R_Knee_Jnt|R_Heel_Jnt|R_Toes_Jnt	Cat_R_Toes_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|L_Hip_Jnt	Cat_L_Hip_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|L_Hip_Jnt|L_Knee_Jnt	Cat_L_Knee_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|L_Hip_Jnt|L_Knee_Jnt|L_Heel_Jnt	Cat_L_Heel_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|L_Hip_Jnt|L_Knee_Jnt|L_Heel_Jnt|L_Toe_Jnt	Cat_L_Toe_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|Tail1_Jnt	Cat_Tail1_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|Tail1_Jnt|Tail2_Jnt	Cat_Tail2_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|Tail1_Jnt|Tail2_Jnt|Tail3_jnt	Cat_Tail3_jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|Tail1_Jnt|Tail2_Jnt|Tail3_jnt|Tail4_Jnt	Cat_Tail4_Jnt.iff
+Cat	Chest_Jnt|Back1_Jnt|Back2_Jnt|Back3_jnt|Waist|Tail1_Jnt|Tail2_Jnt|Tail3_jnt|Tail4_Jnt|Tail5_Jnt	Cat_Tail5_Jnt.iff
+Cat	Chest_Jnt|Neck1_jnt	Cat_Neck1_jnt.iff
+Cat	Chest_Jnt|Neck1_jnt|Neck2_Jnt	Cat_Neck2_Jnt.iff
+Cat	Chest_Jnt|Neck1_jnt|Neck2_Jnt|Neck3_Jnt	Cat_Neck3_Jnt.iff
+Cat	Chest_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt	Cat_L_Shoulder_Jnt.iff
+Cat	Chest_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_Elbow_Jnt	Cat_L_Elbow_Jnt.iff
+Cat	Chest_Jnt|L_Clavicle_Jnt|L_Shoulder_Jnt|L_Elbow_Jnt|L_Wrist_Jnt	Cat_L_Wrist_Jnt.iff

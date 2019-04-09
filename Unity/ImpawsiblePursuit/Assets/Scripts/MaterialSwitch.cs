@@ -42,7 +42,7 @@ public class MaterialSwitch : MonoBehaviour
 
 	public void SetMaterial2()
 	{
-		clr1.a = 0;
+		//clr1.a = 0;
 		clr2.a = 1;
 		mat1.color = clr1;
 		mat2.color = clr2;
@@ -74,7 +74,7 @@ public class MaterialSwitch : MonoBehaviour
 				//print("B");
 				yield return new WaitForFixedUpdate();
 				changevalue = speed * Time.deltaTime;
-				clr1.a += changevalue;
+				//clr1.a += changevalue;
 				clr2.a -= changevalue;
 				mat1.color = clr1;
 				mat2.color = clr2;

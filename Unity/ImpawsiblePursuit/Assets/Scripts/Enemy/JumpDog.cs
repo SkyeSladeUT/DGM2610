@@ -62,7 +62,7 @@ public class JumpDog : MonoBehaviour {
 			if (CanJump)
 			{
 				//print("Jump");
-				Anim.SetTrigger("Jump");
+				//Anim.SetTrigger("Jump");
 				movement = rb.velocity;
 				movement.y = jumpspeed;
 				rb.AddForce(movement, ForceMode.Impulse);

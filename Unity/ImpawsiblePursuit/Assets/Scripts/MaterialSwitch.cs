@@ -42,11 +42,20 @@ public class MaterialSwitch : MonoBehaviour
 
 	public void SetMaterial2()
 	{
-		//clr1.a = 0;
-		clr2.a = 1;
-		mat1.color = clr1;
-		mat2.color = clr2;
+		StartCoroutine(SetMat2());
+	}
+	
+	public IEnumerator SetMat2()
+	{
 		mat1set = false;
+		//clr1.a = 0;
+		while (clr2.a < 1)
+		{
+			clr2.a += .1f;
+			mat1.color = clr1;
+			mat2.color = clr2;
+			yield return new WaitForSeconds(.05f);
+		}
 	}
 
 	IEnumerator Change()

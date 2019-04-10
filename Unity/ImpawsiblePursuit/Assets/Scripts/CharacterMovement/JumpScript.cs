@@ -60,15 +60,24 @@ public class JumpScript : MonoBehaviour
 		if (obj.gameObject.layer == 9|| obj.gameObject.layer == 12)
 		{
 			JumpCount = 0;
-			Anim.SetTrigger("Run");
+			Anim.SetTrigger("Land");
+			
 		}
 	}
 
-	private void OnCollisionStay(Collision other)
+	private void OnCollisionStay(Collision obj)
 	{
-		if (other.gameObject.layer == 9)
+		if (obj.gameObject.layer == 9|| obj.gameObject.layer == 12)
 		{
 			gravity = 0;
+		}
+	}
+
+	private void OnCollisionExit(Collision obj)
+	{
+		if (obj.gameObject.layer == 9 || obj.gameObject.layer == 12)
+		{
+			Anim.ResetTrigger("Land");
 		}
 	}
 }

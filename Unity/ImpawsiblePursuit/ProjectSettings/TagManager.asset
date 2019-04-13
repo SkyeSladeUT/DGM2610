@@ -16,6 +16,8 @@ TagManager:
   - CheckPoint
   - Mud
   - End
+  - Stove
+  - Water
   layers:
   - Default
   - TransparentFX

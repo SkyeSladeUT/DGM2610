@@ -13,7 +13,8 @@ public class CharacterMovement : MonoBehaviour
 	public FloatData SpeedChange;
 	public DoubleKeyCodeData PowerUpStart;
 	public FloatData PowerUpLevel;
-	private float currentSpeed, changevalue, countdown;
+	public float currentSpeed;
+	private float  changevalue, countdown;
 	public DoubleKeyCodeData slower;
 	public PlayerData player;
 	public BoolData Tutorial, TutorialOver;
@@ -125,6 +126,13 @@ public class CharacterMovement : MonoBehaviour
 		yield return new WaitForSeconds(1f);
 		changevalue -= 10;
 		powerupactive = false;
+	}
+
+	public void StopMoving()
+	{
+		rb.constraints = RigidbodyConstraints.FreezePositionX;
+		//rb.isKinematic = true;
+		gameObject.GetComponent<JumpScript>().enabled = false;
 	}
 
 }

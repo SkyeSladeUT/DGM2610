@@ -25,10 +25,11 @@ public class JumpScript : MonoBehaviour
 	void Update () {
 		if (Up.GetKey())
 		{
+			//Anim.SetTrigger("Jump_Prep");
 			if (JumpCount < 2)
 			{
 				if(JumpCount < 1)
-					Anim.SetTrigger("Jump");
+					Anim.SetTrigger("Jump_Prep");
 				/*if (JumpCount > 1)
 				{
 					jumpspeed = JumpFloat.value * .85f;
@@ -50,6 +51,19 @@ public class JumpScript : MonoBehaviour
 			gravity += Time.deltaTime * Gravity.value;
 		if (gravity > .75f)
 			gravity = .75f;
+		//Debug.Log(rb.velocity.y);
+		if (JumpCount > 0)
+		{
+			if (rb.velocity.y <= .5f && rb.velocity.y >= -.1f)
+			{
+				Anim.SetTrigger("Jump_Hang");
+			}
+			else if (rb.velocity.y < 0)
+			{
+				Anim.SetTrigger("Jump_Drop");
+			}
+		}
+
 		movement = rb.velocity;
 		movement.y -= gravity;
 		rb.velocity = movement;
@@ -60,8 +74,10 @@ public class JumpScript : MonoBehaviour
 		if (obj.gameObject.layer == 9|| obj.gameObject.layer == 12)
 		{
 			JumpCount = 0;
-			Anim.SetTrigger("Land");
-			
+			Anim.SetTrigger("Jump_Land");
+			Anim.ResetTrigger("Jump_Prep");
+			Anim.ResetTrigger("Jump_Drop");
+			Anim.ResetTrigger("Jump_Hang");
 		}
 	}
 
@@ -77,7 +93,8 @@ public class JumpScript : MonoBehaviour
 	{
 		if (obj.gameObject.layer == 9 || obj.gameObject.layer == 12)
 		{
-			Anim.ResetTrigger("Land");
+			Anim.ResetTrigger("Jump_Land");
+			
 		}
 	}
 }

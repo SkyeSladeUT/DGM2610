@@ -20,9 +20,11 @@ public class ChargingDog : MonoBehaviour {
 	public GameObject CautionSymbolLeft;
 	private Quaternion rotation;
 	public Animator Anim;
+	private bool isDead;
 
 	private void Start()
 	{
+		isDead = false;
 		//Offset.value = offset;
 		//Seconds.value = seconds;
 		gameObject.tag = "Untagged";
@@ -39,39 +41,42 @@ public class ChargingDog : MonoBehaviour {
 
 	private void Update()
 	{
-		if (!charging)
+		if (!isDead)
 		{
-			if (transform.position.x < player.transform.position.x && !isAwake)
+			if (!charging)
 			{
-				StartCoroutine(Wake());
-				StartCoroutine(Move());
+				if (transform.position.x < player.transform.position.x && !isAwake)
+				{
+					StartCoroutine(Wake());
+					StartCoroutine(Move());
+				}
+				else if (transform.position.x < player.transform.position.x - offset && isAwake)
+				{
+					StartCoroutine(Right());
+					right = true;
+				}
+				else if (transform.position.x > player.transform.position.x + offset && isAwake)
+				{
+					StartCoroutine(Left());
+					right = false;
+				}
 			}
-			else if (transform.position.x < player.transform.position.x - offset && isAwake)
-			{
-				StartCoroutine(Right());
-				right = true;
-			}
-			else if (transform.position.x > player.transform.position.x + offset && isAwake)
-			{
-				StartCoroutine(Left());
-				right = false;
-			}
-		}
 
-		if (isAwake)
-		{
-			movement = rb.velocity;
-			movement.x = currentSpeed;
-			rb.velocity = movement;
-			if(currentSpeed < 0)
-				currentSpeed -= SpeedIncrease.value * Time.deltaTime;
-			else
-				currentSpeed += SpeedIncrease.value * Time.deltaTime;
-			if (gravity < 1f)
-				gravity += Time.deltaTime * Gravity;
-			movement = rb.velocity;
-			movement.y -= gravity;
-			rb.velocity = movement;
+			if (isAwake)
+			{
+				movement = rb.velocity;
+				movement.x = currentSpeed;
+				rb.velocity = movement;
+				if (currentSpeed < 0)
+					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+				else
+					currentSpeed += SpeedIncrease.value * Time.deltaTime;
+				if (gravity < 1f)
+					gravity += Time.deltaTime * Gravity;
+				movement = rb.velocity;
+				movement.y -= gravity;
+				rb.velocity = movement;
+			}
 		}
 
 		/*if ((interact.GetKey() && inRange))
@@ -87,6 +92,7 @@ public class ChargingDog : MonoBehaviour {
 
 	private IEnumerator Wake()
 	{
+		Anim.SetTrigger("Wake");
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
 		currentSpeed = DogSpeed.value;
@@ -160,21 +166,14 @@ public class ChargingDog : MonoBehaviour {
 		gravity = 1;
 	}
 
-	/*private void OnTriggerEnter(Collider other)
+	public void StopMovement()
 	{
-		if (other.CompareTag("Player")&& cat.PowerUp)
-		{
-			inRange = true;
-			highlighter.SetActive(true);
-		}
+		gameObject.tag = "Untagged";
+		rb.velocity = Vector3.zero;
+		rb.angularVelocity = Vector3.zero;
+		gameObject.layer = 0;
+		isDead = true;
+		rb.constraints = RigidbodyConstraints.FreezeRotation;
+		StopAllCoroutines();
 	}
-
-	private void OnTriggerExit(Collider other)
-	{
-		if (other.CompareTag("Player") && cat.PowerUp)
-		{
-			highlighter.SetActive(false);
-			inRange = false;
-		}
-	}*/
 }

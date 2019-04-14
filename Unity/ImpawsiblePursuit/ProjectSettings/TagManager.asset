@@ -18,6 +18,7 @@ TagManager:
   - End
   - Stove
   - Water
+  - CarDogDeath
   layers:
   - Default
   - TransparentFX

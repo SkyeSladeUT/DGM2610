@@ -6,85 +6,67 @@ public class JumpDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed;
-	public GameObject player;// CatHighlighter;
+	public GameObject player;
 	private Vector3 movement, JumpMove;
-	private bool isAwake, CanJump;
-	//public PlayerData cat;
-	//public GameObject highlighter;
-	//private bool inRange;
-	//public DoubleKeyCodeData interact;
-	//public FloatData PowerUpLevel;
+	private bool isAwake, CanJump, isDead;
 	private Quaternion rotation;
-	//Jump Variables
-	//public float JumpFrequency;
 	public float speed, jumpspeed, gravity, Gravity, offset, seconds;
 	public Animator Anim;
 	public FloatData Speed, Offset, Seconds, SpeedIncrease;
 
 	private void Start()
 	{
-		//Seconds.value = seconds;
-		//Offset.value = offset;
+		isDead = false;
 		gameObject.tag = "Untagged";
 		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;
-		//inRange = false;
-		//highlighter.SetActive(false);
 		rotation = transform.rotation;
 	}
 
 	private void Update()
 	{
-		if (transform.position.x < player.transform.position.x && !isAwake)
+		if (!isDead)
 		{
-				StartCoroutine(Wake());
-		}
-		else if (transform.position.x < player.transform.position.x - offset && isAwake)
-		{
-			StartCoroutine(Right());
-		}
-		else if (transform.position.x > player.transform.position.x + offset && isAwake)
-		{
-			StartCoroutine(Left());
-		}
-
-		if (isAwake)
-		{
-			movement = rb.velocity;
-			movement.x = currentSpeed;
-			rb.velocity = movement;
-			if(currentSpeed < 0)
-				currentSpeed -= SpeedIncrease.value * Time.deltaTime;
-			else
-				currentSpeed += SpeedIncrease.value * Time.deltaTime;
-			if (CanJump)
+			if (transform.position.x < player.transform.position.x && !isAwake)
 			{
-				//print("Jump");
-				//Anim.SetTrigger("Jump");
-				movement = rb.velocity;
-				movement.y = jumpspeed;
-				rb.AddForce(movement, ForceMode.Impulse);
-				gravity = 0;
-				CanJump = false;
+				StartCoroutine(Wake());
 			}
-			if (gravity < 1f)
-				gravity += Time.deltaTime * Gravity;
-			movement = rb.velocity;
-			movement.y -= gravity;
-			rb.velocity = movement;
-		}
+			else if (transform.position.x < player.transform.position.x - offset && isAwake)
+			{
+				StartCoroutine(Right());
+			}
+			else if (transform.position.x > player.transform.position.x + offset && isAwake)
+			{
+				StartCoroutine(Left());
+			}
 
-		/*if ((interact.GetKey() && inRange))
-		{
-			cat.score.value += 10;
-			PowerUpLevel.value = 0;
-			cat.PowerUp = false;
-			CatHighlighter.SetActive(false);
-			Destroy(gameObject);
-		}*/
-		
+			if (isAwake)
+			{
+				movement = rb.velocity;
+				movement.x = currentSpeed;
+				rb.velocity = movement;
+				if (currentSpeed < 0)
+					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+				else
+					currentSpeed += SpeedIncrease.value * Time.deltaTime;
+				if (CanJump)
+				{
+					movement = rb.velocity;
+					movement.y = jumpspeed;
+					rb.AddForce(movement, ForceMode.Impulse);
+					gravity = 0;
+					CanJump = false;
+				}
+
+				if (gravity < 1f)
+					gravity += Time.deltaTime * Gravity;
+				movement = rb.velocity;
+				movement.y -= gravity;
+				rb.velocity = movement;
+			}
+		}
 	}
 
 	private void OnCollisionStay(Collision other)
@@ -98,12 +80,12 @@ public class JumpDog : MonoBehaviour {
 
 	private IEnumerator Wake()
 	{
+		Anim.SetTrigger("Wake");
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
 		currentSpeed = Speed.value;
 		isAwake = true;
 		gameObject.tag = "Enemy";
-		//StartCoroutine(Jump());
 	}
 
 	private IEnumerator Right()
@@ -128,21 +110,14 @@ public class JumpDog : MonoBehaviour {
 		transform.rotation = rotation;
 	}
 	
-	/*private void OnTriggerEnter(Collider other)
+	public void StopMovement()
 	{
-		if (other.CompareTag("Player")&& cat.PowerUp)
-		{
-			inRange = true;
-			highlighter.SetActive(true);
-		}
+		gameObject.tag = "Untagged";
+		rb.velocity = Vector3.zero;
+		rb.angularVelocity = Vector3.zero;
+		gameObject.layer = 0;
+		isDead = true;
+		rb.constraints = RigidbodyConstraints.FreezeRotation;
+		StopAllCoroutines();
 	}
-
-	private void OnTriggerExit(Collider other)
-	{
-		if (other.CompareTag("Player") && cat.PowerUp)
-		{
-			highlighter.SetActive(false);
-			inRange = false;
-		}
-	}*/
 }

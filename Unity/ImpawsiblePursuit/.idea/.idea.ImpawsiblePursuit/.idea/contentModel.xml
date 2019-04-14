@@ -23,6 +23,7 @@
           <e p="Checkpoint.cs" t="Include" />
           <e p="CheckpointScript.cs" t="Include" />
           <e p="Destroy.cs" t="Include" />
+          <e p="DogAnimController.cs" t="Include" />
           <e p="EndingScript.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="ChargingDog.cs" t="Include" />

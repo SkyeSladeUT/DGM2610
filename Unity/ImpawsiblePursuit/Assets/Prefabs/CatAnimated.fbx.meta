@@ -451,7 +451,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Suprised_Jump
       takeName: Take 001
-      firstFrame: 91
+      firstFrame: 95
       lastFrame: 102
       wrapMode: 0
       orientationOffsetY: 0

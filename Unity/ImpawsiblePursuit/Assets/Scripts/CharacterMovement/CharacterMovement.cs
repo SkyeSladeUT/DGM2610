@@ -135,4 +135,10 @@ public class CharacterMovement : MonoBehaviour
 		gameObject.GetComponent<JumpScript>().enabled = false;
 	}
 
+	public void FreezeAll()
+	{
+		print("Freeze");
+		rb.constraints = RigidbodyConstraints.FreezeAll;
+	}
+
 }

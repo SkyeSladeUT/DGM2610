@@ -22,7 +22,7 @@ public class BreakApart : MonoBehaviour
 		{
 			//print("GroundHit");
 			gameObject.tag = "Untagged";
-			yield return new WaitForSeconds(1f);
+			yield return new WaitForSeconds(.05f);
 			broken.SetActive(true);
 			Destroy(Solid);
 			//Coll.Invoke();

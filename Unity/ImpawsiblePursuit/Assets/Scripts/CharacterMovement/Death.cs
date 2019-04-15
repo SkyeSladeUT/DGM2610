@@ -49,11 +49,12 @@ public class Death : MonoBehaviour
 
 					break;
 				case "Stove":
-					Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
-					Stove.Invoke();
+					Cat.GetComponent<CharacterMovement>().currentSpeed = 0;	
 					DeathEvent.Invoke();
+					Stove.Invoke();
 					isdead.value = true;
-					yield return new WaitForSeconds(Waittime);
+					yield return new WaitForSeconds(Waittime/2);
+					print("Die");
 					Lives.value -= 1;
 					if (Lives.value <= 0)
 					{
@@ -123,39 +124,18 @@ public class Death : MonoBehaviour
 		}
 
 	}
-		/*if (obj.CompareTag("Enemy")&& !player.PowerUp && !player.hidden)
-		{
-			Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
-			Dog.Invoke();
-			yield return new WaitForSeconds(Waittime);
-			Lives.value -= 1;
-			gameObject.SetActive(false);
-			if (Lives.value <= 0)
-			{
-				SceneManager.LoadScene("MainMenu");
-			}
-			else
-			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-			}
-		}*/
 
-		/*if (obj.CompareTag("Stove") && !player.PowerUp)
+	private void OnCollisionEnter(Collision other)
+	{
+		if (isdead.value)
 		{
-			Lives.value -= 1;
-			gameObject.SetActive(false);
-			if (Lives.value <= 0)
+			if (other.gameObject.layer == 12)
 			{
-				SceneManager.LoadScene("MainMenu");
+				print("Freeze2");
+				GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+				GetComponent<Rigidbody>().isKinematic = true;
+				GetComponent<Rigidbody>().useGravity = false;
 			}
-			else
-			{
-				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-			}
-			
 		}
-		
-	}*/
-
-	
+	}
 }

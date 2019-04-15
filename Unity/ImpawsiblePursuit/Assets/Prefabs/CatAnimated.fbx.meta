@@ -193,7 +193,7 @@ ModelImporter:
     7400014: Hit
     7400016: Suprised_Jump
     7400018: Hide
-    7400020: Prep_Init_Hang
+    7400020: HangAndDrop
     9500000: //RootNode
     13700000: Cat
   externalObjects: {}
@@ -505,10 +505,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Prep_Init_Hang
+      name: HangAndDrop
       takeName: Take 001
-      firstFrame: 48
-      lastFrame: 55
+      firstFrame: 53
+      lastFrame: 58
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

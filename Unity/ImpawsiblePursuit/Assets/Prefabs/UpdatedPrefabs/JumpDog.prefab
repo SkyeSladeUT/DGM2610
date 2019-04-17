@@ -3251,17 +3251,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  speed: 9
   jumpspeed: 10
   gravity: 0
   Gravity: 5
   offset: 0.5
-  seconds: 0.5
   Anim: {fileID: 95195933369029744}
   Speed: {fileID: 11400000, guid: 6c8438304a61c7e499452f19d0a27352, type: 2}
   Offset: {fileID: 11400000, guid: 420f411b72922a84694c5b8fd6b97384, type: 2}
   Seconds: {fileID: 11400000, guid: 1cd02f66462b8244196f5acd15b8e13c, type: 2}
   SpeedIncrease: {fileID: 11400000, guid: 63d23a2f742562d46b4fef249aa1f251, type: 2}
+  CatDead: {fileID: 11400000, guid: c47e64ef1bf071747b4a4738fdce7781, type: 2}
 --- !u!114 &114389175162978918
 MonoBehaviour:
   m_ObjectHideFlags: 1

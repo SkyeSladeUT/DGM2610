@@ -5,17 +5,19 @@ using UnityEngine;
 public class FollowDogMovement : MonoBehaviour {
 
 	private Rigidbody rb;
-	private float currentSpeed, Gravity;
-	public float speed, offset, seconds, gravity;
+	private float currentSpeed, Gravity, _offsetTime;
+	public float  offset, gravity;
 	public GameObject player;
 	private Vector3 movement;
-	private bool isAwake, inRange, isDead;
+	private bool isAwake, inRange, isDead, isAttacking;
 	private Quaternion rotation;
 	public Animator Anim;
 	public FloatData Speed, Offset, Seconds, SpeedIncrease;
+	public BoolData CatDead;
 
 	private void Start()
 	{
+		isAttacking = false;
 		isDead = false;
 		gameObject.tag = "Untagged";
 		rb = GetComponent<Rigidbody>();
@@ -27,6 +29,8 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private void Update()
 	{
+		if(CatDead.value && !isAttacking)
+			attackCat();
 		if (!isDead)
 		{
 			if (transform.position.x < player.transform.position.x && !isAwake)
@@ -47,10 +51,16 @@ public class FollowDogMovement : MonoBehaviour {
 				movement = rb.velocity;
 				movement.x = currentSpeed;
 				rb.velocity = movement;
-				if (currentSpeed < 0)
-					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
-				else
-					currentSpeed += SpeedIncrease.value * Time.deltaTime;
+				if (!CatDead.value)
+				{
+					if (currentSpeed < 0)
+						currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+					else
+						currentSpeed += SpeedIncrease.value * Time.deltaTime;
+					if (_offsetTime > .1f)
+						_offsetTime -= .005f * Time.deltaTime;
+				}
+
 				if (gravity < 1f)
 					gravity += Time.deltaTime * Gravity;
 				movement = rb.velocity;
@@ -63,6 +73,7 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private IEnumerator Wake()
 	{
+		_offsetTime = Offset.value;
 		Anim.SetTrigger("Wake");
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
@@ -73,7 +84,7 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private IEnumerator Right()
 	{
-		yield return  new WaitForSeconds(Offset.value);
+		yield return  new WaitForSeconds(_offsetTime);
 		if (currentSpeed < 0)
 		{
 			currentSpeed *= -1;
@@ -84,7 +95,7 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private IEnumerator Left()
 	{
-		yield return new WaitForSeconds(Offset.value);
+		yield return new WaitForSeconds(_offsetTime);
 		if (currentSpeed > 0)
 		{
 			currentSpeed *= -1;
@@ -115,5 +126,12 @@ public class FollowDogMovement : MonoBehaviour {
 		isDead = true;
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		StopAllCoroutines();
+	}
+	
+	public void attackCat()
+	{
+		isAttacking = true;
+		_offsetTime = 0;
+		currentSpeed = 8;
 	}
 }

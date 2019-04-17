@@ -3077,9 +3077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 933920e8ea9d0ac4d8058cdfb795d5ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
   offset: 0.5
-  seconds: 0.5
   gravity: 5
   player: {fileID: 0}
   DogSpeed: {fileID: 11400000, guid: 087a0d3e39f2b4646854f6cea2bf9ece, type: 2}
@@ -3090,6 +3088,7 @@ MonoBehaviour:
   CautionSymbolRight: {fileID: 0}
   CautionSymbolLeft: {fileID: 0}
   Anim: {fileID: 95074270443201436}
+  CatDead: {fileID: 11400000, guid: c47e64ef1bf071747b4a4738fdce7781, type: 2}
 --- !u!114 &114058509999601252
 MonoBehaviour:
   m_ObjectHideFlags: 1

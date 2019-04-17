@@ -5,17 +5,19 @@ using UnityEngine;
 public class JumpDog : MonoBehaviour {
 
 	private Rigidbody rb;
-	private float currentSpeed;
+	private float currentSpeed, _offsetTime;
 	public GameObject player;
 	private Vector3 movement, JumpMove;
-	private bool isAwake, CanJump, isDead;
+	private bool isAwake, CanJump, isDead, isAttacking;
 	private Quaternion rotation;
-	public float speed, jumpspeed, gravity, Gravity, offset, seconds;
+	public float jumpspeed, gravity, Gravity, offset;
 	public Animator Anim;
 	public FloatData Speed, Offset, Seconds, SpeedIncrease;
+	public BoolData CatDead;
 
 	private void Start()
 	{
+		isAttacking = false;
 		isDead = false;
 		gameObject.tag = "Untagged";
 		CanJump = true;
@@ -27,6 +29,8 @@ public class JumpDog : MonoBehaviour {
 
 	private void Update()
 	{
+		if(CatDead.value && !isAttacking)
+			attackCat();
 		if (!isDead)
 		{
 			if (transform.position.x < player.transform.position.x && !isAwake)
@@ -47,17 +51,22 @@ public class JumpDog : MonoBehaviour {
 				movement = rb.velocity;
 				movement.x = currentSpeed;
 				rb.velocity = movement;
-				if (currentSpeed < 0)
-					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
-				else
-					currentSpeed += SpeedIncrease.value * Time.deltaTime;
-				if (CanJump)
+				if (!CatDead.value)
 				{
-					movement = rb.velocity;
-					movement.y = jumpspeed;
-					rb.AddForce(movement, ForceMode.Impulse);
-					gravity = 0;
-					CanJump = false;
+					if (currentSpeed < 0)
+						currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+					else
+						currentSpeed += SpeedIncrease.value * Time.deltaTime;
+					if (_offsetTime > .1f)
+						_offsetTime -= .005f * Time.deltaTime;
+					if (CanJump)
+					{
+						movement = rb.velocity;
+						movement.y = jumpspeed;
+						rb.AddForce(movement, ForceMode.Impulse);
+						gravity = 0;
+						CanJump = false;
+					}
 				}
 
 				if (gravity < 1f)
@@ -80,6 +89,7 @@ public class JumpDog : MonoBehaviour {
 
 	private IEnumerator Wake()
 	{
+		_offsetTime = Offset.value;
 		Anim.SetTrigger("Wake");
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
@@ -90,7 +100,7 @@ public class JumpDog : MonoBehaviour {
 
 	private IEnumerator Right()
 	{
-		yield return  new WaitForSeconds(Offset.value);
+		yield return  new WaitForSeconds(_offsetTime);
 		if (currentSpeed < 0)
 		{
 			currentSpeed *= -1;
@@ -101,7 +111,7 @@ public class JumpDog : MonoBehaviour {
 
 	private IEnumerator Left()
 	{
-		yield return new WaitForSeconds(Offset.value);
+		yield return new WaitForSeconds(_offsetTime);
 		if (currentSpeed > 0)
 		{
 			currentSpeed *= -1;
@@ -119,5 +129,12 @@ public class JumpDog : MonoBehaviour {
 		isDead = true;
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		StopAllCoroutines();
+	}
+	
+	public void attackCat()
+	{
+		_offsetTime = 0;
+		isAttacking = true;
+		currentSpeed = 8;
 	}
 }

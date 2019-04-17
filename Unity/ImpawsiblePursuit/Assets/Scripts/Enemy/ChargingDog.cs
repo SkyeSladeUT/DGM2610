@@ -5,49 +5,49 @@ using UnityEngine;
 public class ChargingDog : MonoBehaviour {
 
 	private Rigidbody rb;
-	private float currentSpeed, Gravity;
-	public float speed, offset, seconds, gravity;
-	public GameObject player; //CatHighlighter;
+	private float currentSpeed, Gravity, _offsetTime;
+	public float  offset,  gravity;
+	public GameObject player;
 	private Vector3 movement;
-	private bool isAwake, right, charging;
-	//public PlayerData cat;
-	//public GameObject highlighter;
+	private bool isAwake, right, charging, waking;
 	private bool inRange;
-	//public DoubleKeyCodeData interact;
 	public FloatData DogSpeed, Offset, Seconds, SpeedIncrease, ChargeFrequency;
-	//public float ChargeFrequency;
 	public GameObject CautionSymbolRight;
 	public GameObject CautionSymbolLeft;
 	private Quaternion rotation;
 	public Animator Anim;
 	private bool isDead;
+	private bool isCharging;
+	public BoolData CatDead;
 
 	private void Start()
 	{
+		waking = false;
+		isCharging = false;
 		isDead = false;
-		//Offset.value = offset;
-		//Seconds.value = seconds;
-		gameObject.tag = "Untagged";
+		isAwake = false;
+		inRange = false;
 		charging = false;
+		gameObject.tag = "Untagged";
 		CautionSymbolLeft.SetActive(false);
 		CautionSymbolRight.SetActive(false);
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
-		isAwake = false;
-		inRange = false;
-		//highlighter.SetActive(false);
 		rotation = transform.rotation;
 	}
 
 	private void Update()
 	{
+		if(CatDead.value && isCharging)
+			attackCat();
 		if (!isDead)
 		{
 			if (!charging)
 			{
-				if (transform.position.x < player.transform.position.x && !isAwake)
+				if (transform.position.x < player.transform.position.x && !waking)
 				{
 					StartCoroutine(Wake());
+					Debug.Log("Move");
 					StartCoroutine(Move());
 				}
 				else if (transform.position.x < player.transform.position.x - offset && isAwake)
@@ -67,10 +67,16 @@ public class ChargingDog : MonoBehaviour {
 				movement = rb.velocity;
 				movement.x = currentSpeed;
 				rb.velocity = movement;
-				if (currentSpeed < 0)
-					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
-				else
-					currentSpeed += SpeedIncrease.value * Time.deltaTime;
+				if (!CatDead.value)
+				{
+					if (currentSpeed < 0)
+						currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+					else
+						currentSpeed += SpeedIncrease.value * Time.deltaTime;
+					if (_offsetTime > .1f)
+						_offsetTime -= .005f * Time.deltaTime;
+				}
+
 				if (gravity < 1f)
 					gravity += Time.deltaTime * Gravity;
 				movement = rb.velocity;
@@ -78,20 +84,14 @@ public class ChargingDog : MonoBehaviour {
 				rb.velocity = movement;
 			}
 		}
-
-		/*if ((interact.GetKey() && inRange))
-		{
-			cat.score.value += 10;
-			PowerUpLevel.value = 0;
-			cat.PowerUp = false;
-			CatHighlighter.SetActive(false);
-			Destroy(gameObject);
-		}*/
 		
 	}
 
 	private IEnumerator Wake()
 	{
+		waking = true;
+		_offsetTime = Offset.value;
+		isCharging = true;
 		Anim.SetTrigger("Wake");
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
@@ -102,7 +102,7 @@ public class ChargingDog : MonoBehaviour {
 
 	private IEnumerator Right()
 	{
-		yield return  new WaitForSeconds(Offset.value);
+		yield return  new WaitForSeconds(_offsetTime);
 		if (currentSpeed < 0)
 		{
 			currentSpeed *= -1;
@@ -113,7 +113,7 @@ public class ChargingDog : MonoBehaviour {
 
 	private IEnumerator Left()
 	{
-		yield return new WaitForSeconds(Offset.value);
+		yield return new WaitForSeconds(_offsetTime);
 		if (currentSpeed > 0)
 		{
 			currentSpeed *= -1;
@@ -124,7 +124,8 @@ public class ChargingDog : MonoBehaviour {
 
 	private IEnumerator Move()
 	{
-		while (true)
+
+		while (isCharging)
 		{
 			yield return new WaitForSeconds(ChargeFrequency.value);
 			if (right)
@@ -133,7 +134,7 @@ public class ChargingDog : MonoBehaviour {
 				yield return new WaitForSeconds(.5f);
 				charging = true;
 				currentSpeed += 1;
-				yield return new WaitForSeconds(.75f);
+				yield return new WaitForSeconds(.5f);
 				CautionSymbolRight.SetActive(false);
 				currentSpeed -= 1;
 				charging = false;
@@ -144,7 +145,7 @@ public class ChargingDog : MonoBehaviour {
 				yield return new WaitForSeconds(.5f);
 				charging = true;
 				currentSpeed -= 1;
-				yield return new WaitForSeconds(.75f);
+				yield return new WaitForSeconds(.5f);
 				CautionSymbolLeft.SetActive(false);
 				currentSpeed += 1;
 				charging = false;
@@ -175,5 +176,12 @@ public class ChargingDog : MonoBehaviour {
 		isDead = true;
 		rb.constraints = RigidbodyConstraints.FreezeRotation;
 		StopAllCoroutines();
+	}
+
+	public void attackCat()
+	{
+		isCharging = false;
+		_offsetTime = 0;
+		currentSpeed = 8;
 	}
 }

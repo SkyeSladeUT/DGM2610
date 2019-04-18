@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class JumpDog : MonoBehaviour {
 
@@ -13,7 +14,11 @@ public class JumpDog : MonoBehaviour {
 	public float jumpspeed, gravity, Gravity, offset;
 	public Animator Anim;
 	public FloatData Speed, Offset, Seconds, SpeedIncrease;
+<<<<<<< Updated upstream
 	public BoolData CatDead;
+=======
+	public UnityEvent SpeedUp, WakeUp;
+>>>>>>> Stashed changes
 
 	private void Start()
 	{
@@ -51,7 +56,16 @@ public class JumpDog : MonoBehaviour {
 				movement = rb.velocity;
 				movement.x = currentSpeed;
 				rb.velocity = movement;
+<<<<<<< Updated upstream
 				if (!CatDead.value)
+=======
+				SpeedUp.Invoke();
+				if (currentSpeed < 0)
+					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+				else
+					currentSpeed += SpeedIncrease.value * Time.deltaTime;
+				if (CanJump)
+>>>>>>> Stashed changes
 				{
 					if (currentSpeed < 0)
 						currentSpeed -= SpeedIncrease.value * Time.deltaTime;
@@ -91,6 +105,7 @@ public class JumpDog : MonoBehaviour {
 	{
 		_offsetTime = Offset.value;
 		Anim.SetTrigger("Wake");
+		WakeUp.Invoke();
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
 		currentSpeed = Speed.value;

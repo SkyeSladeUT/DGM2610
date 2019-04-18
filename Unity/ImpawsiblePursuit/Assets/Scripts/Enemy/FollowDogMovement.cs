@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class FollowDogMovement : MonoBehaviour {
 
@@ -13,7 +14,11 @@ public class FollowDogMovement : MonoBehaviour {
 	private Quaternion rotation;
 	public Animator Anim;
 	public FloatData Speed, Offset, Seconds, SpeedIncrease;
+<<<<<<< Updated upstream
 	public BoolData CatDead;
+=======
+	public UnityEvent SpeedUp, WakeUp;
+>>>>>>> Stashed changes
 
 	private void Start()
 	{
@@ -51,6 +56,7 @@ public class FollowDogMovement : MonoBehaviour {
 				movement = rb.velocity;
 				movement.x = currentSpeed;
 				rb.velocity = movement;
+<<<<<<< Updated upstream
 				if (!CatDead.value)
 				{
 					if (currentSpeed < 0)
@@ -61,6 +67,13 @@ public class FollowDogMovement : MonoBehaviour {
 						_offsetTime -= .005f * Time.deltaTime;
 				}
 
+=======
+				SpeedUp.Invoke();
+				if (currentSpeed < 0)
+					currentSpeed -= SpeedIncrease.value * Time.deltaTime;
+				else
+					currentSpeed += SpeedIncrease.value * Time.deltaTime;
+>>>>>>> Stashed changes
 				if (gravity < 1f)
 					gravity += Time.deltaTime * Gravity;
 				movement = rb.velocity;
@@ -75,6 +88,7 @@ public class FollowDogMovement : MonoBehaviour {
 	{
 		_offsetTime = Offset.value;
 		Anim.SetTrigger("Wake");
+		WakeUp.Invoke();
 		yield return new WaitForSeconds(Seconds.value);
 		Anim.SetTrigger("Run");
 		currentSpeed = Speed.value;

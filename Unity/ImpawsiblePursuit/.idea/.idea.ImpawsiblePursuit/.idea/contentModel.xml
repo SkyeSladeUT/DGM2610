@@ -11,6 +11,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AnimationSpeedUp.cs" t="Include" />
           <e p="CameraScript.cs" t="Include" />
           <e p="ChangeLight.cs" t="Include" />
           <e p="CharacterMovement" t="Include">
@@ -27,6 +28,8 @@
           <e p="Checkpoint.cs" t="Include" />
           <e p="CheckpointScript.cs" t="Include" />
           <e p="Destroy.cs" t="Include" />
+          <e p="DogAnimationSpeedUp.cs" t="Include" />
+          <e p="DoubleTap.cs" t="Include" />
           <e p="EndingScript.cs" t="Include" />
           <e p="Enemy" t="Include">
             <e p="ChargingDog.cs" t="Include" />
@@ -85,6 +88,7 @@
             <e p="KeycodeData.cs" t="Include" />
             <e p="PlayerData.cs" t="Include" />
           </e>
+          <e p="SpeedUpAnim.cs" t="Include" />
           <e p="Stars.cs" t="Include" />
           <e p="UIScripts" t="Include">
             <e p="FPSCounter.cs" t="Include" />

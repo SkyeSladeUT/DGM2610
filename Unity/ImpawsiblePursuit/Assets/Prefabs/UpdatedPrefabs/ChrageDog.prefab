@@ -821,6 +821,7 @@ GameObject:
   - component: {fileID: 114598547518158150}
   - component: {fileID: 114083823607845788}
   - component: {fileID: 114058509999601252}
+  - component: {fileID: 114628029911411204}
   m_Layer: 10
   m_Name: ChrageDog
   m_TagString: Untagged
@@ -3088,7 +3089,42 @@ MonoBehaviour:
   CautionSymbolRight: {fileID: 0}
   CautionSymbolLeft: {fileID: 0}
   Anim: {fileID: 95074270443201436}
+<<<<<<< Updated upstream
   CatDead: {fileID: 11400000, guid: c47e64ef1bf071747b4a4738fdce7781, type: 2}
+=======
+  SpeedUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114628029911411204}
+        m_MethodName: SpeedUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  WakeUp:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114628029911411204}
+        m_MethodName: Initialize
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+>>>>>>> Stashed changes
 --- !u!114 &114058509999601252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3203,6 +3239,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Right: {fileID: 0}
   Left: {fileID: 0}
+--- !u!114 &114628029911411204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1569730612914140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455d54d45e0c1d44fae65c9d8625b575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 95074270443201436}
+  Speed: {fileID: 11400000, guid: 256c5d03ea49ae747b3b6d3ff5b9da66, type: 2}
+  SpeedIncrease: {fileID: 11400000, guid: 63d23a2f742562d46b4fef249aa1f251, type: 2}
 --- !u!137 &137476504221184010
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

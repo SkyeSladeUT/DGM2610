@@ -17,6 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< Updated upstream
       <file leaf-file-name="Death.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -26,6 +27,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> Stashed changes
       <file leaf-file-name="IncrementFunction.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/IncrementFunction.cs">
           <provider selected="true" editor-type-id="text-editor" />
@@ -40,14 +43,31 @@
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="Checkpoint.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs">
           <provider selected="true" editor-type-id="text-editor" />
+=======
+      <file leaf-file-name="AnimationSpeedUp.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AnimationSpeedUp.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding>
+                <marker date="1555620416460" expanded="false" signature="6:78" ph="..." />
+                <marker date="1555620416460" expanded="true" signature="125:294" ph="{...}" />
+                <marker date="1555620416460" expanded="true" signature="198:232" ph="{...}" />
+                <marker date="1555620416460" expanded="true" signature="256:290" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+>>>>>>> Stashed changes
         </entry>
       </file>
-      <file leaf-file-name="CharacterMovement.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs">
+      <file leaf-file-name="DogAnimationSpeedUp.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DogAnimationSpeedUp.cs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="855">
               <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
@@ -72,14 +92,25 @@
                 <marker date="1555531818744" expanded="true" signature="2509:2600" ph="{...}" />
                 <marker date="1555531818744" expanded="true" signature="2627:2774" ph="{...}" />
                 <marker date="1555531818744" expanded="true" signature="2800:2876" ph="{...}" />
+=======
+            <state relative-caret-position="330">
+              <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+              <folding>
+                <marker date="1555620759828" expanded="false" signature="6:107" ph="..." />
+                <marker date="1555620759828" expanded="true" signature="158:548" ph="{...}" />
+                <marker date="1555620759828" expanded="true" signature="300:336" ph="{...}" />
+                <marker date="1555620759828" expanded="true" signature="363:428" ph="{...}" />
+                <marker date="1555620759828" expanded="true" signature="452:546" ph="{...}" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DogDeath.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DogDeath.cs">
+      <file leaf-file-name="DoubleTap.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DoubleTap.cs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="1260">
               <caret line="88" selection-start-line="88" selection-end-line="88" />
               <folding>
@@ -95,6 +126,18 @@
                 <marker date="1555284670491" expanded="true" signature="1037:1359" ph="{...}" />
                 <marker date="1555284670491" expanded="true" signature="1415:1632" ph="{...}" />
                 <marker date="1555284670491" expanded="true" signature="1639:1878" ph="/* else ... */" />
+=======
+            <state relative-caret-position="105">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <marker date="1555618332813" expanded="false" signature="6:78" ph="..." />
+                <marker date="1555618332813" expanded="true" signature="119:445" ph="{...}" />
+                <marker date="1555618332813" expanded="true" signature="168:359" ph="{...}" />
+                <marker date="1555618332813" expanded="true" signature="206:288" ph="{...}" />
+                <marker date="1555618332813" expanded="true" signature="231:270" ph="{...}" />
+                <marker date="1555618332813" expanded="true" signature="309:356" ph="{...}" />
+                <marker date="1555618332813" expanded="true" signature="381:443" ph="{...}" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -103,6 +146,7 @@
       <file leaf-file-name="ChargingDog.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="2426">
               <caret line="182" column="25" selection-start-line="182" selection-start-column="25" selection-end-line="182" selection-end-column="25" />
               <folding>
@@ -131,11 +175,72 @@
                 <marker date="1555533385830" expanded="true" signature="3634:3655" ph="{...}" />
                 <marker date="1555533385830" expanded="true" signature="3684:3908" ph="{...}" />
                 <marker date="1555533385830" expanded="true" signature="3934:4021" ph="{...}" />
+=======
+            <state relative-caret-position="1470">
+              <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+              <folding>
+                <marker date="1555620126492" expanded="true" signature="6:104" ph="..." />
+                <marker date="1555620126492" expanded="true" signature="147:4077" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="371:429" ph="/* public PlayerData cat; ... */" />
+                <marker date="1555620126492" expanded="true" signature="811:1178" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="835:888" ph="/* Offset.value = offset; ... */" />
+                <marker date="1555620126492" expanded="true" signature="1202:2320" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="1220:2126" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="1242:1686" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="1319:1389" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="1474:1535" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="1620:1681" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="1703:2122" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2130:2314" ph="/* if ((interact.GetKey() &amp;&amp; inRange)) ... */" />
+                <marker date="1555620126492" expanded="true" signature="2349:2556" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2586:2748" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2663:2694" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2777:2940" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2853:2884" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2969:3608" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="2987:3605" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="3064:3329" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="3337:3601" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="3657:3754" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="3727:3751" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="3801:3822" ph="{...}" />
+                <marker date="1555620126492" expanded="true" signature="3851:4075" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FollowDogMovement.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+              <folding>
+                <marker date="1555620126511" expanded="true" signature="6:104" ph="..." />
+                <marker date="1555620126511" expanded="true" signature="153:2638" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="526:706" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="730:1552" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="748:1546" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="823:861" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="945:984" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="1068:1106" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="1123:1542" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="1581:1785" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="1815:1977" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="1892:1923" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="2006:2169" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="2082:2113" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="2218:2314" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="2287:2311" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="2362:2383" ph="{...}" />
+                <marker date="1555620126511" expanded="true" signature="2412:2636" ph="{...}" />
+>>>>>>> Stashed changes
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="FollowDogMovement.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -162,11 +267,38 @@
                 <marker date="1555531298113" expanded="true" signature="2512:2533" ph="{...}" />
                 <marker date="1555531298113" expanded="true" signature="2562:2786" ph="{...}" />
                 <marker date="1555531298113" expanded="true" signature="2813:2880" ph="{...}" />
+=======
+      <file leaf-file-name="JumpDog.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+              <folding>
+                <marker date="1555620126502" expanded="true" signature="6:104" ph="..." />
+                <marker date="1555620126502" expanded="true" signature="143:2771" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="537:716" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="740:1734" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="758:1731" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="833:871" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="955:994" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="1078:1116" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="1133:1727" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="1417:1574" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="1782:1898" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="1852:1895" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="1927:2131" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="2161:2323" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="2238:2269" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="2352:2515" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="2428:2459" ph="{...}" />
+                <marker date="1555620126502" expanded="true" signature="2545:2769" ph="{...}" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="JumpDog.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -193,16 +325,45 @@
                 <marker date="1555522497931" expanded="true" signature="2585:2616" ph="{...}" />
                 <marker date="1555522497931" expanded="true" signature="2702:2926" ph="{...}" />
                 <marker date="1555522497931" expanded="true" signature="2953:3020" ph="{...}" />
+=======
+      <file leaf-file-name="Checkpoint.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1554387566600" expanded="true" signature="6:171" ph="..." />
+                <marker date="1554387566600" expanded="true" signature="212:653" ph="{...}" />
+                <marker date="1554387566600" expanded="true" signature="252:505" ph="/* public BoolData Halfway; ... */" />
+                <marker date="1554387566600" expanded="true" signature="550:651" ph="{...}" />
+                <marker date="1554387566600" expanded="true" signature="587:648" ph="{...}" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="BreakApart.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Objects/BreakableObjects/BreakApart.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+=======
+      <file leaf-file-name="CheckpointScript.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CheckpointScript.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding>
+                <marker date="1555619264427" expanded="true" signature="6:104" ph="..." />
+                <marker date="1555619264427" expanded="true" signature="151:1109" ph="{...}" />
+                <marker date="1555619264427" expanded="true" signature="390:1103" ph="{...}" />
+                <marker date="1555619264427" expanded="true" signature="459:526" ph="{...}" />
+                <marker date="1555619264427" expanded="true" signature="558:622" ph="{...}" />
+                <marker date="1555619264427" expanded="true" signature="629:692" ph="{...}" />
+                <marker date="1555619264427" expanded="true" signature="724:786" ph="{...}" />
+              </folding>
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -213,10 +374,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/InitializeValues.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/BreakableObjects/BreakApart.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDogDeactivate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/CarMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/DoorScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/BreakableObjects/BreakApart.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/PowerUpAvailable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/CatnpPatch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/ActivateArea.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/TriggerEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Collectables/PowerUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Collectables/PowerUpLevelBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/ClickObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DogAnimationSpeedUp.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/InitializeValues.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuScripts/TestRestartScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoubleTap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CheckpointScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IncrementFunction.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/JumpScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DogDeath.cs" root0="FORCE_HIGHLIGHTING" />
@@ -224,6 +408,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/PlayerData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/DoubleKeyCodeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs" root0="FORCE_HIGHLIGHTING" />
+<<<<<<< Updated upstream
+=======
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Objects/Collectables/FishCollectable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationSpeedUp.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/KeycodeData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/BoolData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/PowerUpAvailable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -244,10 +433,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjectsScripts/PlayerData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Objects/DoorScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/IncreaseSpeed.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/InitializeValues.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InacvtivateAreas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Objects/BreakingBranch.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BreakApart.cs" />
@@ -291,10 +476,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/DogDeath.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MenuScripts/TestRestartScript.cs" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CharacterMovement/CharacterMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/Scripts/DoubleTap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CheckpointScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AnimationSpeedUp.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DogAnimationSpeedUp.cs" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -325,6 +520,17 @@
             <path>
               <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="ImpawsiblePursuit" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ImpawsiblePursuit" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ImpawsiblePursuit" type="483dac07:UnityExplorerNode$Root" />
+              <item name="" type="1045f7f1:UnityExplorerNode" />
               <item name="" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
@@ -459,15 +665,23 @@
       <workItem from="1555275855275" duration="5424000" />
       <workItem from="1555285052960" duration="1448000" />
       <workItem from="1555444155255" duration="2956000" />
+<<<<<<< Updated upstream
       <workItem from="1555514679622" duration="6815000" />
       <workItem from="1555521903329" duration="594000" />
       <workItem from="1555530940383" duration="1955000" />
       <workItem from="1555533354576" duration="629000" />
+=======
+      <workItem from="1555617203370" duration="3592000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="230061000" />
+=======
+    <option name="totallyTimeSpent" value="223660000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -485,15 +699,24 @@
       <window_info anchor="right" id="Errors In Solution" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Unit Tests" order="8" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Version Control" order="9" />
+=======
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.3294964" />
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15452756" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3610895" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unity" order="12" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="NuGet" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,24 +734,24 @@
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Unity" order="13" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16427104" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Unit Tests" order="8" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="14" weight="0.3294964" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,21 +768,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="5" lean-forward="true" selection-start-line="104" selection-start-column="5" selection-end-line="104" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TutorialArea.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/PowerUpAvailable.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
@@ -631,9 +839,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Objects/ClickObject.cs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+=======
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Objects/BreakableObjects/BreakApart.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -644,8 +855,13 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Stars.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterMovement/Death.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="2115">
           <caret line="141" selection-start-line="141" selection-end-line="141" />
+=======
+        <state relative-caret-position="1320">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -658,13 +874,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/MenuScripts/TestRestartScript.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="120">
           <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+=======
+        <state relative-caret-position="2160">
+          <caret line="144" selection-start-line="144" selection-end-line="144" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/DogDeath.cs">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1260">
           <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
@@ -714,6 +936,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
+=======
+        <state relative-caret-position="2115">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Objects/StoveGlow.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/IncrementFunction.cs">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
@@ -802,6 +1033,167 @@
             <marker date="1555533385830" expanded="true" signature="3634:3655" ph="{...}" />
             <marker date="1555533385830" expanded="true" signature="3684:3908" ph="{...}" />
             <marker date="1555533385830" expanded="true" signature="3934:4021" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DoubleTap.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <marker date="1555618332813" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555618332813" expanded="true" signature="119:445" ph="{...}" />
+            <marker date="1555618332813" expanded="true" signature="168:359" ph="{...}" />
+            <marker date="1555618332813" expanded="true" signature="206:288" ph="{...}" />
+            <marker date="1555618332813" expanded="true" signature="231:270" ph="{...}" />
+            <marker date="1555618332813" expanded="true" signature="309:356" ph="{...}" />
+            <marker date="1555618332813" expanded="true" signature="381:443" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CheckpointScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <marker date="1555619264427" expanded="true" signature="6:104" ph="..." />
+            <marker date="1555619264427" expanded="true" signature="151:1109" ph="{...}" />
+            <marker date="1555619264427" expanded="true" signature="390:1103" ph="{...}" />
+            <marker date="1555619264427" expanded="true" signature="459:526" ph="{...}" />
+            <marker date="1555619264427" expanded="true" signature="558:622" ph="{...}" />
+            <marker date="1555619264427" expanded="true" signature="629:692" ph="{...}" />
+            <marker date="1555619264427" expanded="true" signature="724:786" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Checkpoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554387566600" expanded="true" signature="6:171" ph="..." />
+            <marker date="1554387566600" expanded="true" signature="212:653" ph="{...}" />
+            <marker date="1554387566600" expanded="true" signature="252:505" ph="/* public BoolData Halfway; ... */" />
+            <marker date="1554387566600" expanded="true" signature="550:651" ph="{...}" />
+            <marker date="1554387566600" expanded="true" signature="587:648" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/ChargingDog.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
+          <folding>
+            <marker date="1555620126492" expanded="true" signature="6:104" ph="..." />
+            <marker date="1555620126492" expanded="true" signature="147:4077" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="371:429" ph="/* public PlayerData cat; ... */" />
+            <marker date="1555620126492" expanded="true" signature="811:1178" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="835:888" ph="/* Offset.value = offset; ... */" />
+            <marker date="1555620126492" expanded="true" signature="1202:2320" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="1220:2126" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="1242:1686" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="1319:1389" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="1474:1535" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="1620:1681" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="1703:2122" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2130:2314" ph="/* if ((interact.GetKey() &amp;&amp; inRange)) ... */" />
+            <marker date="1555620126492" expanded="true" signature="2349:2556" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2586:2748" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2663:2694" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2777:2940" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2853:2884" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2969:3608" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="2987:3605" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="3064:3329" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="3337:3601" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="3657:3754" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="3727:3751" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="3801:3822" ph="{...}" />
+            <marker date="1555620126492" expanded="true" signature="3851:4075" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/FollowDogMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="69" column="24" selection-start-line="69" selection-start-column="24" selection-end-line="69" selection-end-column="24" />
+          <folding>
+            <marker date="1555620126511" expanded="true" signature="6:104" ph="..." />
+            <marker date="1555620126511" expanded="true" signature="153:2638" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="526:706" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="730:1552" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="748:1546" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="823:861" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="945:984" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="1068:1106" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="1123:1542" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="1581:1785" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="1815:1977" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="1892:1923" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="2006:2169" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="2082:2113" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="2218:2314" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="2287:2311" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="2362:2383" ph="{...}" />
+            <marker date="1555620126511" expanded="true" signature="2412:2636" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Enemy/JumpDog.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
+          <folding>
+            <marker date="1555620126502" expanded="true" signature="6:104" ph="..." />
+            <marker date="1555620126502" expanded="true" signature="143:2771" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="537:716" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="740:1734" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="758:1731" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="833:871" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="955:994" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="1078:1116" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="1133:1727" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="1417:1574" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="1782:1898" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="1852:1895" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="1927:2131" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="2161:2323" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="2238:2269" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="2352:2515" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="2428:2459" ph="{...}" />
+            <marker date="1555620126502" expanded="true" signature="2545:2769" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AnimationSpeedUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding>
+            <marker date="1555620416460" expanded="false" signature="6:78" ph="..." />
+            <marker date="1555620416460" expanded="true" signature="125:294" ph="{...}" />
+            <marker date="1555620416460" expanded="true" signature="198:232" ph="{...}" />
+            <marker date="1555620416460" expanded="true" signature="256:290" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DogAnimationSpeedUp.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="25" column="63" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+          <folding>
+            <marker date="1555620759828" expanded="false" signature="6:107" ph="..." />
+            <marker date="1555620759828" expanded="true" signature="158:548" ph="{...}" />
+            <marker date="1555620759828" expanded="true" signature="300:336" ph="{...}" />
+            <marker date="1555620759828" expanded="true" signature="363:428" ph="{...}" />
+            <marker date="1555620759828" expanded="true" signature="452:546" ph="{...}" />
           </folding>
         </state>
       </provider>

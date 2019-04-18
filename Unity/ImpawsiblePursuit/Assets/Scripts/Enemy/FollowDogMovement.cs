@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowDogMovement : MonoBehaviour {
 
 	private Rigidbody rb;
-	private float currentSpeed, Gravity, _offsetTime;
+	public float currentSpeed, Gravity, _offsetTime;
 	public float  offset, gravity;
 	public GameObject player;
 	private Vector3 movement;

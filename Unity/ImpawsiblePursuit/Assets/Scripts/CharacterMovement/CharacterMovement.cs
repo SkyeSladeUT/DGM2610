@@ -18,13 +18,14 @@ public class CharacterMovement : MonoBehaviour
 	public DoubleKeyCodeData slower;
 	public PlayerData player;
 	public BoolData Tutorial, TutorialOver;
-	private bool powerupactive, Muddy;
+	private bool powerupactive, Muddy, slowed;
 	public UnityEvent MudEnter, MudExit;
 
 
 
 	void Start ()
 	{
+		slowed = false;
 		Muddy = false;
 		currentSpeed = Speed.value;
 		changevalue = 0;
@@ -56,17 +57,21 @@ public class CharacterMovement : MonoBehaviour
 			currentSpeed = 0;
 		else
 		{
-			if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2))
+			if (Input.GetKeyDown(slower.Key1) || Input.GetKeyDown(slower.Key2) && !slowed)
 			{
+				Debug.Log(("Slow"));
 				//currentSpeed -= SpeedChange.value;
+				slowed = true;
 				changevalue -= SpeedChange.value;
 			}
 			/*else if(Input.GetKeyDown(faster.Key1)||Input.GetKeyDown(faster.Key2))
 			{
 				Speed.value += SpeedChange.value/2;
 			}*/
-			else if (Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2))
+			else if ((Input.GetKeyUp(slower.Key1)||Input.GetKeyUp(slower.Key2)) && slowed)
 			{
+				slowed = false;
+				Debug.Log("Speed");
 				changevalue += SpeedChange.value;
 			}
 			currentSpeed = Speed.value + changevalue;

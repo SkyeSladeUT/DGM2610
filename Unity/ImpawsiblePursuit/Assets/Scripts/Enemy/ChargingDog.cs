@@ -133,10 +133,10 @@ public class ChargingDog : MonoBehaviour {
 				CautionSymbolRight.SetActive(true);
 				yield return new WaitForSeconds(.5f);
 				charging = true;
-				currentSpeed += 1;
-				yield return new WaitForSeconds(.5f);
+				currentSpeed += 20;
+				yield return new WaitForSeconds(.75f);
 				CautionSymbolRight.SetActive(false);
-				currentSpeed -= 1;
+				currentSpeed -= 20;
 				charging = false;
 			}
 			else
@@ -144,10 +144,10 @@ public class ChargingDog : MonoBehaviour {
 				CautionSymbolLeft.SetActive(true);
 				yield return new WaitForSeconds(.5f);
 				charging = true;
-				currentSpeed -= 1;
-				yield return new WaitForSeconds(.5f);
+				currentSpeed -= 20;
+				yield return new WaitForSeconds(.75f);
 				CautionSymbolLeft.SetActive(false);
-				currentSpeed += 1;
+				currentSpeed += 20;
 				charging = false;
 
 			}
@@ -180,6 +180,7 @@ public class ChargingDog : MonoBehaviour {
 
 	public void attackCat()
 	{
+		charging = false;
 		isCharging = false;
 		_offsetTime = 0;
 		currentSpeed = 8;

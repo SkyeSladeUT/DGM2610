@@ -1,0 +1,386 @@
+fileFormatVersion: 2
+guid: 75d0859677ad4c8448da5882ba4427df
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Back1_Jnt
+    100002: Back2_Jnt
+    100004: Back3_jnt
+    100006: Cat
+    100008: //RootNode
+    100010: Chest_Jnt
+    100012: L_Clavicle_Jnt
+    100014: L_Elbow_Jnt
+    100016: L_Heel_Jnt
+    100018: L_Hip_Jnt
+    100020: L_Knee_Jnt
+    100022: L_Shoulder_Jnt
+    100024: L_Toe_Jnt
+    100026: L_Wrist_Jnt
+    100028: Neck1_jnt
+    100030: Neck2_Jnt
+    100032: Neck3_Jnt
+    100034: R_Calvicle_jnt
+    100036: R_Elbow_Jnt
+    100038: R_Heel_Jnt
+    100040: R_Hip_Jnt
+    100042: R_Knee_Jnt
+    100044: R_Shoulder_Jnt
+    100046: R_Toes_Jnt
+    100048: R_Wrist_Jnt
+    100050: Tail1_Jnt
+    100052: Tail2_Jnt
+    100054: Tail3_jnt
+    100056: Tail4_Jnt
+    100058: Tail5_Jnt
+    100060: Waist
+    100062: Back_01_ctrl
+    100064: Back_01_ctrl_grp
+    100066: Back_02_ctrl_grp
+    100068: Back_02_trl
+    100070: Back_03_ctrl
+    100072: Back_03_ctrl_grp
+    100074: chest_ctrl
+    100076: Chest_Ctrl_grp
+    100078: Head_ctrk
+    100080: Head_ctrl_grp
+    100082: hip_ctrl
+    100084: Hip_ctrl_grp
+    100086: l_back_leg_01_ctrl
+    100088: l_back_leg_01_ctrl_grp
+    100090: l_back_leg_02_ctrl
+    100092: l_back_leg_02_ctrl_grp
+    100094: l_back_leg_03_ctrl
+    100096: l_back_leg_03_ctrl_grp
+    100098: l_back_leg_04_ctrl
+    100100: l_back_leg_04_ctrl_grp
+    100102: l_clavicle_ctrl
+    100104: l_clavicle_ctrl_grp
+    100106: l_front_leg_01_ctrl
+    100108: l_front_leg_01_ctrl_grp
+    100110: l_front_leg_02_ctrl_grp
+    100112: l_front_leg_02_ctrl_grp 1
+    100114: l_front_leg_03_ctrl
+    100116: l_front_leg_03_ctrl_grp
+    100118: neck_01_ctrl
+    100120: Neck_01_ctrl_grp
+    100122: neck_02_ctrl
+    100124: Neck_02_ctrl_grp
+    100126: r_back_leg_01_ctrl
+    100128: r_back_leg_01_ctrl_grp
+    100130: r_back_leg_02_ctrl_grp
+    100132: r_back_leg_02_ctrl_grp 1
+    100134: r_back_leg_03_ctrl_grp
+    100136: r_back_leg_03_ctrl_grp 1
+    100138: r_back_leg_04_ctrl
+    100140: r_back_leg_04_ctrl_grp
+    100142: r_clavicle_ctrl
+    100144: r_clavicle_ctrl_grp
+    100146: r_front_leg_01_ctrl
+    100148: r_front_leg_01_ctrl_grp
+    100150: r_front_leg_02_ctrl_grp
+    100152: r_front_leg_02_ctrl_grp 1
+    100154: r_front_leg_03_ctrl_grp
+    100156: r_front_leg_03_ctrl_grp 1
+    100158: Tail_01_ctrl
+    100160: Tail_01_ctrl_grp
+    100162: Tail_02_ctrl
+    100164: Tail_02_ctrl_grp
+    100166: tail_03_ctrl
+    100168: tail_03_ctrl_grp
+    100170: tail_04_ctrl
+    100172: tail_04_ctrl_grp
+    100174: tail_05_ctrl
+    100176: tail_05_ctrl_grp
+    400000: Back1_Jnt
+    400002: Back2_Jnt
+    400004: Back3_jnt
+    400006: Cat
+    400008: //RootNode
+    400010: Chest_Jnt
+    400012: L_Clavicle_Jnt
+    400014: L_Elbow_Jnt
+    400016: L_Heel_Jnt
+    400018: L_Hip_Jnt
+    400020: L_Knee_Jnt
+    400022: L_Shoulder_Jnt
+    400024: L_Toe_Jnt
+    400026: L_Wrist_Jnt
+    400028: Neck1_jnt
+    400030: Neck2_Jnt
+    400032: Neck3_Jnt
+    400034: R_Calvicle_jnt
+    400036: R_Elbow_Jnt
+    400038: R_Heel_Jnt
+    400040: R_Hip_Jnt
+    400042: R_Knee_Jnt
+    400044: R_Shoulder_Jnt
+    400046: R_Toes_Jnt
+    400048: R_Wrist_Jnt
+    400050: Tail1_Jnt
+    400052: Tail2_Jnt
+    400054: Tail3_jnt
+    400056: Tail4_Jnt
+    400058: Tail5_Jnt
+    400060: Waist
+    400062: Back_01_ctrl
+    400064: Back_01_ctrl_grp
+    400066: Back_02_ctrl_grp
+    400068: Back_02_trl
+    400070: Back_03_ctrl
+    400072: Back_03_ctrl_grp
+    400074: chest_ctrl
+    400076: Chest_Ctrl_grp
+    400078: Head_ctrk
+    400080: Head_ctrl_grp
+    400082: hip_ctrl
+    400084: Hip_ctrl_grp
+    400086: l_back_leg_01_ctrl
+    400088: l_back_leg_01_ctrl_grp
+    400090: l_back_leg_02_ctrl
+    400092: l_back_leg_02_ctrl_grp
+    400094: l_back_leg_03_ctrl
+    400096: l_back_leg_03_ctrl_grp
+    400098: l_back_leg_04_ctrl
+    400100: l_back_leg_04_ctrl_grp
+    400102: l_clavicle_ctrl
+    400104: l_clavicle_ctrl_grp
+    400106: l_front_leg_01_ctrl
+    400108: l_front_leg_01_ctrl_grp
+    400110: l_front_leg_02_ctrl_grp
+    400112: l_front_leg_02_ctrl_grp 1
+    400114: l_front_leg_03_ctrl
+    400116: l_front_leg_03_ctrl_grp
+    400118: neck_01_ctrl
+    400120: Neck_01_ctrl_grp
+    400122: neck_02_ctrl
+    400124: Neck_02_ctrl_grp
+    400126: r_back_leg_01_ctrl
+    400128: r_back_leg_01_ctrl_grp
+    400130: r_back_leg_02_ctrl_grp
+    400132: r_back_leg_02_ctrl_grp 1
+    400134: r_back_leg_03_ctrl_grp
+    400136: r_back_leg_03_ctrl_grp 1
+    400138: r_back_leg_04_ctrl
+    400140: r_back_leg_04_ctrl_grp
+    400142: r_clavicle_ctrl
+    400144: r_clavicle_ctrl_grp
+    400146: r_front_leg_01_ctrl
+    400148: r_front_leg_01_ctrl_grp
+    400150: r_front_leg_02_ctrl_grp
+    400152: r_front_leg_02_ctrl_grp 1
+    400154: r_front_leg_03_ctrl_grp
+    400156: r_front_leg_03_ctrl_grp 1
+    400158: Tail_01_ctrl
+    400160: Tail_01_ctrl_grp
+    400162: Tail_02_ctrl
+    400164: Tail_02_ctrl_grp
+    400166: tail_03_ctrl
+    400168: tail_03_ctrl_grp
+    400170: tail_04_ctrl
+    400172: tail_04_ctrl_grp
+    400174: tail_05_ctrl
+    400176: tail_05_ctrl_grp
+    2100000: lambert1
+    4300000: Cat
+    7400000: Run
+    7400002: Jump
+    7400004: Idle
+    7400006: Jump Land
+    9500000: //RootNode
+    13700000: Cat
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 18
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 45
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump Land
+      takeName: Take 001
+      firstFrame: 59
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

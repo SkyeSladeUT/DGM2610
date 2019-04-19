@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Owner\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_ImpawsiblePursuit.1933749341.00" t="ExcludeRecursive" />
+    <e p="E:\School\Spring2019\Unity\ImpawsiblePursuit" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Prefabs" t="Include">
+          <e p="UpdatedPrefabs" t="Include">
+            <e p="MakeTrigger2.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AnimationSpeedUp.cs" t="Include" />
+          <e p="CameraScript.cs" t="Include" />
+          <e p="ChangeLight.cs" t="Include" />
+          <e p="CharacterMovement" t="Include">
+            <e p="ActivateArea.cs" t="Include" />
+            <e p="CatEndingTrigger.cs" t="Include" />
+            <e p="CharacterMovement.cs" t="Include" />
+            <e p="Death.cs" t="Include" />
+            <e p="JumpScript.cs" t="Include" />
+            <e p="MudSplatter.cs" t="Include" />
+            <e p="MudTexture.cs" t="Include" />
+            <e p="PowerUpAvailable.cs" t="Include" />
+            <e p="TriggerEvent.cs" t="Include" />
+          </e>
+          <e p="Checkpoint.cs" t="Include" />
+          <e p="CheckpointScript.cs" t="Include" />
+          <e p="Destroy.cs" t="Include" />
+          <e p="DogAnimationSpeedUp.cs" t="Include" />
+          <e p="DoubleTap.cs" t="Include" />
+          <e p="EndingScript.cs" t="Include" />
+          <e p="Enemy" t="Include">
+            <e p="ChargingDog.cs" t="Include" />
+            <e p="ChargingDogDeactivate.cs" t="Include" />
+            <e p="DogDeath.cs" t="Include" />
+            <e p="FollowDogMovement.cs" t="Include" />
+            <e p="InitializeValues.cs" t="Include" />
+            <e p="JumpDog.cs" t="Include" />
+          </e>
+          <e p="Events" t="Include">
+            <e p="AnimationCOntroller.cs" t="Include" />
+            <e p="DogAnimController.cs" t="Include" />
+            <e p="MakeTrigger.cs" t="Include" />
+            <e p="OnKeyEvent.cs" t="Include" />
+            <e p="SetAnimationTrigger.cs" t="Include" />
+          </e>
+          <e p="ExitGame.cs" t="Include" />
+          <e p="FloorClickObject.cs" t="Include" />
+          <e p="Highlight.cs" t="Include" />
+          <e p="InacvtivateAreas.cs" t="Include" />
+          <e p="IncrementFunction.cs" t="Include" />
+          <e p="MaterialSwitch.cs" t="Include" />
+          <e p="MenuScripts" t="Include">
+            <e p="ChangeScene.cs" t="Include" />
+            <e p="ConstantSpeed.cs" t="Include" />
+            <e p="MenuChange.cs" t="Include" />
+            <e p="MenuStartScreen.cs" t="Include" />
+            <e p="ReapwanMenuScript.cs" t="Include" />
+            <e p="TestRestartScript.cs" t="Include" />
+          </e>
+          <e p="Objects" t="Include">
+            <e p="BreakableObjects" t="Include">
+              <e p="BreakApart.cs" t="Include" />
+              <e p="BreakingBranch.cs" t="Include" />
+              <e p="BreakingObjectsonGround.cs" t="Include" />
+            </e>
+            <e p="CarHighlight.cs" t="Include" />
+            <e p="CarMovement.cs" t="Include" />
+            <e p="CatnpPatch.cs" t="Include" />
+            <e p="ClickObject.cs" t="Include" />
+            <e p="Collectables" t="Include">
+              <e p="FishCollectable.cs" t="Include" />
+              <e p="PowerUp.cs" t="Include" />
+              <e p="PowerUpLevelBar.cs" t="Include" />
+            </e>
+            <e p="DoorScript.cs" t="Include" />
+            <e p="StoveGlow.cs" t="Include" />
+          </e>
+          <e p="RestartGame.cs" t="Include" />
+          <e p="ScriptableObjectsScripts" t="Include">
+            <e p="BoolData.cs" t="Include" />
+            <e p="DoubleKeyCodeData.cs" t="Include" />
+            <e p="FloatData.cs" t="Include" />
+            <e p="IncrementFloats.cs" t="Include" />
+            <e p="IntData.cs" t="Include" />
+            <e p="KeycodeData.cs" t="Include" />
+            <e p="PlayerData.cs" t="Include" />
+          </e>
+          <e p="Stars.cs" t="Include" />
+          <e p="UIScripts" t="Include">
+            <e p="FPSCounter.cs" t="Include" />
+            <e p="LivesText.cs" t="Include" />
+            <e p="ScoreTExt.cs" t="Include" />
+            <e p="TutorialArea.cs" t="Include" />
+          </e>
+          <e p="Window.cs" t="Include" />
+        </e>
+        <e p="Unused" t="Include">
+          <e p="ChangeColor.cs" t="Include" />
+          <e p="ChangeDirectionsMovement.cs" t="Include" />
+          <e p="DogMovement.cs" t="Include" />
+          <e p="HighlightScript.cs" t="Include" />
+          <e p="IncreaseSpeed.cs" t="Include" />
+          <e p="MerryMovement.cs" t="Include" />
+          <e p="MudPuddle.cs" t="Include" />
+        </e>
+      </e>
+      <e p="ImpawsiblePursuit.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

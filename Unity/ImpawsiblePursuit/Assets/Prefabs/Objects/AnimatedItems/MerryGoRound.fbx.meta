@@ -1,0 +1,228 @@
+fileFormatVersion: 2
+guid: 25b5d00d372a0564cbd7c8a05f170d26
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCylinder117
+    100004: pCylinder118
+    100006: pCylinder122
+    100008: pCylinder122 1
+    100010: pCylinder122 2
+    100012: pCylinder122 3
+    100014: pCylinder122 4
+    100016: pCylinder122 5
+    100018: pCylinder122 6
+    100020: pCylinder122 7
+    100022: pCylinder123
+    100024: pCylinder123 1
+    100026: pCylinder123 2
+    100028: pCylinder123 3
+    100030: pCylinder123 4
+    100032: pCylinder123 5
+    100034: pCylinder123 6
+    100036: pCylinder123 7
+    100038: Railing
+    100040: Railing1
+    100042: Railing2
+    100044: Railing3
+    100046: Railing4
+    100048: Railing5
+    100050: Railing6
+    100052: Railing7
+    100054: Rotating
+    400000: //RootNode
+    400002: pCylinder117
+    400004: pCylinder118
+    400006: pCylinder122
+    400008: pCylinder122 1
+    400010: pCylinder122 2
+    400012: pCylinder122 3
+    400014: pCylinder122 4
+    400016: pCylinder122 5
+    400018: pCylinder122 6
+    400020: pCylinder122 7
+    400022: pCylinder123
+    400024: pCylinder123 1
+    400026: pCylinder123 2
+    400028: pCylinder123 3
+    400030: pCylinder123 4
+    400032: pCylinder123 5
+    400034: pCylinder123 6
+    400036: pCylinder123 7
+    400038: Railing
+    400040: Railing1
+    400042: Railing2
+    400044: Railing3
+    400046: Railing4
+    400048: Railing5
+    400050: Railing6
+    400052: Railing7
+    400054: Rotating
+    2100000: lambert1
+    2300000: pCylinder117
+    2300002: pCylinder118
+    2300004: pCylinder122
+    2300006: pCylinder122 1
+    2300008: pCylinder122 2
+    2300010: pCylinder122 3
+    2300012: pCylinder122 4
+    2300014: pCylinder122 5
+    2300016: pCylinder122 6
+    2300018: pCylinder122 7
+    2300020: pCylinder123
+    2300022: pCylinder123 1
+    2300024: pCylinder123 2
+    2300026: pCylinder123 3
+    2300028: pCylinder123 4
+    2300030: pCylinder123 5
+    2300032: pCylinder123 6
+    2300034: pCylinder123 7
+    3300000: pCylinder117
+    3300002: pCylinder118
+    3300004: pCylinder122
+    3300006: pCylinder122 1
+    3300008: pCylinder122 2
+    3300010: pCylinder122 3
+    3300012: pCylinder122 4
+    3300014: pCylinder122 5
+    3300016: pCylinder122 6
+    3300018: pCylinder122 7
+    3300020: pCylinder123
+    3300022: pCylinder123 1
+    3300024: pCylinder123 2
+    3300026: pCylinder123 3
+    3300028: pCylinder123 4
+    3300030: pCylinder123 5
+    3300032: pCylinder123 6
+    3300034: pCylinder123 7
+    4300000: pCylinder118
+    4300002: pCylinder117
+    4300004: pCylinder122
+    4300006: pCylinder123
+    4300008: pCylinder122
+    4300010: pCylinder123
+    4300012: pCylinder122
+    4300014: pCylinder123
+    4300016: pCylinder122
+    4300018: pCylinder123
+    4300020: pCylinder122
+    4300022: pCylinder123
+    4300024: pCylinder122
+    4300026: pCylinder123
+    4300028: pCylinder122
+    4300030: pCylinder123
+    4300032: pCylinder122
+    4300034: pCylinder123
+    7400000: Spin
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Spin
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

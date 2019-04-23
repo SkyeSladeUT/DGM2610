@@ -8,7 +8,7 @@ public class FollowDogMovement : MonoBehaviour {
 	private Rigidbody rb;
 	public float currentSpeed, Gravity, _offsetTime;
 	public float  offset, gravity;
-	public GameObject player;
+	public GameObject player, UpperTrigger;
 	private Vector3 movement;
 	private bool isAwake, inRange, isDead, isAttacking;
 	private Quaternion rotation;
@@ -22,6 +22,7 @@ public class FollowDogMovement : MonoBehaviour {
 		isAttacking = false;
 		isDead = false;
 		gameObject.tag = "Untagged";
+		UpperTrigger.tag = "Untagged";
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
 		isAwake = false;
@@ -84,6 +85,7 @@ public class FollowDogMovement : MonoBehaviour {
 		currentSpeed = Speed.value;
 		isAwake = true;
 		gameObject.tag = "Enemy";
+		UpperTrigger.tag = "DeathAbove";
 	}
 
 	private IEnumerator Right()
@@ -124,6 +126,7 @@ public class FollowDogMovement : MonoBehaviour {
 	public void StopMovement()
 	{
 		gameObject.tag = "Untagged";
+		UpperTrigger.tag = "Untagged";
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		gameObject.layer = 0;

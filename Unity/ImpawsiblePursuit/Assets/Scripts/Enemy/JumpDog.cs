@@ -7,7 +7,7 @@ public class JumpDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed, _offsetTime;
-	public GameObject player;
+	public GameObject player, UpperTrigger;
 	private Vector3 movement, JumpMove;
 	private bool isAwake, CanJump, isDead, isAttacking;
 	private Quaternion rotation;
@@ -22,6 +22,7 @@ public class JumpDog : MonoBehaviour {
 		isAttacking = false;
 		isDead = false;
 		gameObject.tag = "Untagged";
+		UpperTrigger.tag = "Untagged";
 		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
@@ -100,6 +101,7 @@ public class JumpDog : MonoBehaviour {
 		currentSpeed = Speed.value;
 		isAwake = true;
 		gameObject.tag = "Enemy";
+		UpperTrigger.tag = "DeathAbove";
 	}
 
 	private IEnumerator Right()
@@ -127,6 +129,7 @@ public class JumpDog : MonoBehaviour {
 	public void StopMovement()
 	{
 		gameObject.tag = "Untagged";
+		UpperTrigger.tag = "Untagged";
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		gameObject.layer = 0;

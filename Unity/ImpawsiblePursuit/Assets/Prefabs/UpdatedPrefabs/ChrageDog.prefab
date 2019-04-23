@@ -101,6 +101,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1061941235546208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4726017301398196}
+  - component: {fileID: 33209123624993060}
+  - component: {fileID: 23475524057581254}
+  - component: {fileID: 65954519967635140}
+  m_Layer: 14
+  m_Name: Cube (2)
+  m_TagString: DeathAbove
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1071876835118178
 GameObject:
   m_ObjectHideFlags: 1
@@ -1813,6 +1831,7 @@ Transform:
   m_Children:
   - {fileID: 4884539747745180}
   - {fileID: 4551458875224620}
+  - {fileID: 4726017301398196}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2203,6 +2222,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4770117975947008}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4726017301398196
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1061941235546208}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 17.855963, z: 0}
+  m_LocalScale: {x: 1, y: 28.893723, z: 11.638901}
+  m_Children: []
+  m_Father: {fileID: 4384624287573204}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4726684861219706
 Transform:
@@ -2740,6 +2772,41 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!23 &23475524057581254
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1061941235546208}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!23 &23568992222498072
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -2929,6 +2996,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1636214201009328}
   m_Mesh: {fileID: 4300010, guid: 3beed79a608425644a2240ad04678615, type: 3}
+--- !u!33 &33209123624993060
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1061941235546208}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &33262484379596942
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -3031,6 +3105,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.167805, z: 1.0728313}
   m_Center: {x: 0, y: 0.1536355, z: 0.036414444}
+--- !u!65 &65954519967635140
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1061941235546208}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &95074270443201436
 Animator:
   serializedVersion: 3
@@ -3081,6 +3167,7 @@ MonoBehaviour:
   offset: 0.5
   gravity: 5
   player: {fileID: 0}
+  UpperTrigger: {fileID: 1061941235546208}
   DogSpeed: {fileID: 11400000, guid: 087a0d3e39f2b4646854f6cea2bf9ece, type: 2}
   Offset: {fileID: 11400000, guid: 420f411b72922a84694c5b8fd6b97384, type: 2}
   Seconds: {fileID: 11400000, guid: 1cd02f66462b8244196f5acd15b8e13c, type: 2}

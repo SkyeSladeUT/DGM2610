@@ -8,7 +8,7 @@ public class ChargingDog : MonoBehaviour {
 	private Rigidbody rb;
 	private float currentSpeed, Gravity, _offsetTime;
 	public float  offset,  gravity;
-	public GameObject player;
+	public GameObject player, UpperTrigger;
 	private Vector3 movement;
 	private bool isAwake, right, charging, waking;
 	private bool inRange;
@@ -31,6 +31,7 @@ public class ChargingDog : MonoBehaviour {
 		inRange = false;
 		charging = false;
 		gameObject.tag = "Untagged";
+		UpperTrigger.tag = "Untagged";
 		CautionSymbolLeft.SetActive(false);
 		CautionSymbolRight.SetActive(false);
 		rb = GetComponent<Rigidbody>();
@@ -102,6 +103,7 @@ public class ChargingDog : MonoBehaviour {
 		currentSpeed = DogSpeed.value;
 		isAwake = true;
 		gameObject.tag = "Enemy";
+		UpperTrigger.tag = "DeathAbove";
 	}
 
 	private IEnumerator Right()
@@ -180,6 +182,7 @@ public class ChargingDog : MonoBehaviour {
 	public void StopMovement()
 	{
 		gameObject.tag = "Untagged";
+		UpperTrigger.tag = "Untagged";
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		gameObject.layer = 0;

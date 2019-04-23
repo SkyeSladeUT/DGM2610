@@ -19,6 +19,7 @@ TagManager:
   - Stove
   - Water
   - CarDogDeath
+  - DeathAbove
   layers:
   - Default
   - TransparentFX
@@ -33,8 +34,8 @@ TagManager:
   - Dog
   - Breakables
   - Floor
-  - 
-  - 
+  - Cat
+  - TriggerAbove
   - 
   - 
   - 

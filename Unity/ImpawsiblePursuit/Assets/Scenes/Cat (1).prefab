@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4533158825862166}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Knee_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4715952232667826}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Back2_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4471617610312132}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Neck2_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4590596332883870}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Tail5_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4340830753522916}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Tail3_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4526512248499190}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Knee_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4756519081179262}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Elbow_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4184701966635882}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Tail1_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -139,7 +139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4177834944595174}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Waist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4080352542404450}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Elbow_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4779188771348060}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Neck3_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4812939513559486}
   - component: {fileID: 95497535537917986}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4398970519046650}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Back3_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4308897489907674}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Hip_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4885147789020864}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Heel_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4335935599849122}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Clavicle_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4496792082623762}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Calvicle_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 4943184813574764}
   - component: {fileID: 198350633871730830}
   - component: {fileID: 199037650122786004}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Muddsplatter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4959346049488092}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Shoulder_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -307,7 +307,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4047364591376720}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Chest_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 4676246319880870}
   - component: {fileID: 137000986847564668}
   - component: {fileID: 114685160764471746}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4114506192247620}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Toes_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4280102044390054}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Tail4_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4387975825177908}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Wrist_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4483040458648126}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Neck1_jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -399,7 +399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4335966386070670}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Heel_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -414,7 +414,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4520239657214566}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Shoulder_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4618298557704118}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Hip_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4295863240599074}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Tail2_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,9 @@ GameObject:
   - component: {fileID: 114730258586844304}
   - component: {fileID: 114556112828822656}
   - component: {fileID: 114973407335107704}
-  m_Layer: 0
+  - component: {fileID: 114328216092683748}
+  - component: {fileID: 82612942562678210}
+  m_Layer: 13
   m_Name: Cat (1)
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -485,7 +487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4071967203132814}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: L_Toe_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4778724813739596}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Back1_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +517,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4452535151315384}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: R_Wrist_Jnt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1017,6 +1019,101 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.4052572, y: 6.5988903, z: 0.9999998}
   m_Center: {x: -0.67394483, y: -0.84235376, z: 0}
+--- !u!82 &82612942562678210
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836896299365432}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 96d1801f85b6a7b4ebc06afc0ed8bf4e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95497535537917986
 Animator:
   serializedVersion: 3
@@ -1035,6 +1132,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114328216092683748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1836896299365432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b70100a12fa17744805425daa39e651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Anim: {fileID: 95497535537917986}
+  Speed: {fileID: 11400000, guid: 9a62ecf0b7dd4014493043c4605bdc9a, type: 2}
 --- !u!114 &114497185648518942
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1183,6 +1293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: {fileID: 11400000, guid: fa75ba54cce1bda4f91812ad5052f8f7, type: 2}
   SpeedChange: {fileID: 11400000, guid: e18bb8e17db8f4c45b8347c21f93d116, type: 2}
+  AnimSpeed: {fileID: 11400000, guid: 9a62ecf0b7dd4014493043c4605bdc9a, type: 2}
   PowerUpStart: {fileID: 11400000, guid: 6f77d0738ff639b419ba112b2951a322, type: 2}
   PowerUpLevel: {fileID: 11400000, guid: c5b08588714fc7f4f9d8a480c414b4fb, type: 2}
   currentSpeed: 0
@@ -1222,6 +1333,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  Anim: {fileID: 95497535537917986}
 --- !u!114 &114886251538795430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1317,6 +1429,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 114741548047101298}
         m_MethodName: StopMoving
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 82612942562678210}
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

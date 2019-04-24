@@ -10,7 +10,7 @@ public class Death : MonoBehaviour
 	public GameObject Cat;
 	public IntData Lives;
 	public float Waittime;
-	public UnityEvent Dog, Car, Water, Stove, DeathEvent, DeathAboveEvent;
+	public UnityEvent Dog, Car, Water, Stove, DeathEvent;
 
 	public BoolData isdead;
 	//public GameObject Cat;

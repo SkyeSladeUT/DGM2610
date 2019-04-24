@@ -8,6 +8,8 @@ public class BreakApart : MonoBehaviour
 
 	public GameObject Solid;
 	public GameObject broken;
+
+	public UnityEvent Break;
 	//public UnityEvent Coll;
 
 	private void Start()
@@ -20,6 +22,7 @@ public class BreakApart : MonoBehaviour
 	{
 		if (other.gameObject.layer == 12)
 		{
+			Break.Invoke();
 			//print("GroundHit");
 			gameObject.tag = "Untagged";
 			yield return new WaitForSeconds(.05f);
@@ -30,6 +33,7 @@ public class BreakApart : MonoBehaviour
 		
 		else if (other.gameObject.CompareTag("Enemy"))
 		{
+			Break.Invoke();
 			//print("DogHit");
 			broken.SetActive(true);
 			Destroy(Solid);

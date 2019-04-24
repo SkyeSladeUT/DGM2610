@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BreakingBranch : MonoBehaviour
@@ -12,6 +13,7 @@ public class BreakingBranch : MonoBehaviour
 	public DoubleKeyCodeData interact;
 	//public BoxCollider collider;
 	public float seconds;
+	public UnityEvent BreakEvent;
 
 	private void Start()
 	{
@@ -50,6 +52,7 @@ public class BreakingBranch : MonoBehaviour
 
 	private IEnumerator Break()
 	{
+		BreakEvent.Invoke();
 		gameObject.tag = "Breakable";
 		yield return new WaitForSeconds(.25f);
 		rb.constraints = RigidbodyConstraints.None;

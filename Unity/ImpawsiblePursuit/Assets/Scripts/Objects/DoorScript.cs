@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DoorScript : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class DoorScript : MonoBehaviour
 	private bool InRange;
 	public GameObject highlighter;
 	public DoubleKeyCodeData Interact;
-	public bool open;
+	public bool isopen;
+	public UnityEvent door;
 	void Start ()
 	{
 		InRange = false;
@@ -34,8 +36,10 @@ public class DoorScript : MonoBehaviour
 	{
 		if (InRange && Interact.GetKey())
 		{
-				if (open)
+			door.Invoke();
+				if (isopen)
 				{
+					
 					CloseDoor();
 				}
 				else
@@ -47,19 +51,21 @@ public class DoorScript : MonoBehaviour
 
 	private void CloseDoor()
 	{
+		
 		transform.Rotate(0, -90, 0);
 		scaling = transform.localScale;
 		scaling.z = 1.5f;
 		transform.localScale = scaling;
-		open = false;
+		isopen = false;
 	}
 
 	private void OpenDoor()
 	{
+		//door.Invoke();
 		transform.Rotate(0, 90, 0);
 		scaling = transform.localScale;
 		scaling.z = .35f;
 		transform.localScale = scaling;
-		open = true;
+		isopen = true;
 	}
 }

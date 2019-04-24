@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Window : MonoBehaviour
 {
 
 	public GameObject Unbroken;
 	public GameObject Broken;
+	public UnityEvent Break;
 
 	private void Start()
 	{
@@ -18,6 +20,7 @@ public class Window : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
+			Break.Invoke();
 			Unbroken.SetActive(false);
 			Broken.SetActive(true);
 			yield return new WaitForSeconds(2);

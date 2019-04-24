@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 [RequireComponent(typeof(Rigidbody))]
 public class ClickObject : MonoBehaviour
 {
@@ -10,6 +12,8 @@ public class ClickObject : MonoBehaviour
 	public DoubleKeyCodeData interact;
 	public float seconds, waitseconds;
 	public PlayerData player;
+
+	public UnityEvent HitGround;
 	//public Collider PlayerTrigger;
 
 	private void Start()
@@ -68,9 +72,14 @@ public class ClickObject : MonoBehaviour
 	{
 		if (other.gameObject.layer == 12)
 		{
+			HitGround.Invoke();
 			print("hit");
 			yield return new WaitForSeconds(waitseconds);
 			gameObject.tag = "Untagged";
+		}
+		else if (other.gameObject.CompareTag("Enemy"))
+		{
+			HitGround.Invoke();
 		}
 	}
 

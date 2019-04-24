@@ -10,7 +10,7 @@ public class Death : MonoBehaviour
 	public GameObject Cat;
 	public IntData Lives;
 	public float Waittime;
-	public UnityEvent Dog, Car, Water, Stove, DeathEvent;
+	public UnityEvent Dog, Car, Water, Stove, DeathEvent, DeathAboveEvent;
 
 	public BoolData isdead;
 	//public GameObject Cat;
@@ -119,24 +119,23 @@ public class Death : MonoBehaviour
 
 					break;
 				case "DeathAbove":
-					Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
-					print("Freeze2");
-					GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-					GetComponent<Rigidbody>().isKinematic = true;
-					GetComponent<Rigidbody>().useGravity = false;
-					yield return new WaitForSeconds(1);
-					Dog.Invoke();
-					DeathEvent.Invoke();
-					isdead.value = true;
-					yield return new WaitForSeconds(Waittime);
-					Lives.value -= 1;
-					if (Lives.value <= 0)
+					if (!player.PowerUp && !player.hidden)
 					{
-						SceneManager.LoadScene("MainMenu");
-					}
-					else
-					{
-						SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+						Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
+						DeathEvent.Invoke();
+						yield return new WaitForSeconds(1);
+						Dog.Invoke();
+						isdead.value = true;
+						yield return new WaitForSeconds(Waittime);
+						Lives.value -= 1;
+						if (Lives.value <= 0)
+						{
+							SceneManager.LoadScene("MainMenu");
+						}
+						else
+						{
+							SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+						}
 					}
 
 					break;

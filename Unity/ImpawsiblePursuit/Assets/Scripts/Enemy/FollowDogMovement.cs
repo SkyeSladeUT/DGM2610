@@ -6,11 +6,11 @@ using UnityEngine.Events;
 public class FollowDogMovement : MonoBehaviour {
 
 	private Rigidbody rb;
-	public float currentSpeed, Gravity, _offsetTime;
+	public float currentSpeed, Gravity, _offsetTime, jumpspeed;
 	public float  offset, gravity;
 	public GameObject player, UpperTrigger;
 	private Vector3 movement;
-	private bool isAwake, inRange, isDead, isAttacking;
+	private bool isAwake, inRange, isDead, isAttacking, InWater;
 	private Quaternion rotation;
 	public Animator Anim;
 	public FloatData Speed, Offset, Seconds, SpeedIncrease;
@@ -19,6 +19,7 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private void Start()
 	{
+		InWater = false;
 		isAttacking = false;
 		isDead = false;
 		gameObject.tag = "Untagged";
@@ -51,8 +52,14 @@ public class FollowDogMovement : MonoBehaviour {
 
 			if (isAwake)
 			{
+				//print(currentSpeed);
 				movement = rb.velocity;
 				movement.x = currentSpeed;
+				rb.velocity = movement;
+				if (gravity < 1f)
+					gravity += Time.deltaTime * Gravity;
+				movement = rb.velocity;
+				movement.y -= gravity;
 				rb.velocity = movement;
 				if (!CatDead.value)
 				{
@@ -64,12 +71,8 @@ public class FollowDogMovement : MonoBehaviour {
 						_offsetTime -= .005f * Time.deltaTime;
 					SpeedUp.Invoke();
 				}
-
-				if (gravity < 1f)
-					gravity += Time.deltaTime * Gravity;
-				movement = rb.velocity;
-				movement.y -= gravity;
-				rb.velocity = movement;
+				//print(currentSpeed);
+				
 			}
 		}
 		
@@ -86,6 +89,7 @@ public class FollowDogMovement : MonoBehaviour {
 		isAwake = true;
 		gameObject.tag = "Enemy";
 		UpperTrigger.tag = "DeathAbove";
+		//print(currentSpeed);
 	}
 
 	private IEnumerator Right()
@@ -109,10 +113,10 @@ public class FollowDogMovement : MonoBehaviour {
 		rotation.y = 180;
 		transform.rotation = rotation;
 	}
-	
+
 	private void OnCollisionStay(Collision other)
 	{
-		if (other.gameObject.layer == 9|| other.gameObject.layer == 12)
+		if (other.gameObject.layer == 9 || other.gameObject.layer == 12)
 		{
 			gravity = 0;
 		}
@@ -120,7 +124,7 @@ public class FollowDogMovement : MonoBehaviour {
 
 	private void OnCollisionExit(Collision other)
 	{
-		gravity = 1;
+		gravity = 0;
 	}
 
 	public void StopMovement()
@@ -137,8 +141,44 @@ public class FollowDogMovement : MonoBehaviour {
 	
 	public void attackCat()
 	{
+		print("Attack" + gameObject.name);
 		isAttacking = true;
 		_offsetTime = 0;
 		currentSpeed = 8;
+		//Jump();
+	}
+
+	public void Jump()
+	{
+		if (!CatDead.value && !InWater)
+		{
+			if (isAwake)
+			{
+				rb.velocity = Vector3.zero;
+				rb.angularVelocity = Vector3.zero;
+				currentSpeed = 8;
+				print("Jump");
+				movement = rb.velocity;
+				movement.y = jumpspeed;
+				rb.AddForce(movement, ForceMode.Impulse);
+				gravity = 1;
+				movement.y -= gravity;
+				rb.velocity = movement;
+			}
+		}
+	}
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Water"))
+		{
+			InWater = true;
+		}
+	}
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Water"))
+		{
+			InWater = false;
+		}
 	}
 }

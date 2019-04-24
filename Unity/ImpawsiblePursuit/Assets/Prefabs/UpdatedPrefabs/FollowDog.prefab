@@ -1055,6 +1055,7 @@ GameObject:
   - component: {fileID: 33323448236357718}
   - component: {fileID: 23402588254419310}
   - component: {fileID: 65572691335179262}
+  - component: {fileID: 114819623938151570}
   m_Layer: 14
   m_Name: Cube
   m_TagString: DeathAbove
@@ -1753,8 +1754,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1676530496032930}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 16.7, z: 0.9}
-  m_LocalScale: {x: 1, y: 28.89371, z: 11.638903}
+  m_LocalPosition: {x: 0, y: 7.8, z: 0.9}
+  m_LocalScale: {x: 1, y: 10.407765, z: 11.638903}
   m_Children: []
   m_Father: {fileID: 4490991914353400}
   m_RootOrder: 2
@@ -3376,6 +3377,7 @@ MonoBehaviour:
   currentSpeed: 0
   Gravity: 0
   _offsetTime: 0
+  jumpspeed: 5
   offset: 0.5
   gravity: 5
   player: {fileID: 0}
@@ -3508,6 +3510,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anim: {fileID: 95091112581178576}
+--- !u!114 &114819623938151570
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1676530496032930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135eaed99bdaa204eb4be40c3cf18284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114153886877356610}
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114838864572605806
 MonoBehaviour:
   m_ObjectHideFlags: 1

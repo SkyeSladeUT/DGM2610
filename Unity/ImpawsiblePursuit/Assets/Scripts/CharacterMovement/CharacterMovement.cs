@@ -37,7 +37,9 @@ public class CharacterMovement : MonoBehaviour
 	}
 	
 	void Update () {
+		
 			ChangeSpeed();
+		//print(currentSpeed);
 			movement = rb.velocity;
 			movement.x = currentSpeed;
 			rb.velocity = movement;

@@ -7,9 +7,9 @@ public class JumpDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed, _offsetTime;
-	public GameObject player, UpperTrigger;
+	public GameObject player; //UpperTrigger;
 	private Vector3 movement, JumpMove;
-	private bool isAwake, CanJump, isDead, isAttacking;
+	private bool isAwake, CanJump, isDead, isAttacking, InWater;
 	private Quaternion rotation;
 	public float jumpspeed, gravity, Gravity, offset;
 	public Animator Anim;
@@ -19,10 +19,11 @@ public class JumpDog : MonoBehaviour {
 
 	private void Start()
 	{
+		InWater = false;
 		isAttacking = false;
 		isDead = false;
 		gameObject.tag = "Untagged";
-		UpperTrigger.tag = "Untagged";
+		//UpperTrigger.tag = "Untagged";
 		CanJump = true;
 		rb = GetComponent<Rigidbody>();
 		currentSpeed = 0;
@@ -32,6 +33,7 @@ public class JumpDog : MonoBehaviour {
 
 	private void Update()
 	{
+		
 		if(CatDead.value && !isAttacking)
 			attackCat();
 		if (!isDead)
@@ -101,7 +103,7 @@ public class JumpDog : MonoBehaviour {
 		currentSpeed = Speed.value;
 		isAwake = true;
 		gameObject.tag = "Enemy";
-		UpperTrigger.tag = "DeathAbove";
+		//UpperTrigger.tag = "DeathAbove";
 	}
 
 	private IEnumerator Right()
@@ -129,7 +131,7 @@ public class JumpDog : MonoBehaviour {
 	public void StopMovement()
 	{
 		gameObject.tag = "Untagged";
-		UpperTrigger.tag = "Untagged";
+		//UpperTrigger.tag = "Untagged";
 		rb.velocity = Vector3.zero;
 		rb.angularVelocity = Vector3.zero;
 		gameObject.layer = 0;
@@ -143,5 +145,39 @@ public class JumpDog : MonoBehaviour {
 		_offsetTime = 0;
 		isAttacking = true;
 		currentSpeed = 8;
+	}
+	
+	public void Jump()
+	{
+		if (!CatDead.value && !InWater)
+		{
+			if (isAwake)
+			{
+				rb.velocity = Vector3.zero;
+				rb.angularVelocity = Vector3.zero;
+				currentSpeed = 8;
+				print("Jump");
+				movement = rb.velocity;
+				movement.y = jumpspeed;
+				rb.AddForce(movement, ForceMode.Impulse);
+				gravity = 1;
+				movement.y -= gravity;
+				rb.velocity = movement;
+			}
+		}
+	}
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Water"))
+		{
+			InWater = true;
+		}
+	}
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Water"))
+		{
+			InWater = false;
+		}
 	}
 }

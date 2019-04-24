@@ -7,10 +7,10 @@ public class ChargingDog : MonoBehaviour {
 
 	private Rigidbody rb;
 	private float currentSpeed, Gravity, _offsetTime;
-	public float  offset,  gravity;
+	public float  offset,  gravity, jumpspeed;
 	public GameObject player, UpperTrigger;
 	private Vector3 movement;
-	private bool isAwake, right, charging, waking;
+	private bool isAwake, right, charging, waking, InWater;
 	private bool inRange;
 	public FloatData DogSpeed, Offset, Seconds, SpeedIncrease, ChargeFrequency;
 	public GameObject CautionSymbolRight;
@@ -24,6 +24,7 @@ public class ChargingDog : MonoBehaviour {
 
 	private void Start()
 	{
+		InWater = false;
 		waking = false;
 		isCharging = false;
 		isDead = false;
@@ -193,9 +194,45 @@ public class ChargingDog : MonoBehaviour {
 
 	public void attackCat()
 	{
+		//Jump();
 		charging = false;
 		isCharging = false;
 		_offsetTime = 0;
 		currentSpeed = 8;
+	}
+	
+	public void Jump()
+	{
+		if (!CatDead.value && !InWater)
+		{
+			if (isAwake)
+			{
+				rb.velocity = Vector3.zero;
+				rb.angularVelocity = Vector3.zero;
+				currentSpeed = 8;
+				print("Jump");
+				movement = rb.velocity;
+				movement.y = jumpspeed;
+				rb.AddForce(movement, ForceMode.Impulse);
+				gravity = 1;
+				movement.y -= gravity;
+				rb.velocity = movement;
+			}
+		}
+	}
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Water"))
+		{
+			InWater = true;
+		}
+		
+	}
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Water"))
+		{
+			InWater = false;
+		}
 	}
 }

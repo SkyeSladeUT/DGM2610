@@ -112,6 +112,7 @@ GameObject:
   - component: {fileID: 33209123624993060}
   - component: {fileID: 23475524057581254}
   - component: {fileID: 65954519967635140}
+  - component: {fileID: 114425482355424188}
   m_Layer: 14
   m_Name: Cube (2)
   m_TagString: DeathAbove
@@ -1826,7 +1827,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1569730612914140}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 189.71286, y: 45.45, z: -56.247818}
+  m_LocalPosition: {x: 188.61, y: 45.45, z: -56.247818}
   m_LocalScale: {x: 1.5913222, y: 0.28360036, z: 0.6216515}
   m_Children:
   - {fileID: 4884539747745180}
@@ -2230,8 +2231,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1061941235546208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 17.855963, z: 0}
-  m_LocalScale: {x: 1, y: 28.893723, z: 11.638901}
+  m_LocalPosition: {x: 0, y: 10.6, z: 0}
+  m_LocalScale: {x: 1, y: 12.537807, z: 11.638901}
   m_Children: []
   m_Father: {fileID: 4384624287573204}
   m_RootOrder: 2
@@ -3079,7 +3080,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 124
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!65 &65501909995679110
 BoxCollider:
@@ -3166,6 +3167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: 0.5
   gravity: 5
+  jumpspeed: 5
   player: {fileID: 0}
   UpperTrigger: {fileID: 1061941235546208}
   DogSpeed: {fileID: 11400000, guid: 087a0d3e39f2b4646854f6cea2bf9ece, type: 2}
@@ -3310,6 +3312,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Anim: {fileID: 95074270443201436}
+--- !u!114 &114425482355424188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1061941235546208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 135eaed99bdaa204eb4be40c3cf18284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114045395178182384}
+        m_MethodName: Jump
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114463716209000326
 MonoBehaviour:
   m_ObjectHideFlags: 1

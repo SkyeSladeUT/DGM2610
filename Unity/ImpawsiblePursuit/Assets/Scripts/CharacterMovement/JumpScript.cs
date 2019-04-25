@@ -46,7 +46,7 @@ public class JumpScript : MonoBehaviour
 				gravity = 0;
 			}
 		}
-
+		//print(rb.velocity.y);
 		if (gravity < .75f)
 			gravity += Time.deltaTime * Gravity.value;
 		if (gravity > .75f)

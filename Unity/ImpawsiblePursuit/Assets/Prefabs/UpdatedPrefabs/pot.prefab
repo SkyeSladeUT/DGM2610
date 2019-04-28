@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23117029318064636}
   m_Layer: 11
   m_Name: pCylinder72
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 65510960063117340}
   m_Layer: 11
   m_Name: SpaghettiPot
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 23847534241427464}
   m_Layer: 11
   m_Name: pCube55
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 23593781438006652}
   m_Layer: 11
   m_Name: pCube56
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,8 +135,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956560637693994}
   m_LocalRotation: {x: -0.11626851, y: -0, z: -0, w: 0.9932179}
-  m_LocalPosition: {x: 141.76997, y: 15.620823, z: -53.643692}
-  m_LocalScale: {x: 0.5794084, y: 1.0526001, z: 0.3768}
+  m_LocalPosition: {x: 831.8425, y: 15.620823, z: -53.643692}
+  m_LocalScale: {x: 0.57940996, y: 1.0526001, z: 0.3768}
   m_Children:
   - {fileID: 4359050204201890}
   - {fileID: 4880916863671780}
@@ -422,9 +422,9 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 10
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

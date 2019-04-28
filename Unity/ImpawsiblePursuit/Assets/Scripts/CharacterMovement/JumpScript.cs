@@ -54,7 +54,7 @@ public class JumpScript : MonoBehaviour
 		//Debug.Log(rb.velocity.y);
 		if (JumpCount > 0)
 		{
-			if (rb.velocity.y <= .5f && rb.velocity.y >= -.1f)
+			if (rb.velocity.y <= 0 && rb.velocity.y >= -.5f)
 			{
 				Anim.SetTrigger("Jump_Hang");
 			}

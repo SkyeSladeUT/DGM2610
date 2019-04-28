@@ -25,6 +25,7 @@ public class DogDeath : MonoBehaviour
 		{
 			if (obj.CompareTag("Breakable"))
 			{
+				gameObject.tag = "Untagged";
 				isDead = true;
 				Object.Invoke();
 				Death.Invoke();
@@ -36,6 +37,7 @@ public class DogDeath : MonoBehaviour
 
 			else if (obj.CompareTag("CarDogDeath"))
 			{
+				gameObject.tag = "Untagged";
 				Car.Invoke();
 				Death.Invoke();
 				isDead = true;
@@ -51,6 +53,7 @@ public class DogDeath : MonoBehaviour
 		{
 			if (other.gameObject.CompareTag("Door"))
 			{
+				gameObject.tag = "Untagged";
 				Movement = gameObject.transform.position;
 				Movement.x = other.gameObject.transform.position.x - 1.5f;
 				gameObject.transform.position = Movement;
@@ -64,6 +67,7 @@ public class DogDeath : MonoBehaviour
 
 			else if (other.gameObject.CompareTag("Breakable") )
 			{
+				gameObject.tag = "Untagged";
 				Object.Invoke();
 				Death.Invoke();
 				isDead = true;

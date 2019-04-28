@@ -48,6 +48,7 @@ public class Death : MonoBehaviour
 					}
 
 					break;
+				case "Sink":
 				case "Stove":
 					Cat.GetComponent<CharacterMovement>().currentSpeed = 0;	
 					DeathEvent.Invoke();
@@ -68,11 +69,16 @@ public class Death : MonoBehaviour
 					//gameObject.SetActive(false);
 					break;
 				case "Water":
+					
 					Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
 					Water.Invoke();
 					DeathEvent.Invoke();
 					isdead.value = true;
-					yield return new WaitForSeconds(Waittime);
+					yield return new WaitForSeconds(.1f);
+					GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+					GetComponent<Rigidbody>().isKinematic = true;
+					GetComponent<Rigidbody>().useGravity = false;
+					yield return new WaitForSeconds(Waittime-.1f);
 					Lives.value -= 1;
 					if (Lives.value <= 0)
 					{
@@ -123,7 +129,7 @@ public class Death : MonoBehaviour
 					{
 						Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
 						DeathEvent.Invoke();
-						yield return new WaitForSeconds(1);
+						//yield return new WaitForSeconds(1);
 						Dog.Invoke();
 						isdead.value = true;
 						yield return new WaitForSeconds(Waittime);

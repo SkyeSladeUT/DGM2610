@@ -10,7 +10,7 @@ public class DoorScript : MonoBehaviour
 	public GameObject highlighter;
 	public DoubleKeyCodeData Interact;
 	public bool isopen;
-	public UnityEvent door;
+	public UnityEvent DoorOpen, DoorClose;
 	void Start ()
 	{
 		InRange = false;
@@ -36,7 +36,6 @@ public class DoorScript : MonoBehaviour
 	{
 		if (InRange && Interact.GetKey())
 		{
-			door.Invoke();
 				if (isopen)
 				{
 					
@@ -51,7 +50,7 @@ public class DoorScript : MonoBehaviour
 
 	private void CloseDoor()
 	{
-		
+		DoorClose.Invoke();
 		transform.Rotate(0, -90, 0);
 		scaling = transform.localScale;
 		scaling.z = 1.5f;
@@ -61,7 +60,7 @@ public class DoorScript : MonoBehaviour
 
 	private void OpenDoor()
 	{
-		//door.Invoke();
+		DoorOpen.Invoke();
 		transform.Rotate(0, 90, 0);
 		scaling = transform.localScale;
 		scaling.z = .35f;

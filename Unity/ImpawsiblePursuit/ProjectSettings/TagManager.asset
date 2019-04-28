@@ -20,6 +20,7 @@ TagManager:
   - Water
   - CarDogDeath
   - DeathAbove
+  - Sink
   layers:
   - Default
   - TransparentFX

@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 82910158136311768}
   m_Layer: 0
   m_Name: FloorLamp
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,8 +211,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220212215524636}
   m_LocalRotation: {x: -0.113840714, y: -0, z: -0, w: 0.99349904}
-  m_LocalPosition: {x: -267.93887, y: 13.180411, z: -53.703705}
-  m_LocalScale: {x: 55.29901, y: 55.299004, z: 55.299004}
+  m_LocalPosition: {x: 751.8763, y: 13.180411, z: -53.703705}
+  m_LocalScale: {x: 55.299023, y: 55.299007, z: 55.299007}
   m_Children:
   - {fileID: 4022516304919298}
   - {fileID: 4175299584859274}
@@ -220,7 +220,7 @@ Transform:
   - {fileID: 4937189008818306}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -13.074, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4251267067791492
 Transform:
   m_ObjectHideFlags: 1
@@ -724,6 +724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InRange: 0
+  knockedover: 0
   Highlighter: {fileID: 1711385234010676}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
   seconds: 2

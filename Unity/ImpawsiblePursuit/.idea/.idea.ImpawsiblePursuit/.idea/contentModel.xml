@@ -17,6 +17,7 @@
         </e>
         <e p="Scenes" t="Include">
           <e p="AboveDeathScript.cs" t="Include" />
+          <e p="CreateAudio.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="AnimationSpeedUp.cs" t="Include" />

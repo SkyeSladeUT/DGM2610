@@ -6,7 +6,7 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Rigidbody))]
 public class ClickObject : MonoBehaviour
 {
-	public bool InRange;
+	public bool InRange, knockedover;
 	public GameObject Highlighter;
 	private Rigidbody rb;
 	public DoubleKeyCodeData interact;
@@ -18,6 +18,7 @@ public class ClickObject : MonoBehaviour
 
 	private void Start()
 	{
+		knockedover = false;
 		//PlayerTrigger.enabled = true;
 		gameObject.tag = "Untagged";
 		rb = GetComponent<Rigidbody>();
@@ -55,6 +56,7 @@ public class ClickObject : MonoBehaviour
 	private void KnockOver()
 	{
 		//PlayerTrigger.enabled = false;
+		knockedover = true;
 		gameObject.tag = "Breakable";
 		rb.constraints = RigidbodyConstraints.None;
 		player.score.value += 1;
@@ -77,7 +79,7 @@ public class ClickObject : MonoBehaviour
 			yield return new WaitForSeconds(waitseconds);
 			gameObject.tag = "Untagged";
 		}
-		else if (other.gameObject.CompareTag("Enemy"))
+		else if (other.gameObject.CompareTag("Enemy") && knockedover)
 		{
 			HitGround.Invoke();
 		}

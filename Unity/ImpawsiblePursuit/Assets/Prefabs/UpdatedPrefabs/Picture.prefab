@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 82414807622059628}
   m_Layer: 0
   m_Name: Picture
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,15 +166,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1336931016103990}
-  m_LocalRotation: {x: -0.1870757, y: -0, z: -0, w: 0.9823455}
-  m_LocalPosition: {x: -401.2273, y: 16.701614, z: -54.007378}
-  m_LocalScale: {x: 0.5794099, y: 1.0526, z: 0.3768}
+  m_LocalRotation: {x: -0.085987344, y: -0, z: -0, w: 0.9962962}
+  m_LocalPosition: {x: 89.96056, y: 18.085854, z: -53.661263}
+  m_LocalScale: {x: 0.5794084, y: 1.0526, z: 0.3768}
   m_Children:
   - {fileID: 4464871943509050}
   - {fileID: 4483536150905192}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -21.564001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4128380208839086
 Transform:
   m_ObjectHideFlags: 1
@@ -309,7 +309,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b99eaf96dc228574cb5274d4e49b01ba, type: 2}
+  - {fileID: 2100000, guid: 46b234bfb3c566148930197c97ad2a29, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -627,6 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InRange: 0
+  knockedover: 0
   Highlighter: {fileID: 1247890275419738}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
   seconds: 3

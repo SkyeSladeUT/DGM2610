@@ -141,7 +141,7 @@ public class FollowDogMovement : MonoBehaviour {
 	
 	public void attackCat()
 	{
-		print("Attack" + gameObject.name);
+		//print("Attack" + gameObject.name);
 		isAttacking = true;
 		_offsetTime = 0;
 		currentSpeed = 8;

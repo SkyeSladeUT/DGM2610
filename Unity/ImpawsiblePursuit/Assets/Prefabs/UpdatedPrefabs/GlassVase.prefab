@@ -881,7 +881,7 @@ GameObject:
   - component: {fileID: 82662067991362810}
   m_Layer: 0
   m_Name: GlassVase
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3506,6 +3506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InRange: 0
+  knockedover: 0
   Highlighter: {fileID: 1299153215330742}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
   seconds: 1

@@ -431,6 +431,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4714184851391060}
   - component: {fileID: 137356542087424596}
+  - component: {fileID: 114090185282079134}
   m_Layer: 0
   m_Name: ShortDog 1
   m_TagString: Untagged
@@ -616,7 +617,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4490991914353400}
   - component: {fileID: 33106499145250074}
-  - component: {fileID: 23249668422450220}
   - component: {fileID: 54967708980992048}
   - component: {fileID: 65090044621715940}
   - component: {fileID: 65028945287598496}
@@ -2216,7 +2216,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338046048624488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.56, y: 45.777832, z: -55.077705}
+  m_LocalPosition: {x: 238.7, y: 45.777832, z: -55.077705}
   m_LocalScale: {x: 1.3323699, y: 0.23744999, z: 0.52049}
   m_Children:
   - {fileID: 4393792223268942}
@@ -2895,41 +2895,6 @@ MeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 0c132996cc3b4f34c8982b64cdbd2394, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!23 &23249668422450220
-MeshRenderer:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1338046048624488}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 2100000, guid: c016307a560b6894fb5aa42c837ee6cc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3703,6 +3668,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114090185282079134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1249882118541536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7dad66422d31794c8187ccc7146b313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.25
 --- !u!114 &114153886877356610
 MonoBehaviour:
   m_ObjectHideFlags: 1

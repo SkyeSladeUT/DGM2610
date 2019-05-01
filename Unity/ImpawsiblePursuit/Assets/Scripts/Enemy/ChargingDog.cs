@@ -51,7 +51,7 @@ public class ChargingDog : MonoBehaviour {
 				if (transform.position.x < player.transform.position.x && !waking)
 				{
 					StartCoroutine(Wake());
-					Debug.Log("Move");
+					//Debug.Log("Move");
 					StartCoroutine(Move());
 				}
 				else if (transform.position.x < player.transform.position.x - offset && isAwake)

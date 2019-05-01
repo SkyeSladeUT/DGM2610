@@ -841,7 +841,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4374145553271450}
   - component: {fileID: 137666088438173318}
-  - component: {fileID: 114639343422227286}
   m_Layer: 0
   m_Name: Chihuahua 1
   m_TagString: Untagged
@@ -3443,7 +3442,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f79d45c81ec172e4284e6eb2d52b3d01, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.25
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3750,18 +3749,6 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   waitTime: 2
   Stars: {fileID: 1231028964235908}
---- !u!114 &114639343422227286
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1595524399118346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7dad66422d31794c8187ccc7146b313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.25
 --- !u!114 &114782420545531428
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -10,6 +10,8 @@ public class Death : MonoBehaviour
 	public GameObject Cat;
 	public IntData Lives;
 	public float Waittime;
+	private float z;
+	private Vector3 position;
 	public UnityEvent Dog, Car, Water, Stove, DeathEvent;
 
 	public BoolData isdead;
@@ -91,11 +93,15 @@ public class Death : MonoBehaviour
 
 					break;
 				case "CarDeath":
+					z = 1.22f;
 					Cat.GetComponent<CharacterMovement>().currentSpeed = 0;
 					Car.Invoke();
 					DeathEvent.Invoke();
 					isdead.value = true;
 					yield return new WaitForSeconds(Waittime);
+					position = transform.position;
+					position.z = z;
+					transform.position = position;
 					Lives.value -= 1;
 					if (Lives.value <= 0)
 					{

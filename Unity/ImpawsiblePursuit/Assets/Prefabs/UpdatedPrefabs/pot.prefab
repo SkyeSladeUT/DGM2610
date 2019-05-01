@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 65630967608535180}
   - component: {fileID: 114352155344609912}
   - component: {fileID: 82049623385000780}
+  - component: {fileID: 65360718902028806}
   m_Layer: 0
   m_Name: pot
   m_TagString: Untagged
@@ -134,8 +135,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1956560637693994}
-  m_LocalRotation: {x: -0.11626851, y: -0, z: -0, w: 0.9932179}
-  m_LocalPosition: {x: 831.8425, y: 15.620823, z: -53.643692}
+  m_LocalRotation: {x: -0.26277816, y: -0, z: -0, w: 0.9648563}
+  m_LocalPosition: {x: -354.1348, y: 15.620823, z: -53.643692}
   m_LocalScale: {x: 0.57940996, y: 1.0526001, z: 0.3768}
   m_Children:
   - {fileID: 4359050204201890}
@@ -381,6 +382,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &65360718902028806
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956560637693994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9235119, y: 1.2833012, z: 2.1925943}
+  m_Center: {x: -0.12467003, y: 0.031332694, z: -0.06919129}
 --- !u!65 &65510960063117340
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -389,7 +402,7 @@ BoxCollider:
   m_GameObject: {fileID: 1121460941296168}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.01995281, y: 0.051028, z: 0.019383596}
   m_Center: {x: -0.00047148843, y: 0.012455035, z: 0.00023344488}
@@ -416,7 +429,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3c71b693dc33ebe4aae7fed48715cacd, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -424,7 +437,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 0
   DopplerLevel: 1
-  MinDistance: 10
+  MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -524,6 +537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InRange: 0
+  knockedover: 0
   Highlighter: {fileID: 1742188981967486}
   interact: {fileID: 11400000, guid: ef714ac7c2463a8468ef58c8e5d18e86, type: 2}
   seconds: 1
@@ -534,6 +548,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 82049623385000780}
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: fc8723a3110e61e478c86547868a7cda, type: 2}
+        m_MethodName: Call
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -28,7 +28,7 @@ public class AudioScript : MonoBehaviour
 	public void Whine()
 	{
 		audio.volume = volume;
-		audio.volume = .25f;
+		audio.volume *= .5f;
 		audio.Stop();
 		audio.clip = whine;
 		audio.Play();
@@ -37,7 +37,7 @@ public class AudioScript : MonoBehaviour
 	public void CarHorn()
 	{
 		audio.volume = volume;
-		audio.volume = 1f;
+		audio.volume *= 1f;
 		audio.Stop();
 		audio.clip = horn;
 		audio.Play();

@@ -588,7 +588,7 @@ GameObject:
   - component: {fileID: 65320449876545146}
   m_Layer: 0
   m_Name: Vase
-  m_TagString: Breakable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1444,14 +1444,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1986958171384524}
   m_LocalRotation: {x: -0.11626851, y: -0, z: -0, w: 0.9932179}
-  m_LocalPosition: {x: 174.81436, y: 15.491316, z: -54.09989}
-  m_LocalScale: {x: 0.5794084, y: 1.0526001, z: 0.3768}
+  m_LocalPosition: {x: 847.4001, y: 15.851614, z: -54.099884}
+  m_LocalScale: {x: 0.57940996, y: 1.0526001, z: 0.3768}
   m_Children:
   - {fileID: 4870996003597022}
   - {fileID: 4690029886657186}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -13.354001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4814213407824922
 Transform:
   m_ObjectHideFlags: 1

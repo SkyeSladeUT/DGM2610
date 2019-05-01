@@ -439,7 +439,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4870473565210618}
   - component: {fileID: 137476504221184010}
-  - component: {fileID: 114535015616666802}
   m_Layer: 0
   m_Name: pug
   m_TagString: Untagged
@@ -3728,18 +3727,6 @@ MonoBehaviour:
   Anim: {fileID: 95074270443201436}
   Speed: {fileID: 11400000, guid: 0eda52e64b2931a4381e062bc4c8d539, type: 2}
   SpeedIncrease: {fileID: 11400000, guid: 63d23a2f742562d46b4fef249aa1f251, type: 2}
---- !u!114 &114535015616666802
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1307912498753374}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7dad66422d31794c8187ccc7146b313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.25
 --- !u!114 &114598547518158150
 MonoBehaviour:
   m_ObjectHideFlags: 1

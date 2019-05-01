@@ -431,7 +431,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4714184851391060}
   - component: {fileID: 137356542087424596}
-  - component: {fileID: 114090185282079134}
   m_Layer: 0
   m_Name: ShortDog 1
   m_TagString: Untagged
@@ -3435,7 +3434,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 18baee17a1c872a4ca4602b869fe5cd0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -3668,18 +3667,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114090185282079134
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1249882118541536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7dad66422d31794c8187ccc7146b313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.25
 --- !u!114 &114153886877356610
 MonoBehaviour:
   m_ObjectHideFlags: 1

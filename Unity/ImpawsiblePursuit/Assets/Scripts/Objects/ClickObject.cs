@@ -34,6 +34,8 @@ public class ClickObject : MonoBehaviour
 			InRange = true;
 			Highlighter.SetActive(true);
 		}
+		if(obj.CompareTag("Enemy"))
+			HitGround.Invoke();
 	}
 
 	private void OnTriggerExit(Collider obj)
